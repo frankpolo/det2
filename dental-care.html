@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dental Care in Gudivada | General Dental Services | Krishna Dental Clinic</title>
+      <meta name="description" content="Comprehensive dental care services at Krishna Multispeciality Dental Clinic in Gudivada. Preventive and restorative treatments for the whole family. Call 086742 44241 to schedule.">
+      <!-- Include Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Include Tailwind CSS -->
+      <link rel="stylesheet" href="dist/styles.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+      <link rel="canonical" href="https://www.krishnadental.in/dental-care.html">
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "MedicalWebPage",
+           "headline": "Comprehensive Dental Care Services in Gudivada",
+           "datePublished": "2025-05-02",
+           "dateModified": "2025-05-02",
+           "description": "Information about general dental care services available at Krishna Multispeciality Dental Clinic in Gudivada including preventive and restorative treatments.",
+           "publisher": {
+             "@type": "Organization",
+             "name": "Krishna Multispeciality Dental Clinic",
+             "logo": {
+               "@type": "ImageObject",
+               "url": "https://www.krishnadental.in/logo.webp"
+             }
+           },
+           "specialty": "General Dentistry",
+           "about": {
+             "@type": "MedicalProcedure",
+             "name": "Dental Care",
+             "howPerformed": "Professional dental care including checkups, cleanings, and various preventive and restorative treatments."
+           }
+         }
+      </script>
+      <style>
+         body {
+         font-family: 'Poppins', sans-serif;
+         }
+         .slider-item {
+         background-size: cover;
+         background-position: center;
+         height: 55vh;
+         }
+         .overlay {
+         background: rgba(0, 0, 0, 0.5);
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         }
+         @media (min-width: 768px) {
+         .image-wrapper {
+         height: 100%;
+         }
+         }
+         /* Fix for footer text visibility */
+         footer {
+            color: #ffffff;
+         }
+         footer a, footer p, footer span, footer h2, footer h3 {
+            color: #ffffff;
+         }
+         footer a:hover {
+            color: #bfdbfe; /* light blue hover */
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="py-4 border-b md:py-3 bg-white">
+            <div class="container mx-auto">
+               <div class="flex flex-wrap items-start px-3 lg:pt-12 lg:pb-12 md:px-0">
+                  <div class="w-full md:w-1/3 flex flex-col md:flex-row items-center justify-center mb-2 md:mb-0 order-1 md:order-2 text-right">
+                     <div class="flex items-center justify-center md:order-last">
+                        <span></span>
+                     </div>
+                     <div class="pr-0 pl-3 md:pr-4 md:pl-0">
+                        <a href="index.html" class="text-4xl font-bold text-center hover:text-blue-600 block">
+                        KRISHNA
+                        <span class="block text-base font-medium text-center text-gray-500">MultiSpeciality Dental Clinic</span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="w-full lg:pt-4 md:w-1/3 mb-2 md:mb-0 text-center order-2 md:order-1">
+                     <p class="text-xs">
+                        <span>Call:</span>
+                        <span class="font-bold">086742 44241,</span>
+                        <span class="font-bold">079974 44241</span>
+                     </p>
+                     <p class="text-xs">10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301</p>
+                  </div>
+                  <div class="w-full lg:pt-4 md:w-1/3 flex justify-center order-3">
+                     <div class="pl-3 text-center">
+                        <p class="text-xs">
+                           <span class="font-bold">Mon - Sat:</span>
+                           <span>9:30am - 8:30pm</span>
+                        </p>
+                        <p class="text-xs">
+                           <span class="font-bold">Sun:</span>
+                           <span>10:00am - 1:00pm</span>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Menu -->
+      <div class="bg-black lg:bg-white">
+         <div class="container mx-auto px-4">
+            <div class="lg:flex lg:items-center lg:justify-between lg:py-4">
+               <!-- Navbar Toggler -->
+               <button id="navbarToggle" class="text-white lg:text-white focus:outline-none lg:hidden">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+               </button>
+               <!-- Navbar Collapse -->
+               <div class="hidden lg:flex lg:flex-grow lg:items-center lg:w-auto lg:justify-center space-x-4" id="navbarCollapse">
+                  <a href="index.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Home</a>
+                  <a href="dental-treatment.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Treatments</a>
+                  <a href="blog.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Blog</a>
+                  <a href="contact.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Contact</a>
+                  <a href="about.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">About</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         // JavaScript for toggling the navbar on small screens
+         document.getElementById('navbarToggle').addEventListener('click', function() {
+           var navbarCollapse = document.getElementById('navbarCollapse');
+           navbarCollapse.classList.toggle('hidden');
+         });
+      </script>
+      <!-- Menu end -->
+      
+      <!-- Page Header -->
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 py-16">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl md:text-4xl font-bold text-white text-center">General Dental Care</h1>
+          <div class="flex justify-center mt-4">
+            <nav class="flex" aria-label="Breadcrumb">
+              <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                  <a href="index.html" class="text-sm text-blue-100 hover:text-white">Home</a>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg class="w-3 h-3 text-blue-100 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <a href="dental-treatment.html" class="text-sm text-blue-100 hover:text-white">Treatments</a>
+                  </div>
+                </li>
+                <li aria-current="page">
+                  <div class="flex items-center">
+                    <svg class="w-3 h-3 text-blue-100 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-sm text-blue-50 font-medium">Dental Care</span>
+                  </div>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-wrap -mx-4">
+          <!-- Main Content Area -->
+          <div class="w-full lg:w-2/3 px-4">
+            <div class="mb-10">
+              <img src="images/dept-3.webp" alt="Dental Care at Krishna Dental Clinic" class="w-full h-auto rounded-lg shadow-md mb-6">
+              
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">Comprehensive Dental Care Services</h2>
+              <p class="text-gray-600 mb-4">At Krishna Multispeciality Dental Clinic in Gudivada, we provide a wide range of dental care services designed to maintain, restore, and enhance your oral health. Our comprehensive approach to dental care ensures that all your dental needs are addressed under one roof by our team of experienced professionals.</p>
+              <p class="text-gray-600 mb-6">Regular dental care is essential not just for a beautiful smile, but also for your overall health. Poor oral health has been linked to various systemic conditions, including heart disease, diabetes, and respiratory infections. By prioritizing your dental care, you're taking an important step toward maintaining your overall well-being.</p>
+              
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">Our General Dental Services</h2>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2">Routine Check-ups and Examinations</h3>
+              <p class="text-gray-600 mb-4">Regular dental check-ups are the foundation of good oral health. During these appointments, our dentists will:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Examine your teeth, gums, and mouth for signs of decay, gum disease, and other potential issues</li>
+                <li class="mb-2">Conduct oral cancer screenings</li>
+                <li class="mb-2">Take digital X-rays when necessary to detect problems not visible to the naked eye</li>
+                <li class="mb-2">Discuss any concerns you may have about your oral health</li>
+                <li class="mb-2">Provide personalized advice on maintaining good oral hygiene</li>
+              </ul>
+              <p class="text-gray-600 mb-4">We recommend visiting us for a check-up every six months, though some patients may require more frequent visits depending on their oral health status.</p>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2 mt-6">Professional Teeth Cleaning</h3>
+              <p class="text-gray-600 mb-4">Even with diligent brushing and flossing, plaque and tartar can build up on your teeth over time. Our professional cleaning services include:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Removal of plaque and tartar (calculus) from all surfaces of the teeth</li>
+                <li class="mb-2">Polishing of teeth to remove stains and smooth the tooth surface</li>
+                <li class="mb-2">Flossing between teeth to remove any remaining debris</li>
+                <li class="mb-2">Application of fluoride treatment if necessary</li>
+              </ul>
+              <p class="text-gray-600 mb-4">Regular professional cleanings help prevent gum disease, tooth decay, and bad breath while keeping your smile bright and healthy.</p>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2 mt-6">Dental Fillings</h3>
+              <p class="text-gray-600 mb-4">When tooth decay is detected, dental fillings are used to restore the affected tooth. At Krishna Multispeciality Dental Clinic, we offer various filling options:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Composite resin (tooth-colored) fillings that blend naturally with your teeth</li>
+                <li class="mb-2">Amalgam fillings, which are durable and cost-effective</li>
+                <li class="mb-2">Glass ionomer fillings, which release fluoride to help protect teeth from further decay</li>
+              </ul>
+              <p class="text-gray-600 mb-4">Our dentists will discuss the best filling option for you based on the location of the cavity, extent of decay, and your preferences.</p>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2 mt-6">Dental Sealants</h3>
+              <p class="text-gray-600 mb-4">Dental sealants are thin, protective coatings applied to the chewing surfaces of the back teeth (molars and premolars) to prevent decay. They are particularly beneficial for:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Children and teenagers who are often more prone to developing cavities</li>
+                <li class="mb-2">Adults with deep grooves in their teeth that are difficult to clean</li>
+                <li class="mb-2">Patients at higher risk for tooth decay</li>
+              </ul>
+              <p class="text-gray-600 mb-4">Sealants can last for several years with proper care and are a cost-effective preventive measure against cavities.</p>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2 mt-6">Fluoride Treatments</h3>
+              <p class="text-gray-600 mb-4">Fluoride is a natural mineral that helps strengthen tooth enamel and prevent decay. Our in-office fluoride treatments provide an extra layer of protection beyond what you get from fluoride toothpaste and water. These treatments are particularly beneficial for:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Patients with a history of frequent cavities</li>
+                <li class="mb-2">Those with dry mouth conditions</li>
+                <li class="mb-2">Patients with exposed root surfaces</li>
+                <li class="mb-2">Children developing their permanent teeth</li>
+              </ul>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2 mt-6">Emergency Dental Care</h3>
+              <p class="text-gray-600 mb-4">Dental emergencies can happen at any time. Whether you're experiencing severe tooth pain, have a broken or knocked-out tooth, or are dealing with an infection, our team is ready to provide prompt emergency care. We offer:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Same-day emergency appointments whenever possible</li>
+                <li class="mb-2">Treatment for toothaches, broken teeth, lost fillings or crowns</li>
+                <li class="mb-2">Management of dental infections and abscesses</li>
+                <li class="mb-2">Clear aftercare instructions to ensure proper healing</li>
+              </ul>
+              <p class="text-gray-600 mb-4">If you're experiencing a dental emergency, call our office immediately at <strong>086742 44241</strong> or <strong>079974 44241</strong> for guidance and to schedule an urgent appointment.</p>
+              
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">Preventive Dentistry: The Key to Long-term Oral Health</h2>
+              <p class="text-gray-600 mb-4">At Krishna Multispeciality Dental Clinic, we strongly emphasize preventive dentistry as the most effective approach to maintaining good oral health. Preventive care includes:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Regular dental check-ups and professional cleanings</li>
+                <li class="mb-2">Patient education on proper brushing and flossing techniques</li>
+                <li class="mb-2">Dietary advice to minimize tooth decay</li>
+                <li class="mb-2">Early detection and treatment of potential issues</li>
+                <li class="mb-2">Customized preventive care plans based on individual risk factors</li>
+              </ul>
+              <p class="text-gray-600 mb-4">By focusing on prevention, we can help you avoid many common dental problems, minimize the need for extensive treatments, and save you time and money in the long run.</p>
+              
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">Dental Care for the Whole Family</h2>
+              <p class="text-gray-600 mb-4">Our clinic provides dental care for patients of all ages, from children to seniors. We understand that each age group has unique dental needs and concerns:</p>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2">Children's Dentistry</h3>
+              <p class="text-gray-600 mb-4">We make dental visits fun and educational for our youngest patients, helping them develop good oral hygiene habits early on. Our services for children include:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Child-friendly dental check-ups</li>
+                <li class="mb-2">Gentle cleanings and fluoride treatments</li>
+                <li class="mb-2">Dental sealants to protect developing molars</li>
+                <li class="mb-2">Education on proper brushing and flossing techniques</li>
+                <li class="mb-2">Monitoring of dental development</li>
+              </ul>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2">Adult Dentistry</h3>
+              <p class="text-gray-600 mb-4">For adults, we focus on maintaining oral health while addressing common issues such as gum disease, tooth decay, and tooth wear. Our services include:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Comprehensive dental examinations</li>
+                <li class="mb-2">Professional cleanings and periodontal treatments</li>
+                <li class="mb-2">Restorative procedures such as fillings, crowns, and bridges</li>
+                <li class="mb-2">Treatment for TMJ disorders and bruxism (teeth grinding)</li>
+                <li class="mb-2">Cosmetic dental procedures</li>
+              </ul>
+              
+              <h3 class="text-xl font-medium text-gray-800 mb-2">Senior Dentistry</h3>
+              <p class="text-gray-600 mb-4">Older adults often face unique dental challenges such as dry mouth, increased risk of gum disease, and the effects of long-term wear and tear. Our services for seniors include:</p>
+              <ul class="list-disc pl-6 mb-6 text-gray-600">
+                <li class="mb-2">Gentle dental care that considers age-related conditions</li>
+                <li class="mb-2">Management of dry mouth symptoms</li>
+                <li class="mb-2">Care for dental implants and dentures</li>
+                <li class="mb-2">Oral cancer screenings</li>
+                <li class="mb-2">Treatments modified to accommodate medications and health conditions</li>
+              </ul>
+              
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mt-8">
+                <p class="font-medium text-blue-700">Ready to prioritize your dental health? Contact Krishna Multispeciality Dental Clinic today at <strong>086742 44241</strong> or <strong>079974 44241</strong> to schedule an appointment. Our team in Gudivada is dedicated to providing comprehensive dental care in a comfortable and welcoming environment.</p>
+              </div>
+            </div>
+            
+            <!-- Related Treatments Section -->
+            <div class="border-t border-gray-200 pt-8 mt-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">Related Treatments</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="dental-implants.html" class="block group">
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 transform group-hover:scale-105">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url(images/dept-1.webp);"></div>
+                    <div class="p-4">
+                      <h4 class="text-lg font-medium mb-2 group-hover:text-blue-600">Dental Implants</h4>
+                      <p class="text-gray-600 text-sm">Replace missing teeth with permanent, natural-looking dental implants</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="cosmetic-dentistry.html" class="block group">
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 transform group-hover:scale-105">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url(images/dept-2.webp);"></div>
+                    <div class="p-4">
+                      <h4 class="text-lg font-medium mb-2 group-hover:text-blue-600">Cosmetic Dentistry</h4>
+                      <p class="text-gray-600 text-sm">Enhance the appearance of your smile with our comprehensive cosmetic dental services</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sidebar Area -->
+          <div class="w-full lg:w-1/3 px-4 mt-8 lg:mt-0">
+            <!-- Contact Information -->
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 mb-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Us</h3>
+              <div class="mb-4">
+                <div class="flex items-start mb-2">
+                  <div class="text-blue-500 mt-1 mr-3">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                  <p class="text-gray-600">10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301</p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div class="text-blue-500 mr-3">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                    </svg>
+                  </div>
+                  <p class="text-gray-600">086742 44241, 079974 44241</p>
+                </div>
+                <div class="flex items-center">
+                  <div class="text-blue-500 mr-3">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                  </div>
+                  <p class="text-gray-600">vidya@krishnadental.in</p>
+                </div>
+              </div>
+              <div class="mt-6">
+                <a href="contact.html" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300">Book Appointment</a>
+              </div>
+            </div>
+            
+            <!-- Opening Hours -->
+            <div class="bg-gray-50 rounded-lg shadow-md p-6 mb-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">Opening Hours</h3>
+              <div class="border-b border-gray-200 pb-2 mb-2">
+                <p class="flex justify-between text-gray-600">
+                  <span>Monday - Saturday:</span>
+                  <span>9:30 AM - 8:30 PM</span>
+                </p>
+              </div>
+              <div>
+                <p class="flex justify-between text-gray-600">
+                  <span>Sunday:</span>
+                  <span>10:00 AM - 1:00 PM</span>
+                </p>
+              </div>
+            </div>
+            
+            <!-- Other Services -->
+            <div class="bg-gray-50 rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Services</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a href="dental-implants.html" class="text-gray-600 hover:text-blue-600">Dental Implants</a>
+                </li>
+                <li>
+                  <a href="cosmetic-dentistry.html" class="text-gray-600 hover:text-blue-600">Cosmetic Dentistry</a>
+                </li>
+                <li>
+                  <a href="dental-care.html" class="text-blue-600 hover:text-blue-800 font-medium">Dental Care</a>
+                </li>
+                <li>
+                  <a href="teeth-whitening.html" class="text-gray-600 hover:text-blue-600">Teeth Whitening</a>
+                </li>
+                <li>
+                  <a href="dental-calculus.html" class="text-gray-600 hover:text-blue-600">Dental Calculus</a>
+                </li>
+                <li>
+                  <a href="periodontics.html" class="text-gray-600 hover:text-blue-600">Periodontics</a>
+                </li>
+                <li>
+                  <a href="clip-and-braces.html" class="text-gray-600 hover:text-blue-600">Clip & Braces</a>
+                </li>
+                <li>
+                  <a href="root-canal.html" class="text-gray-600 hover:text-blue-600">Root Canal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Improved Footer with better text visibility -->
+      <footer class="bg-gradient-to-r from-blue-800 to-blue-600 py-12">
+         <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- Contact Information -->
+               <div>
+                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block text-white">Contact Us</h2>
+                  <ul class="space-y-3">
+                     <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="text-sm text-white">10/181-1, Eluru Road, Gudivada, Krishna District, Andhra Pradesh - 521301</span>
+                     </li>
+                     <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href="tel:08674244241" class="text-sm text-white hover:text-blue-200">086742 44241</a>
+                     </li>
+                     <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href="tel:07997444241" class="text-sm text-white hover:text-blue-200">079974 44241</a>
+                     </li>
+                     <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <a href="mailto:vidya@krishnadental.in" class="text-sm text-white hover:text-blue-200">vidya@krishnadental.in</a>
+                     </li>
+                  </ul>
+               </div>
+               
+               <!-- Quick Links -->
+               <div>
+                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block text-white">Quick Links</h2>
+                  <ul class="space-y-2">
+                     <li>
+                        <a href="index.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Home
+                        </a>
+                     </li>
+                     <li>
+                        <a href="about.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           About Us
+                        </a>
+                     </li>
+                     <li>
+                        <a href="dental-treatment.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Treatments
+                        </a>
+                     </li>
+                     <li>
+                        <a href="blog.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Blog
+                        </a>
+                     </li>
+                     <li>
+                        <a href="contact.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Contact
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               
+               <!-- Dental Treatments -->
+               <div>
+                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block text-white">Our Treatments</h2>
+                  <ul class="space-y-2">
+                     <li>
+                        <a href="dental-implants.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Dental Implants
+                        </a>
+                     </li>
+                     <li>
+                        <a href="cosmetic-dentistry.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Cosmetic Dentistry
+                        </a>
+                     </li>
+                     <li>
+                        <a href="dental-care.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Dental Care
+                        </a>
+                     </li>
+                     <li>
+                        <a href="teeth-whitening.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Teeth Whitening
+                        </a>
+                     </li>
+                     <li>
+                        <a href="root-canal.html" class="text-sm flex items-center text-white hover:text-blue-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                           Root Canal
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               
+               <!-- Business Hours -->
+               <div>
+                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block text-white">Opening Hours</h2>
+                  <div class="space-y-3">
+                     <div>
+                        <p class="text-sm font-medium mb-1 text-white">Monday - Saturday</p>
+                        <p class="text-sm text-white">9:30 AM - 8:30 PM</p>
+                     </div>
+                     <div>
+                        <p class="text-sm font-medium mb-1 text-white">Sunday</p>
+                        <p class="text-sm text-white">10:00 AM - 1:00 PM</p>
+                     </div>
+                     <div class="pt-4">
+                        <h3 class="text-md font-semibold mb-3 text-white">Follow Us</h3>
+                        <div class="flex space-x-3">
+                           <a href="https://www.facebook.com/krishnadentalclinicgudivada" class="bg-white text-blue-600 hover:text-blue-800 rounded-full p-2">
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                              </svg>
+                           </a>
+                           <a href="https://www.instagram.com/krishnadentalgudivada/" class="bg-white text-blue-600 hover:text-blue-800 rounded-full p-2">
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="border-t border-blue-400 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+               <p class="text-sm text-white mb-4 md:mb-0">© 2025 Krishna Multispeciality Dental Clinic. All rights reserved.</p>
+               <div class="flex space-x-6">
+                  <a href="privacy-policy.html" class="text-sm text-white hover:text-blue-200">Privacy Policy</a>
+                  <a href="terms-conditions.html" class="text-sm text-white hover:text-blue-200">Terms & Conditions</a>
+                  <a href="sitemap.html" class="text-sm text-white hover:text-blue-200">Sitemap</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
