@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gum Disease: The Silent Threat to Your Smile | Krishna Dental Gudivada</title>
+  <meta name="description" content="Complete guide to gum disease: signs, stages, risk factors, systemic health connection, treatment options, and prevention strategies. Expert care in Gudivada.">
+  <link rel="canonical" href="https://www.krishnadental.in/blog-gum-disease-guide.html">
+  <meta property="og:title" content="Gum Disease: The Silent Threat to Your Smile | Krishna Dental">
+  <meta property="og:description" content="Learn about periodontal disease: early signs, stages, causes, treatment options, and prevention strategies for healthy gums.">
+  <meta property="og:url" content="https://www.krishnadental.in/blog-gum-disease-guide.html">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.min.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --text-tertiary: #86868b;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --bg-dark: #1d1d1f;
+      --accent: #0d7377;
+      --accent-light: #e0f2f1;
+      --border: #d2d2d7;
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    /* ── Navigation ── */
+    .site-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 52px;
+    }
+    .nav-logo { font-weight: 700; font-size: 18px; color: var(--text-primary); text-decoration: none; letter-spacing: -0.3px; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: var(--text-secondary);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      font-size: 13px; font-weight: 600; color: #fff;
+      background: var(--accent); padding: 8px 18px;
+      border-radius: 980px; text-decoration: none; transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger svg { width: 22px; height: 22px; color: var(--text-primary); }
+
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(20px);
+      flex-direction: column; padding: 80px 32px 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 28px; font-weight: 600; color: var(--text-primary);
+      text-decoration: none; padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-close {
+      position: absolute; top: 16px; right: 20px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .mobile-close svg { width: 24px; height: 24px; }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta-wrap { display: none; }
+      .nav-hamburger { display: block; }
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      max-width: 680px; margin: 0 auto; padding: 20px 24px 0;
+      font-size: 13px; color: var(--text-tertiary);
+    }
+    .breadcrumb a { color: var(--text-tertiary); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ── Hero / Article Header ── */
+    .hero {
+      max-width: 680px; margin: 0 auto;
+      padding: 64px 24px 48px; text-align: center;
+    }
+    .hero-eyebrow {
+      font-size: 15px; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(36px, 6vw, 56px); font-weight: 700;
+      letter-spacing: -1.5px; line-height: 1.08; color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+    .hero-meta {
+      display: flex; justify-content: center; align-items: center; gap: 20px;
+      font-size: 14px; color: var(--text-tertiary);
+      margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 4px; }
+    .hero p {
+      font-size: 19px; line-height: 1.5; color: var(--text-secondary);
+      max-width: 520px; margin: 0 auto 32px;
+    }
+
+    /* ── Article Body ── */
+    .article {
+      max-width: 680px; margin: 0 auto;
+      padding: 0 24px;
+    }
+    .article-section {
+      padding: 40px 0;
+    }
+    .article-section:first-child {
+      padding-top: 0;
+    }
+    .article-section h2 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 32px; font-weight: 700;
+      letter-spacing: -0.8px; line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+    .article-section h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 22px; font-weight: 700;
+      letter-spacing: -0.4px; line-height: 1.3;
+      color: var(--text-primary);
+      margin-top: 32px; margin-bottom: 12px;
+    }
+    .article-section p {
+      font-size: 17px; line-height: 1.8;
+      color: var(--text-secondary); margin-bottom: 16px;
+    }
+    .article-section strong {
+      color: var(--text-primary); font-weight: 600;
+    }
+    .article-section ul {
+      margin-left: 24px; margin-bottom: 16px;
+    }
+    .article-section li {
+      font-size: 17px; line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    /* ── Info Box ── */
+    .info-box {
+      background: var(--accent-light); border-left: 4px solid var(--accent);
+      padding: 20px 24px; border-radius: var(--radius);
+      margin: 32px 0;
+    }
+    .info-box p { margin: 0; font-size: 15px; color: var(--text-primary); }
+
+    /* ── Related Section ── */
+    .related-treatments {
+      background: var(--bg-secondary); border-radius: var(--radius-lg);
+      padding: 32px; margin: 48px 0;
+    }
+    .related-treatments h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 20px; font-weight: 700; margin-bottom: 16px;
+    }
+    .related-treatments ul {
+      list-style: none; margin: 0;
+    }
+    .related-treatments li {
+      margin-bottom: 12px;
+    }
+    .related-treatments a {
+      color: var(--accent); text-decoration: none;
+      font-size: 15px; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .related-treatments a:hover {
+      color: var(--text-primary);
+    }
+
+    /* ── Author Bio ── */
+    .author-bio {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 0;
+      margin: 48px 0;
+      display: flex; gap: 20px;
+    }
+    .author-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: var(--accent-light); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px;
+    }
+    .author-info h4 {
+      font-size: 16px; font-weight: 600; margin-bottom: 4px;
+    }
+    .author-info p {
+      font-size: 14px; color: var(--text-secondary); line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      background: var(--accent); border-radius: var(--radius-lg);
+      padding: 48px 32px; text-align: center; color: #fff;
+      margin: 64px 0;
+    }
+    .cta-banner h2 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 28px; font-weight: 700;
+      letter-spacing: -0.5px; margin-bottom: 12px;
+    }
+    .cta-banner p { font-size: 16px; opacity: 0.9; margin-bottom: 24px; }
+    .cta-banner a {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 15px; font-weight: 600; color: var(--accent);
+      background: #fff; padding: 14px 28px; border-radius: 980px;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .cta-banner a:hover { transform: scale(1.03); }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--bg-dark); color: rgba(255,255,255,0.72);
+      padding: 64px 24px 32px;
+      margin-top: 80px;
+    }
+    .footer-grid {
+      max-width: 1080px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 48px;
+    }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-col h4 {
+      color: #fff; font-size: 14px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 20px;
+    }
+    .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+    .footer-col a {
+      color: rgba(255,255,255,0.6); text-decoration: none;
+      font-size: 14px; display: block; padding: 4px 0;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+    .footer-social a {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,0.08); display: flex;
+      align-items: center; justify-content: center; padding: 0;
+      transition: background 0.2s;
+    }
+    .footer-social a:hover { background: rgba(255,255,255,0.16); }
+    .footer-social svg { width: 16px; height: 16px; fill: #fff; }
+    .footer-bottom {
+      max-width: 1080px; margin: 48px auto 0;
+      padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px; color: rgba(255,255,255,0.4); text-align: center;
+    }
+
+    /* ── WhatsApp FAB ── */
+    .whatsapp-fab {
+      position: fixed; bottom: 24px; right: 24px; z-index: 90;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25d366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+      transition: transform 0.2s; text-decoration: none;
+    }
+    .whatsapp-fab:hover { transform: scale(1.08); }
+    .whatsapp-fab svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ── Section Layout (shared with treatment pages) ── */
+    .section { padding: 80px 24px; }
+    .section-alt { background: var(--bg-secondary); }
+    .section-inner { max-width: 680px; margin: 0 auto; }
+    .section-wide { max-width: 1080px; margin: 0 auto; }
+    .section-label {
+      font-size: 13px; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 12px;
+    }
+    .section-heading {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(28px, 4vw, 40px); font-weight: 700;
+      letter-spacing: -0.8px; line-height: 1.15; margin-bottom: 20px;
+    }
+
+    /* ── FAQ ── */
+    .faq-list { margin-top: 40px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; text-align: left; font-size: 17px;
+      font-weight: 600; color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+    }
+    .faq-question:hover { color: var(--accent); }
+    .faq-chevron {
+      width: 20px; height: 20px; flex-shrink: 0;
+      transition: transform 0.3s ease; color: var(--text-tertiary);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
+    }
+    .faq-answer-inner {
+      padding: 0 0 24px;
+      font-size: 15px; line-height: 1.7; color: var(--text-secondary);
+    }
+
+    /* ── Scroll Reveal ── */
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 24px 32px; }
+      .hero h1 { font-size: 32px; }
+      .hero-meta { gap: 12px; }
+      .article-section h2 { font-size: 26px; }
+      .article-section h3 { font-size: 20px; }
+      .author-bio { flex-direction: column; align-items: center; text-align: center; }
+      .author-info { width: 100%; }
+      .cta-banner { padding: 32px 20px; }
+      .cta-banner h2 { font-size: 22px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Gum Disease: The Silent Threat to Your Smile",
+        "description": "Complete guide to periodontal disease: causes, stages, risk factors, and treatment",
+        "image": "https://www.krishnadental.in/images/gum-disease-blog.jpg",
+        "datePublished": "2025-12-20T10:00:00+05:30",
+        "dateModified": "2025-12-20T10:00:00+05:30",
+        "author": {
+          "@type": "Person",
+          "name": "Dr. Vidya",
+          "jobTitle": "MDS, Prosthodontist"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krishnadental.in" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.krishnadental.in/blog.html" },
+          { "@type": "ListItem", "position": 3, "name": "Gum Disease Guide" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What are the early signs of gum disease?", "acceptedAnswer": { "@type": "Answer", "text": "Early signs (gingivitis) include red, swollen, or bleeding gums when brushing or flossing. Advanced gum disease (periodontitis) causes gum recession, loose teeth, persistent bad breath, and bone loss." }},
+          { "@type": "Question", "name": "Can gum disease be reversed?", "acceptedAnswer": { "@type": "Answer", "text": "Gingivitis (early stage) is fully reversible with professional cleaning and improved oral hygiene. Advanced periodontitis cannot be fully reversed but can be controlled and managed with ongoing treatment." }},
+          { "@type": "Question", "name": "Does gum disease cause tooth loss?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Untreated periodontitis is the leading cause of tooth loss in adults. The infection destroys the bone and tissue that support teeth, causing them to loosen and eventually fall out." }},
+          { "@type": "Question", "name": "Is gum disease linked to heart disease?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Research consistently links periodontal disease to increased risk of heart disease, stroke, and complications in diabetes. The bacteria from gum infections can enter the bloodstream and affect the cardiovascular system." }},
+          { "@type": "Question", "name": "How is gum disease treated at Krishna Dental?", "acceptedAnswer": { "@type": "Answer", "text": "Treatment depends on severity — ranging from professional deep cleaning (scaling and root planing) for early cases to surgical intervention for advanced periodontitis. Our specialist will create a personalised treatment plan." }}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Krishna <span>Dental</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dental-treatment.html">Treatments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta-wrap"><a href="tel:08674244241" class="nav-cta">Call Now</a></div>
+      <button class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Home</a>
+    <a href="dental-treatment.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Treatments</a>
+    <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+    <a href="blog.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Blog</a>
+    <a href="contact.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
+    <a href="tel:08674244241" style="color: var(--accent); border: none; margin-top: 24px;">Call 086742 44241</a>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>/</span>
+    <a href="blog.html">Blog</a><span>/</span>
+    Gum Disease Guide
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-eyebrow">Oral Hygiene</div>
+    <h1>Gum Disease: The Silent Threat to Your Smile</h1>
+    <div class="hero-meta">
+      <span>Dec 20, 2025</span>
+      <span>8 min read</span>
+      <span>By Krishna Dental Team</span>
+    </div>
+    <p>Everything you need to know about gum disease: early warning signs, stages, risk factors, the connection to systemic health, and proven treatment and prevention strategies.</p>
+  </section>
+
+  <!-- Article Content -->
+  <article class="article">
+    <div class="article-section reveal">
+      <h2>What is Gum Disease?</h2>
+      <p>Gum disease, also called periodontal disease, is an infection of the gums and bone supporting your teeth. It's one of the most common dental problems, affecting millions of people worldwide. What makes it dangerous is that it often develops without obvious symptoms — which is why it's called "the silent threat."</p>
+      <p>Gum disease starts when plaque — a sticky film of bacteria — builds up on your teeth. If not removed by daily brushing and flossing, plaque hardens into tartar (calculus), which can only be removed by a professional cleaning. The bacteria in plaque and tartar release toxins that irritate your gums, triggering the infection.</p>
+      <p>If you're in Gudivada and notice any signs of gum disease, schedule an appointment with Krishna Dental immediately. Early intervention can prevent the disease from progressing and causing irreversible damage.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>Early Signs Most People Miss</h2>
+      <p>Many people don't realize they have gum disease until it's advanced. Here are the subtle early signs to watch for:</p>
+      <ul>
+        <li><strong>Bleeding when brushing or flossing:</strong> Healthy gums don't bleed. Any bleeding is a sign of inflammation and bacterial infection.</li>
+        <li><strong>Swollen or tender gums:</strong> Your gums may feel puffy or tender when you touch them or chew.</li>
+        <li><strong>Receding gums:</strong> Your teeth may appear longer as your gumline moves downward, exposing the tooth root.</li>
+        <li><strong>Persistent bad breath:</strong> The bacteria in infected gums produce foul-smelling compounds.</li>
+        <li><strong>Changes in bite:</strong> Your teeth may shift or your bite may feel different.</li>
+        <li><strong>Loose or shifting teeth:</strong> As the bone supporting your teeth weakens, they can become loose.</li>
+        <li><strong>Pus between teeth and gums:</strong> This indicates an active infection.</li>
+      </ul>
+      <p>If you notice any of these signs, don't ignore them. Contact Krishna Dental on Eluru Road in Gudivada for an evaluation. The earlier gum disease is diagnosed, the easier it is to treat.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>The Stages of Gum Disease</h2>
+      <p>Understanding the stages of gum disease helps you recognize how serious your condition might be:</p>
+
+      <h3>Stage 1: Gingivitis</h3>
+      <p>Gingivitis is the earliest and most treatable stage of gum disease. At this point, only the gum tissue is infected — the underlying bone is not yet affected.</p>
+      <ul>
+        <li><strong>Symptoms:</strong> Bleeding gums, redness, swelling, and possibly bad breath.</li>
+        <li><strong>Reversibility:</strong> Gingivitis is completely reversible with professional cleaning and improved oral hygiene.</li>
+        <li><strong>Timeline:</strong> Can develop in days to weeks if plaque accumulates.</li>
+      </ul>
+
+      <h3>Stage 2: Mild Periodontitis</h3>
+      <p>If gingivitis is not treated, it progresses to mild periodontitis. Now the bone supporting your teeth is starting to be affected.</p>
+      <ul>
+        <li><strong>Symptoms:</strong> Deeper pockets around the teeth, bleeding, swelling, and possible bone loss visible on X-rays.</li>
+        <li><strong>Reversibility:</strong> Not fully reversible, but can be stabilized with treatment.</li>
+      </ul>
+
+      <h3>Stage 3: Moderate Periodontitis</h3>
+      <p>The infection is more established, and more bone has been lost. Symptoms become more apparent.</p>
+      <ul>
+        <li><strong>Symptoms:</strong> Deeper pockets (4–6mm), significant bone loss, possible tooth mobility, pus discharge, and severe bad breath.</li>
+        <li><strong>Reversibility:</strong> Cannot be reversed, but aggressive treatment can halt progression.</li>
+      </ul>
+
+      <h3>Stage 4: Advanced Periodontitis</h3>
+      <p>This is the most severe form of gum disease. Significant bone loss has occurred, and teeth are at risk of being lost.</p>
+      <ul>
+        <li><strong>Symptoms:</strong> Very deep pockets (>6mm), extensive bone loss, loose teeth, possible tooth loss, severe bad breath, and pain.</li>
+        <li><strong>Reversibility:</strong> Cannot be reversed. The goal is to halt progression and save remaining teeth.</li>
+      </ul>
+
+      <p>At Krishna Dental in Gudivada, we use advanced diagnostic tools to determine which stage of gum disease you have and recommend appropriate treatment.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>Risk Factors for Gum Disease</h2>
+      <p>While poor oral hygiene is the primary cause, several other factors increase your risk:</p>
+
+      <h3>Smoking</h3>
+      <p>Smokers are significantly more likely to develop gum disease. Smoking weakens the immune system's ability to fight infection and slows healing.</p>
+
+      <h3>Diabetes</h3>
+      <p>People with diabetes are more susceptible to gum disease, and gum disease can make blood sugar harder to control — creating a vicious cycle.</p>
+
+      <h3>Genetics</h3>
+      <p>Some people are genetically predisposed to gum disease. If your parents had gum disease, you're at higher risk.</p>
+
+      <h3>Stress</h3>
+      <p>Chronic stress weakens the immune system, making it harder to fight infection, including gum disease.</p>
+
+      <h3>Poor Nutrition</h3>
+      <p>A diet lacking essential nutrients, especially vitamin C and calcium, increases susceptibility to gum disease.</p>
+
+      <h3>Hormonal Changes</h3>
+      <p>Pregnant women, women using hormonal contraceptives, and women approaching menopause are at higher risk due to hormonal fluctuations.</p>
+
+      <h3>Certain Medications</h3>
+      <p>Some medications reduce saliva flow, which increases cavity and gum disease risk.</p>
+
+      <h3>Poor Oral Hygiene</h3>
+      <p>The primary risk factor. Inadequate brushing, flossing, and professional cleanings allow plaque to accumulate.</p>
+
+      <p>If you have any of these risk factors, be extra vigilant about your oral health and schedule regular check-ups at Krishna Dental in Gudivada.</p>
+    </div>
+
+    <div class="info-box reveal">
+      <p><strong>The Systemic Health Connection:</strong> Recent research shows that untreated gum disease is linked to serious conditions including heart disease, stroke, diabetes complications, and respiratory infections. Your oral health isn't isolated — it affects your whole body.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>The Surprising Link Between Gum Disease and Systemic Health</h2>
+      <p>Many people don't realize that gum disease can affect far more than just your mouth. The bacteria and inflammation from gum disease can enter your bloodstream and affect other parts of your body.</p>
+
+      <h3>Heart Disease</h3>
+      <p>Studies show a strong link between gum disease and heart disease. The bacteria from infected gums can travel through your bloodstream, causing inflammation in blood vessels and increasing your risk of heart attack or stroke.</p>
+
+      <h3>Diabetes</h3>
+      <p>The relationship between gum disease and diabetes is bidirectional. Uncontrolled diabetes increases infection risk, and gum disease makes blood sugar management harder.</p>
+
+      <h3>Respiratory Infections</h3>
+      <p>Bacteria from infected gums can be aspirated into your lungs, increasing the risk of pneumonia and other respiratory infections.</p>
+
+      <h3>Pregnancy Complications</h3>
+      <p>Pregnant women with gum disease have a higher risk of preterm birth and low birth weight babies.</p>
+
+      <h3>Cognitive Decline</h3>
+      <p>Some research suggests a link between chronic gum disease and cognitive decline in older adults.</p>
+
+      <p>This is why regular dental check-ups are so important — they're part of your overall health maintenance, not just cosmetic care.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>Diagnosis and Assessment</h2>
+      <p>At Krishna Dental, diagnosing gum disease involves several steps:</p>
+
+      <h3>Visual Examination</h3>
+      <p>Your dentist examines your gums for redness, swelling, bleeding, and recession.</p>
+
+      <h3>Probing</h3>
+      <p>Using a special probe, your dentist measures the depth of the pockets around each tooth. Healthy pockets are 1–3mm deep; deeper pockets indicate disease.</p>
+
+      <h3>X-rays</h3>
+      <p>Digital X-rays reveal bone loss, which isn't visible to the naked eye.</p>
+
+      <h3>Assessment of Risk Factors</h3>
+      <p>Your dentist asks about smoking, diabetes, family history, and other risk factors.</p>
+
+      <p>Based on this assessment, your dentist determines the stage of gum disease and recommends appropriate treatment.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>Treatment Options at Each Stage</h2>
+      <p>The good news: gum disease is highly treatable when caught early. Treatment depends on the stage:</p>
+
+      <h3>Gingivitis Treatment</h3>
+      <ul>
+        <li><strong>Professional cleaning:</strong> Removal of plaque and tartar above the gumline.</li>
+        <li><strong>Improved home care:</strong> Daily brushing and flossing as directed.</li>
+        <li><strong>Expected result:</strong> Complete reversal within weeks.</li>
+      </ul>
+
+      <h3>Mild to Moderate Periodontitis Treatment</h3>
+      <ul>
+        <li><strong>Scaling and root planing:</strong> Deep cleaning that removes plaque and tartar from below the gumline and smooths the tooth root to prevent bacteria from clinging.</li>
+        <li><strong>Antibiotic therapy:</strong> Oral antibiotics or antimicrobial rinses may be prescribed.</li>
+        <li><strong>Maintenance:</strong> More frequent professional cleanings (every 3 months instead of 6).</li>
+        <li><strong>Expected result:</strong> Disease progression halted, some improvement possible.</li>
+      </ul>
+
+      <h3>Advanced Periodontitis Treatment</h3>
+      <ul>
+        <li><strong>Surgical intervention:</strong> Gum surgery or bone grafting may be necessary to regenerate lost bone.</li>
+        <li><strong>Tooth extraction:</strong> Severely loose teeth may need to be removed.</li>
+        <li><strong>Implants:</strong> After successful treatment, dental implants can replace lost teeth.</li>
+        <li><strong>Intensive maintenance:</strong> Lifelong professional cleanings and meticulous home care.</li>
+      </ul>
+
+      <p>At Krishna Dental in Gudivada, we use the latest techniques including laser therapy and regenerative procedures to treat gum disease effectively.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>Can Gum Disease Be Reversed?</h2>
+      <p>The answer depends on the stage:</p>
+      <ul>
+        <li><strong>Gingivitis:</strong> Yes, completely reversible with professional cleaning and improved home care.</li>
+        <li><strong>Mild periodontitis:</strong> Cannot be fully reversed, but can be stabilized and improved with aggressive treatment.</li>
+        <li><strong>Moderate to advanced periodontitis:</strong> Cannot be reversed, but progression can be halted and remaining teeth can be saved.</li>
+      </ul>
+      <p>This underscores the importance of catching gum disease early. Gingivitis is easily fixed, but periodontitis requires ongoing management. Prevention is far easier than treatment.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>Prevention Strategies That Work</h2>
+      <p>The best way to deal with gum disease is to prevent it. Here are proven strategies:</p>
+
+      <h3>Daily Brushing</h3>
+      <ul>
+        <li>Brush twice daily for at least two minutes.</li>
+        <li>Use a soft-bristled toothbrush at a 45-degree angle to the gum line.</li>
+        <li>Use fluoride toothpaste.</li>
+        <li>Consider an electric toothbrush for more effective plaque removal.</li>
+      </ul>
+
+      <h3>Daily Flossing</h3>
+      <ul>
+        <li>Floss at least once daily, preferably at night.</li>
+        <li>Don't skip the gumline — this is where gum disease starts.</li>
+        <li>If traditional floss is difficult, try water flossers or dental picks.</li>
+      </ul>
+
+      <h3>Professional Cleanings</h3>
+      <ul>
+        <li>Visit your dentist every 6 months (or more frequently if you have risk factors).</li>
+        <li>Professional cleanings remove tartar that you can't remove at home.</li>
+      </ul>
+
+      <h3>Lifestyle Changes</h3>
+      <ul>
+        <li><strong>Quit smoking:</strong> This is one of the best things you can do for your gums.</li>
+        <li><strong>Manage stress:</strong> Chronic stress weakens immunity.</li>
+        <li><strong>Eat a healthy diet:</strong> Focus on foods rich in vitamins C and D, and calcium.</li>
+        <li><strong>Control diabetes:</strong> Keep your blood sugar in target range.</li>
+      </ul>
+
+      <h3>Antimicrobial Rinse</h3>
+      <ul>
+        <li>Use an antimicrobial mouthwash to reduce bacteria count.</li>
+        <li>This is especially useful for people with gum disease risk factors.</li>
+      </ul>
+
+      <p>At Krishna Dental in Gudivada, we educate our patients on these prevention strategies and monitor them closely to catch any early signs of disease.</p>
+    </div>
+
+    <div class="article-section reveal">
+      <h2>The Importance of Regular Professional Cleanings</h2>
+      <p>You might brush and floss perfectly, but you still can't remove all the plaque and tartar that builds up. This is why professional cleanings are essential.</p>
+      <p>During a professional cleaning at Krishna Dental, we remove plaque and tartar from areas you can't reach at home, including below the gumline. We also apply fluoride to strengthen your enamel and assess your gum health.</p>
+      <p>If you have gum disease risk factors or a history of gum disease, you may need cleanings more frequently than the standard every 6 months. Your dentist in Gudivada will recommend the right frequency for you.</p>
+    </div>
+
+    <!-- Related Treatments -->
+    <div class="related-treatments reveal">
+      <h3>Related Treatments</h3>
+      <ul>
+        <li><a href="periodontics-gudivada.html">Periodontal Disease Treatment</a></li>
+        <li><a href="dental-cleaning-gudivada.html">Professional Dental Cleaning & Scaling</a></li>
+        <li><a href="root-canal-gudivada.html">Root Canal Treatment</a></li>
+        <li><a href="dental-implants-gudivada.html">Dental Implants for Missing Teeth</a></li>
+      </ul>
+    </div>
+
+    <!-- Author Bio -->
+    <div class="author-bio reveal">
+      <div class="author-avatar">👨‍⚕️</div>
+      <div class="author-info">
+        <h4>Dr. Vidya</h4>
+        <p>MDS, Prosthodontist. Expert periodontist and preventive specialist at Krishna Multispeciality Dental Clinic in Gudivada, dedicated to diagnosing and treating gum disease while helping patients maintain healthy gums for life.</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="article-section reveal">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What are the early signs of gum disease?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Early signs (gingivitis) include red, swollen, or bleeding gums when brushing or flossing. Advanced gum disease (periodontitis) causes gum recession, loose teeth, persistent bad breath, and bone loss.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can gum disease be reversed?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Gingivitis (early stage) is fully reversible with professional cleaning and improved oral hygiene. Advanced periodontitis cannot be fully reversed but can be controlled and managed with ongoing treatment.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Does gum disease cause tooth loss?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Untreated periodontitis is the leading cause of tooth loss in adults. The infection destroys the bone and tissue that support teeth, causing them to loosen and eventually fall out.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is gum disease linked to heart disease?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Research consistently links periodontal disease to increased risk of heart disease, stroke, and complications in diabetes. The bacteria from gum infections can enter the bloodstream and affect the cardiovascular system.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How is gum disease treated at Krishna Dental?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Treatment depends on severity — ranging from professional deep cleaning (scaling and root planing) for early cases to surgical intervention for advanced periodontitis. Our specialist will create a personalised treatment plan.</div></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner reveal">
+    <h2>Concerned About Your Gum Health?</h2>
+    <p>Get a professional assessment at Krishna Dental. Early detection saves your teeth.</p>
+    <a href="tel:08674244241">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call 086742 44241
+    </a>
+  </section>
+
+  <!-- Footer -->
+    <!-- FAQ Accordion -->
+  <section class="section section-alt">
+    <div class="section-inner reveal">
+      <div class="section-label">Common questions</div>
+      <h2 class="section-heading" style="margin-bottom:0">Frequently asked questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What are the early signs of gum disease?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Early signs (gingivitis) include red, swollen, or bleeding gums when brushing or flossing. Advanced gum disease (periodontitis) causes gum recession, loose teeth, persistent bad breath, and bone loss.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Can gum disease be reversed?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Gingivitis (early stage) is fully reversible with professional cleaning and improved oral hygiene. Advanced periodontitis cannot be fully reversed but can be controlled and managed with ongoing treatment.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Does gum disease cause tooth loss?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Untreated periodontitis is the leading cause of tooth loss in adults. The infection destroys the bone and tissue that support teeth, causing them to loosen and eventually fall out.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Is gum disease linked to heart disease?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Yes. Research consistently links periodontal disease to increased risk of heart disease, stroke, and complications in diabetes. The bacteria from gum infections can enter the bloodstream and affect the cardiovascular system.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            How is gum disease treated at Krishna Dental?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Treatment depends on severity — ranging from professional deep cleaning (scaling and root planing) for early cases to surgical intervention for advanced periodontitis. Our specialist will create a personalised treatment plan.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Krishna Dental</h4>
+        <p>Gudivada's trusted multispeciality dental clinic. Modern treatments, gentle care, honest pricing — since day one.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/krishnadentalclinicgudivada" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/krishnadentalgudivada/" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="https://wa.me/917997444241" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="dental-treatment.html">All Treatments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <a href="root-canal-gudivada.html">Root Canal</a>
+        <a href="dental-implants-gudivada.html">Dental Implants</a>
+        <a href="teeth-whitening-gudivada.html">Teeth Whitening</a>
+        <a href="crowns-bridges-gudivada.html">Crowns & Bridges</a>
+        <a href="orthodontics-gudivada.html">Orthodontics</a>
+        <a href="dental-cleaning-gudivada.html">Cleaning & Scaling</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
+        <a href="tel:08674244241">086742 44241</a>
+        <a href="tel:07997444241">079974 44241</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
+        <p style="margin-top: 12px; font-size: 13px; opacity: 0.6;">
+          Mon – Sat: 9:30 am – 8:30 pm<br>
+          Sun: 10:00 am – 1:00 pm
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/917997444241" class="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-answer').style.maxHeight = null;
+      });
+
+      // Open clicked if was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+# Krishna Multispeciality Dental Clinic
+# https://www.krishnadental.in
+# llms.txt — AI Content Guide
+# Last updated: 2026-03-25
+
+## About This Site
+
+Krishna Multispeciality Dental Clinic is a specialist dental clinic located at 10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301, India. The clinic offers comprehensive dental care including restorative, cosmetic, orthodontic, oral surgery, and preventive dentistry services. The lead dentist is Dr. Vidya, MDS (Prosthodontist).
+
+Contact: +91-86742-44241 | +91-79974-44241
+Email: vidya@krishnadental.in
+Hours: Mon–Sat 9:30 AM–8:30 PM | Sun 10:00 AM–1:00 PM
+
+## Key Pages
+
+### Homepage
+> https://www.krishnadental.in/
+> Overview of Krishna Multispeciality Dental Clinic — treatments, location, team, and contact information.
+
+### About
+> https://www.krishnadental.in/about.html
+> Clinic story, values, team credentials, and what sets Krishna Dental apart in Gudivada.
+
+### All Treatments
+> https://www.krishnadental.in/dental-treatment.html
+> Complete list of dental treatments offered at the clinic.
+
+### Contact
+> https://www.krishnadental.in/contact.html
+> Clinic address, phone numbers, directions, and appointment booking.
+
+## Dental Treatment Pages
+
+> https://www.krishnadental.in/root-canal-gudivada.html
+> Root canal treatment (endodontic therapy) in Gudivada — symptoms, procedure, recovery, and FAQs.
+
+> https://www.krishnadental.in/dental-implants-gudivada.html
+> Dental implants in Gudivada — types (single, multiple, All-on-4), procedure, candidacy, and cost.
+
+> https://www.krishnadental.in/teeth-whitening-gudivada.html
+> Professional teeth whitening in Gudivada — in-office and take-home options, procedure, results.
+
+> https://www.krishnadental.in/crowns-bridges-gudivada.html
+> Dental crowns and bridges in Gudivada — types (zirconia, ceramic, PFM), procedure, and care.
+
+> https://www.krishnadental.in/orthodontics-gudivada.html
+> Orthodontics and braces in Gudivada — metal, ceramic, self-ligating, and clear aligners.
+
+> https://www.krishnadental.in/cosmetic-dentistry-gudivada.html
+> Cosmetic dentistry in Gudivada — veneers, bonding, whitening, smile makeover options.
+
+> https://www.krishnadental.in/dental-fillings-gudivada.html
+> Dental fillings in Gudivada — composite, amalgam, ceramic; procedure and aftercare.
+
+> https://www.krishnadental.in/tooth-extraction-gudivada.html
+> Tooth extraction in Gudivada — simple and surgical extractions, recovery guidance.
+
+> https://www.krishnadental.in/periodontics-gudivada.html
+> Gum treatment (periodontics) in Gudivada — scaling, root planing, gum disease stages.
+
+> https://www.krishnadental.in/pediatric-dentistry-gudivada.html
+> Pediatric dentistry in Gudivada — children's dental care, first visits, sealants, fluoride.
+
+> https://www.krishnadental.in/smile-design-gudivada.html
+> Smile design and makeover in Gudivada — digital smile design, veneers, full-mouth rehabilitation.
+
+> https://www.krishnadental.in/dental-cleaning-gudivada.html
+> Dental cleaning and scaling in Gudivada — ultrasonic scaling, polishing, deep cleaning.
+
+> https://www.krishnadental.in/dentures-gudivada.html
+> Dentures in Gudivada — complete, partial, flexible, and implant-supported dentures.
+
+> https://www.krishnadental.in/wisdom-tooth-gudivada.html
+> Wisdom tooth removal in Gudivada — impaction, surgical extraction, recovery.
+
+## Blog — Dental Health Guides
+
+> https://www.krishnadental.in/blog-root-canal-guide.html
+> 5 Signs You Need a Root Canal — And Why It's Nothing to Fear
+
+> https://www.krishnadental.in/blog-dental-implants-guide.html
+> The Complete Guide to Dental Implants: What to Expect
+
+> https://www.krishnadental.in/blog-dentist-visit-frequency.html
+> How Often Should You Really Visit the Dentist?
+
+> https://www.krishnadental.in/blog-dental-cleaning-guide.html
+> What to Expect During a Professional Dental Cleaning
+
+> https://www.krishnadental.in/blog-modern-dentures.html
+> Dentures in 2026: Modern Options That Look and Feel Natural
+
+> https://www.krishnadental.in/blog-dental-emergency.html
+> How to Handle a Dental Emergency in Gudivada
+
+> https://www.krishnadental.in/blog-cosmetic-dentistry-worth-it.html
+> Is Cosmetic Dentistry Worth It? A Gudivada Dentist's Honest Take
+
+> https://www.krishnadental.in/blog-dental-fillings-explained.html
+> Dental Fillings Explained: Types, Process, and Aftercare
+
+> https://www.krishnadental.in/blog-wisdom-tooth-pain.html
+> Wisdom Tooth Pain? Here's What You Should Know
+
+> https://www.krishnadental.in/blog-braces-guide-gudivada.html
+> Everything You Need to Know About Dental Braces in Gudivada
+
+> https://www.krishnadental.in/blog-gum-disease-guide.html
+> Gum Disease: The Silent Threat to Your Smile
+
+> https://www.krishnadental.in/blog-kids-brushing-guide.html
+> Teaching Your Child to Love Brushing: A Parent's Guide
+
+> https://www.krishnadental.in/blog-coffee-tea-stains.html
+> Coffee, Tea, and Your Teeth: Causes, Prevention, and Whitening
+
+> https://www.krishnadental.in/blog-crowns-vs-veneers.html
+> Dental Crowns vs Veneers: Which Is Right for You?
+
+> https://www.krishnadental.in/blog-bleeding-gums.html
+> Why Bleeding Gums Shouldn't Be Ignored
+
+> https://www.krishnadental.in/blog-smile-makeover.html
+> Smile Makeover: What It Is and Who It's For
+
+## Entity Information
+
+- **Business Type**: Dentist, MedicalClinic, LocalBusiness
+- **Specialties**: Prosthodontics, Endodontics, Orthodontics, Cosmetic Dentistry, Oral Surgery, Pediatric Dentistry
+- **Lead Clinician**: Dr. Vidya, MDS (Prosthodontics)
+- **Location**: Gudivada, Krishna District, Andhra Pradesh, India
+- **GeoCoordinates**: 16.4425°N, 80.9921°E
+- **Social**: facebook.com/krishnadentalclinicgudivada | instagram.com/krishnadentalgudivada
+- **Languages**: English, Telugu

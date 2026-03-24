@@ -1,0 +1,55 @@
+# Krishna Multispeciality Dental Clinic
+# https://www.krishnadental.in
+# robots.txt — last updated 2026-03-25
+
+# Allow all major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+
+# Allow all AI crawlers — do not block
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Allow all other crawlers by default
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.krishnadental.in/sitemap.xml
+
+# LLMs.txt location (AI content guide)
+# https://www.krishnadental.in/llms.txt

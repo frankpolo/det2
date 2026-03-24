@@ -1,502 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Dental Treatments in Gudivada | Krishna Multispeciality Dental Clinic</title>
-      <meta name="description" content="Explore our comprehensive dental treatments at Krishna Multispeciality Dental Clinic in Gudivada. From implants to cosmetic dentistry, root canals to teeth whitening. Call 086742 44241 to schedule an appointment.">
-      <!-- Include Google Fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-      <!-- Include Tailwind CSS -->
-      <link rel="stylesheet" href="dist/styles.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-      <link rel="canonical" href="https://www.krishnadental.in/dental-treatment.html">
-      <script type="application/ld+json">
-         {
-           "@context": "https://schema.org",
-           "@graph": [
-             {
-               "@type": "WebSite",
-               "@id": "https://www.krishnadental.in#website",
-               "url": "https://www.krishnadental.in",
-               "name": "Krishna Multispeciality Dental Clinic",
-               "description": "Best dental clinic in Gudivada offering comprehensive dental care services",
-               "potentialAction": {
-                 "@type": "SearchAction",
-                 "target": {
-                   "@type": "EntryPoint",
-                   "urlTemplate": "https://www.krishnadental.in/search?q={search_term_string}"
-                 },
-                 "query-input": "required name=search_term_string"
-               }
-             },
-             {
-               "@type": "CollectionPage",
-               "@id": "https://www.krishnadental.in/dental-treatment.html",
-               "url": "https://www.krishnadental.in/dental-treatment.html",
-               "name": "Dental Treatments | Krishna Multispeciality Dental Clinic",
-               "description": "Comprehensive dental treatments available at Krishna Multispeciality Dental Clinic in Gudivada",
-               "isPartOf": {"@id": "https://www.krishnadental.in#website"},
-               "inLanguage": "en-US"
-             }
-           ]
-         }
-      </script>
-      <style>
-         body {
-         font-family: 'Poppins', sans-serif;
-         }
-         .slider-item {
-         background-size: cover;
-         background-position: center;
-         height: 55vh;
-         }
-         .overlay {
-         background: rgba(0, 0, 0, 0.5);
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         }
-         @media (min-width: 768px) {
-         .image-wrapper {
-         height: 100%;
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <div class="py-4 border-b md:py-3 bg-white">
-            <div class="container mx-auto">
-               <div class="flex flex-wrap items-start px-3 lg:pt-12 lg:pb-12 md:px-0">
-                  <div class="w-full md:w-1/3 flex flex-col md:flex-row items-center justify-center mb-2 md:mb-0 order-1 md:order-2 text-right">
-                     <div class="flex items-center justify-center md:order-last">
-                        <span></span>
-                     </div>
-                     <div class="pr-0 pl-3 md:pr-4 md:pl-0">
-                        <a href="index.html" class="text-4xl font-bold text-center hover:text-blue-600 block">
-                        KRISHNA
-                        <span class="block text-base font-medium text-center text-gray-500">MultiSpeciality Dental Clinic</span>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="w-full lg:pt-4 md:w-1/3 mb-2 md:mb-0 text-center order-2 md:order-1">
-                     <p class="text-xs">
-                        <span>Call:</span>
-                        <span class="font-bold">086742 44241,</span>
-                        <span class="font-bold">079974 44241</span>
-                     </p>
-                     <p class="text-xs">10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301</p>
-                  </div>
-                  <div class="w-full lg:pt-4 md:w-1/3 flex justify-center order-3">
-                     <div class="pl-3 text-center">
-                        <p class="text-xs">
-                           <span class="font-bold">Mon - Sat:</span>
-                           <span>9:30am - 8:30pm</span>
-                        </p>
-                        <p class="text-xs">
-                           <span class="font-bold">Sun:</span>
-                           <span>10:00am - 1:00pm</span>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <!-- Menu -->
-      <div class="bg-black lg:bg-white">
-         <div class="container mx-auto px-4">
-            <div class="lg:flex lg:items-center lg:justify-between lg:py-4">
-               <!-- Navbar Toggler -->
-               <button id="navbarToggle" class="text-white lg:text-white focus:outline-none lg:hidden">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-               </button>
-               <!-- Navbar Collapse -->
-               <div class="hidden lg:flex lg:flex-grow lg:items-center lg:w-auto lg:justify-center space-x-4" id="navbarCollapse">
-                  <a href="index.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Home</a>
-                  <a href="dental-treatment.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800 font-bold">Treatments</a>
-                  <a href="blog.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Blog</a>
-                  <a href="contact.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">Contact</a>
-                  <a href="about.html" class="block py-2 uppercase text-white lg:px-2 lg:py-1 lg:text-gray-800">About</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <script>
-         // JavaScript for toggling the navbar on small screens
-         document.getElementById('navbarToggle').addEventListener('click', function() {
-           var navbarCollapse = document.getElementById('navbarCollapse');
-           navbarCollapse.classList.toggle('hidden');
-         });
-      </script>
-      <!-- Menu end -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Treatments in Gudivada | All Services | Krishna Dental Clinic</title>
+  <meta name="description" content="All dental treatments in Gudivada at Krishna Multispeciality Dental Clinic. Root canal, implants, whitening, orthodontics, and more. Modern technology, gentle care.">
+  <link rel="canonical" href="https://www.krishnadental.in/dental-treatment.html">
+  <meta property="og:title" content="Dental Treatments | Krishna Dental Clinic">
+  <meta property="og:description" content="Comprehensive dental care for the whole family. Root canal, implants, cosmetic treatments, and more at Krishna Dental.">
+  <meta property="og:url" content="https://www.krishnadental.in/dental-treatment.html">
+  <meta property="og:image" content="https://www.krishnadental.in/images/og-clinic.jpg">
+  <meta property="og:type" content="website">
 
-      <!-- Page Header -->
-      <div class="bg-gradient-to-r from-blue-500 to-blue-700 py-16">
-        <div class="container mx-auto px-4 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold text-white">Our Dental Treatments</h1>
-          <p class="text-xl text-blue-100 mt-4 max-w-3xl mx-auto">Comprehensive dental care services tailored to meet your unique needs</p>
-          <div class="flex justify-center mt-4">
-            <nav class="flex" aria-label="Breadcrumb">
-              <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                <li class="inline-flex items-center">
-                  <a href="index.html" class="text-sm text-blue-100 hover:text-white">Home</a>
-                </li>
-                <li aria-current="page">
-                  <div class="flex items-center">
-                    <svg class="w-3 h-3 text-blue-100 mx-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="text-sm text-blue-50 font-medium">Treatments</span>
-                  </div>
-                </li>
-              </ol>
-            </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.min.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --text-tertiary: #86868b;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --bg-dark: #1d1d1f;
+      --accent: #0d7377;
+      --accent-light: #e0f2f1;
+      --border: #d2d2d7;
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    /* ── Navigation ── */
+    .site-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 52px;
+    }
+    .nav-logo { font-weight: 700; font-size: 18px; color: var(--text-primary); text-decoration: none; letter-spacing: -0.3px; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: var(--text-secondary);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      font-size: 13px; font-weight: 600; color: #fff;
+      background: var(--accent); padding: 8px 18px;
+      border-radius: 980px; text-decoration: none; transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger svg { width: 22px; height: 22px; color: var(--text-primary); }
+
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(20px);
+      flex-direction: column; padding: 80px 32px 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 28px; font-weight: 600; color: var(--text-primary);
+      text-decoration: none; padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-close {
+      position: absolute; top: 16px; right: 20px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+    }
+    .mobile-close svg { width: 24px; height: 24px; }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta-wrap { display: none; }
+      .nav-hamburger { display: block; }
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      max-width: 1080px; margin: 0 auto; padding: 20px 24px 0;
+      font-size: 13px; color: var(--text-tertiary);
+    }
+    .breadcrumb a { color: var(--text-tertiary); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ── Hero ── */
+    .hero {
+      max-width: 1080px; margin: 0 auto;
+      padding: 64px 24px 48px; text-align: center;
+    }
+    .hero-eyebrow {
+      font-size: 15px; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(36px, 6vw, 56px); font-weight: 700;
+      letter-spacing: -1.5px; line-height: 1.08; color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 19px; line-height: 1.5; color: var(--text-secondary);
+      max-width: 600px; margin: 0 auto 32px;
+    }
+
+    /* ── Sections ── */
+    .section { padding: 80px 24px; }
+    .section-alt { background: var(--bg-secondary); }
+    .section-inner { max-width: 1080px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 13px; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 12px;
+    }
+    .section-heading {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(28px, 4vw, 40px); font-weight: 700;
+      letter-spacing: -0.8px; line-height: 1.15; margin-bottom: 48px;
+    }
+
+    /* ── Treatment Grid ── */
+    .treatment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 1000px) {
+      .treatment-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .treatment-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .treatment-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .treatment-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+
+    .treatment-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius);
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-shrink: 0;
+    }
+
+    .treatment-icon svg {
+      width: 26px;
+      height: 26px;
+      color: var(--accent);
+    }
+
+    .treatment-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .treatment-card p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .treatment-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+
+    .treatment-card:hover .treatment-link {
+      gap: 10px;
+    }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      max-width: 1080px; margin: 0 auto;
+      background: var(--accent); border-radius: var(--radius-lg);
+      padding: 64px 48px; text-align: center; color: #fff;
+    }
+    .cta-banner h2 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(26px, 4vw, 36px); font-weight: 700;
+      letter-spacing: -0.5px; margin-bottom: 12px;
+    }
+    .cta-banner p { font-size: 17px; opacity: 0.85; margin-bottom: 28px; }
+    .cta-banner .btn-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 15px; font-weight: 600; color: var(--accent);
+      background: #fff; padding: 14px 28px; border-radius: 980px;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .cta-banner .btn-white:hover { transform: scale(1.03); }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: var(--bg-dark); color: rgba(255,255,255,0.72);
+      padding: 64px 24px 32px;
+    }
+    .footer-grid {
+      max-width: 1080px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 48px;
+    }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-col h4 {
+      color: #fff; font-size: 14px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 20px;
+    }
+    .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+    .footer-col a {
+      color: rgba(255,255,255,0.6); text-decoration: none;
+      font-size: 14px; display: block; padding: 4px 0;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+    .footer-social a {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,0.08); display: flex;
+      align-items: center; justify-content: center; padding: 0;
+      transition: background 0.2s;
+    }
+    .footer-social a:hover { background: rgba(255,255,255,0.16); }
+    .footer-social svg { width: 16px; height: 16px; fill: #fff; }
+    .footer-bottom {
+      max-width: 1080px; margin: 48px auto 0;
+      padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px; color: rgba(255,255,255,0.4); text-align: center;
+    }
+
+    /* ── WhatsApp ── */
+    .whatsapp-fab {
+      position: fixed; bottom: 24px; right: 24px; z-index: 90;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25d366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+      transition: transform 0.2s; text-decoration: none;
+    }
+    .whatsapp-fab:hover { transform: scale(1.08); }
+    .whatsapp-fab svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ── Scroll Reveal ── */
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "name": "Krishna Multispeciality Dental Clinic",
+        "url": "https://www.krishnadental.in",
+        "telephone": ["+918674244241", "+917997444241"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10/181-1 Eluru Road",
+          "addressLocality": "Gudivada",
+          "addressRegion": "Andhra Pradesh",
+          "postalCode": "521301",
+          "addressCountry": "IN"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Dental Treatments",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Root Canal Treatment" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Dental Fillings" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Crowns & Bridges" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Dentures" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Dental Implants" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Tooth Extraction" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Wisdom Tooth Removal" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Teeth Whitening" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Cosmetic Dentistry" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Smile Makeover" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Dental Cleaning" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Gum Treatment" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Orthodontics" } },
+            { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Pediatric Dentistry" } }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krishnadental.in" },
+          { "@type": "ListItem", "position": 2, "name": "Treatments" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Krishna <span>Dental</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dental-treatment.html">Treatments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta-wrap"><a href="tel:08674244241" class="nav-cta">Call Now</a></div>
+      <button class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Home</a>
+    <a href="dental-treatment.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Treatments</a>
+    <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+    <a href="blog.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Blog</a>
+    <a href="contact.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
+    <a href="tel:08674244241" style="color: var(--accent); border: none; margin-top: 24px;">Call 086742 44241</a>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>/</span>
+    Treatments
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-eyebrow">Our Services</div>
+    <h1>Dental Treatments</h1>
+    <p>Comprehensive dental care for the whole family, under one roof.</p>
+  </section>
+
+  <!-- Restorative Treatments -->
+  <section class="section">
+    <div class="section-inner reveal">
+      <div class="section-label">Restore & Repair</div>
+      <h2 class="section-heading">Restorative Treatments</h2>
+      <div class="treatment-grid">
+        <a href="root-canal-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M12 6a6 6 0 100 12 6 6 0 000-12z"/></svg>
           </div>
+          <h3>Root Canal Treatment</h3>
+          <p>Save infected teeth with painless modern therapy</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="dental-fillings-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M12 6v12M6 12h12"/></svg>
+          </div>
+          <h3>Dental Fillings</h3>
+          <p>Repair cavities with tooth-coloured materials</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="crowns-bridges-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6-7 6 7M6 9v8a2 2 0 002 2h8a2 2 0 002-2V9M9 13h6M8 18h8"/></svg>
+          </div>
+          <h3>Crowns & Bridges</h3>
+          <p>Restore damaged or missing teeth</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="dentures-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M8 12s1 2 4 2 4-2 4-2"/></svg>
+          </div>
+          <h3>Dentures</h3>
+          <p>Comfortable, natural-looking replacements</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surgical Treatments -->
+  <section class="section section-alt">
+    <div class="section-inner reveal">
+      <div class="section-label">Advanced Care</div>
+      <h2 class="section-heading">Surgical Treatments</h2>
+      <div class="treatment-grid">
+        <a href="dental-implants-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v8m0 4v8M2 12h20"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanent tooth replacement with titanium implants</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="tooth-extraction-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M9 12l6 6m0-6l-6 6"/></svg>
+          </div>
+          <h3>Tooth Extraction</h3>
+          <p>Safe, gentle removal when needed</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="wisdom-tooth-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M9 15c0-2 1-3 3-3s3 1 3 3"/></svg>
+          </div>
+          <h3>Wisdom Tooth Removal</h3>
+          <p>Expert extraction of impacted third molars</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cosmetic Treatments -->
+  <section class="section">
+    <div class="section-inner reveal">
+      <div class="section-label">Enhance Your Smile</div>
+      <h2 class="section-heading">Cosmetic Treatments</h2>
+      <div class="treatment-grid">
+        <a href="teeth-whitening-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M8 12l3 3 5-5"/></svg>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional brightening for a radiant smile</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="cosmetic-dentistry-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M12 6v12M6 12h12"/></svg>
+          </div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Veneers, bonding, and complete transformations</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="smile-design-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+          </div>
+          <h3>Smile Makeover</h3>
+          <p>Digital design for your perfect smile</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preventive & Specialised Care -->
+  <section class="section section-alt">
+    <div class="section-inner reveal">
+      <div class="section-label">Prevention & Wellness</div>
+      <h2 class="section-heading">Preventive & Specialised Care</h2>
+      <div class="treatment-grid">
+        <a href="dental-cleaning-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M6 6h12v12H6z"/></svg>
+          </div>
+          <h3>Dental Cleaning</h3>
+          <p>Professional scaling and polishing</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="periodontics-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M7 12a5 5 0 1010 0"/></svg>
+          </div>
+          <h3>Gum Treatment</h3>
+          <p>Treat and prevent gum disease</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="orthodontics-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 6h10M7 12h10M7 18h10M3 6v12a2 2 0 002 2h12a2 2 0 002-2V6"/></svg>
+          </div>
+          <h3>Orthodontics</h3>
+          <p>Braces and aligners for straighter teeth</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+
+        <a href="pediatric-dentistry-gudivada.html" class="treatment-card">
+          <div class="treatment-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><circle cx="9" cy="10" r="1.5"/><circle cx="15" cy="10" r="1.5"/><path d="M9 15s1 2 3 2 3-2 3-2"/></svg>
+          </div>
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle care for children</p>
+          <span class="treatment-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="cta-banner reveal">
+      <h2>Not sure what you need?</h2>
+      <p>Book a consultation and we'll guide you.</p>
+      <a href="tel:08674244241" class="btn-white">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Book a Consultation
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Krishna Dental</h4>
+        <p>Gudivada's trusted multispeciality dental clinic. Modern treatments, gentle care, honest pricing — since day one.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/krishnadentalclinicgudivada" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/krishnadentalgudivada/" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="https://wa.me/917997444241" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          </a>
         </div>
       </div>
-      
-      <!-- Treatments Section -->
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="dental-implants.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-1.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Dental Implants</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Permanent replacement for missing teeth that look, feel, and function like natural teeth. Our dental implants provide a strong foundation for fixed or removable replacement teeth.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="cosmetic-dentistry.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-2.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Cosmetic Dentistry</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Transform your smile with our comprehensive cosmetic dentistry services. From veneers to bonding, we provide treatments that enhance the appearance of your teeth and smile.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="dental-care.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-3.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Dental Care</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Comprehensive dental care services for patients of all ages. Our preventive, restorative, and maintenance treatments help maintain optimal oral health for your entire family.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="teeth-whitening.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-4.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Teeth Whitening</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Get a brighter, whiter smile with our professional teeth whitening treatments. We offer both in-office and take-home whitening options for effective stain removal.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="dental-calculus.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-5.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Dental Calculus</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Professional removal of hardened dental plaque (tartar) that forms on teeth. Our dental scaling and cleaning procedures help prevent gum disease and maintain oral health.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="periodontics.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-6.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Periodontics</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Specialized treatment for gum disease and other conditions affecting the gums and supporting structures of the teeth. Our periodontal services help maintain healthy gums and prevent tooth loss.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="clip-and-braces.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-7.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Clip & Braces</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Orthodontic treatments for straighter teeth and improved bite. We offer various options including traditional braces and modern alternatives to correct tooth alignment and jaw position.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-            
-            <a href="root-canal.html" class="group bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 block">
-              <div class="h-56 bg-cover bg-center" style="background-image: url(images/dept-8.webp);">
-                <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 class="text-2xl font-semibold text-white group-hover:text-blue-200 transition duration-300">Root Canal</h3>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-600 mb-4">Treatment to repair and save severely damaged or infected teeth. Our experienced dentists use modern techniques to ensure a comfortable root canal experience with minimal discomfort.</p>
-                <span class="text-blue-600 font-medium flex items-center group-hover:text-blue-800">
-                  Learn more
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Call to Action -->
-      <section class="py-16 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold mb-4">Schedule Your Dental Appointment Today</h2>
-          <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Our experienced team is ready to provide you with high-quality dental care in a comfortable and caring environment.</p>
-          <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <a href="tel:08674244241" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 transition duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call: 086742 44241
-            </a>
-            <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md border-white text-white hover:bg-blue-700 transition duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              Book Appointment
-            </a>
-          </div>
-        </div>
-      </section>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="dental-treatment.html">All Treatments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <a href="root-canal-gudivada.html">Root Canal</a>
+        <a href="dental-implants-gudivada.html">Dental Implants</a>
+        <a href="teeth-whitening-gudivada.html">Teeth Whitening</a>
+        <a href="crowns-bridges-gudivada.html">Crowns & Bridges</a>
+        <a href="orthodontics-gudivada.html">Orthodontics</a>
+        <a href="dental-cleaning-gudivada.html">Cleaning & Scaling</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
+        <a href="tel:08674244241">086742 44241</a>
+        <a href="tel:07997444241">079974 44241</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
+        <p style="margin-top: 12px; font-size: 13px; opacity: 0.6;">
+          Mon – Sat: 9:30 am – 8:30 pm<br>
+          Sun: 10:00 am – 1:00 pm
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved.
+    </div>
+  </footer>
 
-      <!-- Improved Footer -->
-      <footer class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-12">
-         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-               <!-- Contact Information -->
-               <div>
-                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block">Contact Us</h2>
-                  <ul class="space-y-3">
-                     <li class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        <span class="text-sm">10/181-1, Eluru Road, Gudivada, Krishna District, Andhra Pradesh - 521301</span>
-                     </li>
-                     <li class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <a href="tel:08674244241" class="text-sm hover:text-blue-200">086742 44241</a>
-                     </li>
-                     <li class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <a href="tel:07997444241" class="text-sm hover:text-blue-200">079974 44241</a>
-                     </li>
-                     <li class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <a href="mailto:vidya@krishnadental.in" class="text-sm hover:text-blue-200">vidya@krishnadental.in</a>
-                     </li>
-                  </ul>
-               </div>
-               
-               <!-- Quick Links -->
-               <div>
-                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block">Quick Links</h2>
-                  <ul class="space-y-2">
-                     <li>
-                        <a href="index.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Home
-                        </a>
-                     </li>
-                     <li>
-                        <a href="about.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           About Us
-                        </a>
-                     </li>
-                     <li>
-                        <a href="dental-treatment.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Treatments
-                        </a>
-                     </li>
-                     <li>
-                        <a href="blog.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Blog
-                        </a>
-                     </li>
-                     <li>
-                        <a href="contact.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Contact
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-               
-               <!-- Dental Treatments -->
-               <div>
-                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block">Our Treatments</h2>
-                  <ul class="space-y-2">
-                     <li>
-                        <a href="dental-implants.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Dental Implants
-                        </a>
-                     </li>
-                     <li>
-                        <a href="cosmetic-dentistry.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Cosmetic Dentistry
-                        </a>
-                     </li>
-                     <li>
-                        <a href="dental-care.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Dental Care
-                        </a>
-                     </li>
-                     <li>
-                        <a href="teeth-whitening.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Teeth Whitening
-                        </a>
-                     </li>
-                     <li>
-                        <a href="root-canal.html" class="text-sm flex items-center hover:text-blue-200">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                           </svg>
-                           Root Canal
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-               
-               <!-- Business Hours -->
-               <div>
-                  <h2 class="text-xl font-bold mb-6 border-b-2 border-blue-400 pb-2 inline-block">Opening Hours</h2>
-                  <div class="space-y-3">
-                     <div>
-                        <p class="text-sm font-medium mb-1">Monday - Saturday</p>
-                        <p class="text-sm">9:30 AM - 8:30 PM</p>
-                     </div>
-                     <div>
-                        <p class="text-sm font-medium mb-1">Sunday</p>
-                        <p class="text-sm">10:00 AM - 1:00 PM</p>
-                     </div>
-                     <div class="pt-4">
-                        <h3 class="text-md font-semibold mb-3">Follow Us</h3>
-                        <div class="flex space-x-3">
-                           <a href="https://www.facebook.com/krishnadentalclinicgudivada" class="bg-white text-blue-600 hover:text-blue-800 rounded-full p-2">
-                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                 <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
-                              </svg>
-                           </a>
-                           <a href="https://www.instagram.com/krishnadentalgudivada/" class="bg-white text-blue-600 hover:text-blue-800 rounded-full p-2">
-                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            
-            <div class="border-t border-blue-400 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-               <p class="text-sm text-blue-100 mb-4 md:mb-0">© 2025 Krishna Multispeciality Dental Clinic. All rights reserved.</p>
-               <div class="flex space-x-6">
-                  <a href="privacy-policy.html" class="text-sm text-blue-100 hover:text-white">Privacy Policy</a>
-                  <a href="terms-conditions.html" class="text-sm text-blue-100 hover:text-white">Terms & Conditions</a>
-                  <a href="sitemap.html" class="text-sm text-blue-100 hover:text-white">Sitemap</a>
-               </div>
-            </div>
-         </div>
-      </footer>
-   </body>
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/917997444241" class="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
