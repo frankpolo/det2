@@ -387,10 +387,11 @@
     }
   </style>
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
       "@type": "WebSite",
       "@id": "https://www.krishnadental.in#website",
@@ -406,17 +407,43 @@
         "query-input": "required name=search_term_string"
       }
     },
+
     {
       "@type": ["Dentist", "MedicalOrganization"],
       "@id": "https://www.krishnadental.in#dentist",
       "name": "Krishna Multispeciality Dental Clinic",
-      "image": "https://www.krishnadental.in/logo.png",
       "url": "https://www.krishnadental.in",
       "description": "Krishna Multispeciality Dental Clinic in Gudivada offers advanced dental care including implants, root canals, braces, and cosmetic dentistry. Led by Dr. Vidya (MDS Prosthodontist).",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.krishnadental.in/logo.png",
+        "width": 200,
+        "height": 200
+      },
+      "image": "https://www.krishnadental.in/logo.png",
       "telephone": ["+918674244241", "+917997444241"],
       "email": "vidya@krishnadental.in",
       "priceRange": "₹₹",
       "medicalSpecialty": "Dentistry",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Card",
+      "hasMap": "https://maps.google.com/?cid=9657636280680591640",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Vidya",
+        "jobTitle": "MDS Prosthodontist",
+        "worksFor": { "@id": "https://www.krishnadental.in#dentist" }
+      },
+      "employee": {
+        "@id": "https://www.krishnadental.in#physician-vidya"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "telephone": "+918674244241",
+        "email": "vidya@krishnadental.in",
+        "availableLanguage": ["English", "Telugu"]
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "10/181-1 Eluru Road",
@@ -446,17 +473,159 @@
       ],
       "openingHours": ["Mo-Sa 09:30-20:30", "Su 10:00-13:00"],
       "areaServed": [
-  "Gudivada", "Bethavolu", "Billapadu", "Bommuluru", "Chilakamudi", "Chowtapalli", "Dondapadu", "Gangadharapuram", "Guntakoduru","Kalvapudi Agraharam", "Kasipudi", "Lingavaram", "Mandapadu","Merakagudem", "Moturu", "Pedyerukapadu", "Ramachandrapuram","Ramanapudi", "Saidepudi", "Seepudi", "Seri Golvepalle", "Siddhantam", "Tativarru", "Valivarthipadu", "Nagavarapadu","Mandavalli", "Penumakalanka", "Manugunuru", "Kovvadalanka", "Chintapadu", "Dayyampadu", "Pulaparru", "Pillipadu", "Nutchumilli","Nandigamalanka", "Ingilipakalanka", "Thakkellapadu", "Prathipadu","Bhyravapatnam", "Chavalipadu", "Unikili", "Singanapudi","Muduthallapadu", "Sobhanadripuram", "Appapuram", "Ayyavari Rudravaram","Gannavaram", "Mokhasakalvapudi", "Perikegudem", "Kanukollu", "Chintalapudi", "Putlacheruvu", "Pasalapudi", "Lellapudi", "Kaikalur", "Achavaram", "Alapadu", "Atapaka", "Bhujabalapatnam", "Doddipatla", "Gonepadu", "Gopavaram", "Kolletikota", "Kottada","Pallevada", "Penchikalamarru", "Rachapatnam", "Ramavaram","Seetanapalle", "Singapuram", "Someswaram", "Syamalambapuram","Tamarakollu", "Vadarlapadu", "Varahapatnam", "Vemavarappadu", "Vinjaram","Mudinepalli", "Alluru", "Bomminampadu", "Chevuru", "Chigurukota","Chinapalaparru", "Dakaram", "Devapudi", "Devaram", "Gokinampadu","Guraja", "Kakaravada", "Korraguntapalem", "Mulakalapalle","Pedagonnuru", "Komarru","Gudlavalleru", "Pamarru", "Nandivada","Eluru", "Machilipatnam", "Nuzvid",
-  "Krishna district", "Andhra Pradesh"],
-      "currenciesAccepted": "INR",
-      "paymentAccepted": "Cash, UPI, Card",
-      "hasMap": "https://maps.google.com/?cid=9657636280680591640",
+        "Gudivada", "Bethavolu", "Billapadu", "Bommuluru", "Chilakamudi", "Chowtapalli", "Dondapadu", "Gangadharapuram", "Guntakoduru",
+        "Kalvapudi Agraharam", "Kasipudi", "Lingavaram", "Mandapadu", "Merakagudem", "Moturu", "Pedyerukapadu", "Ramachandrapuram",
+        "Ramanapudi", "Saidepudi", "Seepudi", "Seri Golvepalle", "Siddhantam", "Tativarru", "Valivarthipadu", "Nagavarapadu",
+        "Mandavalli", "Penumakalanka", "Manugunuru", "Kovvadalanka", "Chintapadu", "Dayyampadu", "Pulaparru", "Pillipadu", "Nutchumilli",
+        "Nandigamalanka", "Ingilipakalanka", "Thakkellapadu", "Prathipadu", "Bhyravapatnam", "Chavalipadu", "Unikili", "Singanapudi",
+        "Muduthallapadu", "Sobhanadripuram", "Appapuram", "Ayyavari Rudravaram", "Gannavaram", "Mokhasakalvapudi", "Perikegudem",
+        "Kanukollu", "Chintalapudi", "Putlacheruvu", "Pasalapudi", "Lellapudi", "Kaikalur", "Achavaram", "Alapadu", "Atapaka",
+        "Bhujabalapatnam", "Doddipatla", "Gonepadu", "Gopavaram", "Kolletikota", "Kottada", "Pallevada", "Penchikalamarru",
+        "Rachapatnam", "Ramavaram", "Seetanapalle", "Singapuram", "Someswaram", "Syamalambapuram", "Tamarakollu", "Vadarlapadu",
+        "Varahapatnam", "Vemavarappadu", "Vinjaram", "Mudinepalli", "Alluru", "Bomminampadu", "Chevuru", "Chigurukota",
+        "Chinapalaparru", "Dakaram", "Devapudi", "Devaram", "Gokinampadu", "Guraja", "Kakaravada", "Korraguntapalem",
+        "Mulakalapalle", "Pedagonnuru", "Komarru", "Gudlavalleru", "Pamarru", "Nandivada",
+        "Eluru", "Machilipatnam", "Nuzvid", "Krishna district", "Andhra Pradesh"
+      ],
       "availableService": [
-        { "@type": "MedicalProcedure", "name": "Root Canal Treatment" },
-        { "@type": "MedicalProcedure", "name": "Dental Implants" },
-        { "@type": "MedicalProcedure", "name": "Teeth Whitening" },
-        { "@type": "MedicalProcedure", "name": "Cosmetic Dentistry" },
-        { "@type": "MedicalProcedure", "name": "Dental Braces and Aligners" }
+        {
+          "@type": "MedicalProcedure",
+          "name": "Root Canal Treatment",
+          "description": "Pain-free single and multi-visit root canal treatment to save infected or damaged teeth using advanced rotary endodontics.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dental Implants",
+          "description": "Permanent titanium tooth replacement including single implants, full arch implants, and implant-supported dentures.",
+          "procedureType": "https://schema.org/SurgicalProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Teeth Whitening",
+          "description": "Professional in-clinic laser and bleaching teeth whitening for a visibly brighter smile in a single visit.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Cosmetic Dentistry",
+          "description": "Full range of cosmetic dental treatments including smile makeovers, composite bonding, and gum contouring.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dental Braces and Aligners",
+          "description": "Metal braces, ceramic braces, and clear aligner orthodontic treatment for children, teens, and adults.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dental Crowns and Bridges",
+          "description": "Custom ceramic, zirconia, and PFM crowns and bridges to restore broken, decayed, or missing teeth.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Porcelain Veneers",
+          "description": "Thin custom-made porcelain veneers to correct chipped, stained, or uneven teeth for a perfect smile.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dentures and Partial Dentures",
+          "description": "Full and partial removable dentures crafted for comfort, fit, and aesthetics to replace missing teeth.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Tooth Extraction",
+          "description": "Simple and surgical tooth extractions performed under local anaesthesia with minimal discomfort.",
+          "procedureType": "https://schema.org/SurgicalProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Wisdom Tooth Removal",
+          "description": "Safe and comfortable surgical removal of impacted or problematic wisdom teeth by an experienced oral surgeon.",
+          "procedureType": "https://schema.org/SurgicalProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Scaling and Teeth Cleaning",
+          "description": "Professional ultrasonic scaling, polishing, and deep cleaning to remove plaque, tartar, and prevent gum disease.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Gum Disease Treatment (Periodontitis)",
+          "description": "Comprehensive periodontal treatment including deep scaling, root planing, and gum flap surgery for advanced gum disease.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Paediatric Dentistry",
+          "description": "Child-friendly dental care including fluoride treatment, pit and fissure sealants, and preventive dental checkups for children.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Smile Makeover",
+          "description": "Comprehensive full mouth smile transformation combining veneers, whitening, crowns, and gum contouring tailored to each patient.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Full Mouth Rehabilitation",
+          "description": "Complete restoration of all teeth using implants, crowns, bridges, and prosthetics for patients with severe dental damage or tooth loss.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Composite Bonding",
+          "description": "Tooth-coloured composite resin bonding to repair chips, cracks, gaps, and discolouration in a single visit.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Fluoride Treatment",
+          "description": "Topical fluoride application to strengthen enamel and prevent cavities, especially recommended for children and cavity-prone patients.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Pit and Fissure Sealants",
+          "description": "Protective dental sealants applied to the grooves of back teeth to prevent decay in children and teenagers.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dental X-Ray and Diagnosis",
+          "description": "Digital intraoral and panoramic X-rays for accurate diagnosis of cavities, bone loss, impactions, and infections.",
+          "procedureType": "https://schema.org/DiagnosticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Night Guards and Mouth Guards",
+          "description": "Custom-fitted night guards for bruxism (teeth grinding) and sports mouth guards for jaw and tooth protection.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Zirconia Crowns",
+          "description": "High-strength metal-free zirconia crowns for superior aesthetics and durability on front and back teeth.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Gum Contouring",
+          "description": "Laser gum reshaping to correct a gummy smile or uneven gum line for a more balanced and attractive appearance.",
+          "procedureType": "https://schema.org/SurgicalProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Dental Consultation and Checkup",
+          "description": "Comprehensive oral examination, dental health assessment, and personalised treatment planning by Dr. Vidya, MDS Prosthodontist.",
+          "procedureType": "https://schema.org/TherapeuticProcedure"
+        }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -471,12 +640,19 @@
         "https://maps.app.goo.gl/Yy31y5YBPtnsEaVR8"
       ]
     },
+
     {
-      "@type": "Organization",
-      "@id": "https://www.krishnadental.in#organization",
-      "name": "Krishna Multispeciality Dental Clinic",
-      "url": "https://www.krishnadental.in",
-      "logo": "https://www.krishnadental.in/logo.png",
+      "@type": "Physician",
+      "@id": "https://www.krishnadental.in#physician-vidya",
+      "name": "Dr. Vidya",
+      "jobTitle": "MDS Prosthodontist",
+      "description": "Dr. Vidya is an MDS Prosthodontist and founder of Krishna Multispeciality Dental Clinic, Gudivada. Specialises in dental implants, cosmetic dentistry, and full mouth rehabilitation.",
+      "medicalSpecialty": "Dentistry",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "MDS Prosthodontics"
+      },
+      "worksFor": { "@id": "https://www.krishnadental.in#dentist" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "10/181-1 Eluru Road",
@@ -485,20 +661,181 @@
         "postalCode": "521301",
         "addressCountry": "IN"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "telephone": "+918674244241",
-        "email": "vidya@krishnadental.in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/krishnadentalclinicgudivada",
-        "https://www.instagram.com/krishnadentalgudivada"
+      "telephone": "+918674244241",
+      "email": "vidya@krishnadental.in",
+      "url": "https://www.krishnadental.in/about"
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.krishnadental.in#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is Krishna Multispeciality Dental Clinic located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Krishna Multispeciality Dental Clinic is located at 10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301. We are easily accessible from Gudivada town centre and surrounding mandals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the clinic timings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open Monday to Saturday from 9:30 AM to 8:30 PM, and Sunday from 10:00 AM to 1:00 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is the dentist at Krishna Dental Clinic Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The clinic is led by Dr. Vidya, an MDS Prosthodontist with specialisation in dental implants, cosmetic dentistry, smile makeovers, and full mouth rehabilitation. She is the founder of Krishna Multispeciality Dental Clinic, Gudivada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Krishna Dental Clinic offer dental implants in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer permanent dental implants including single tooth implants, full arch implants, and implant-supported dentures. All implant procedures are performed by Dr. Vidya, MDS Prosthodontist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is root canal treatment painful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Root canal treatment at Krishna Multispeciality Dental Clinic is performed under local anaesthesia using advanced rotary endodontic instruments. Most patients experience little to no pain during or after the procedure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many sittings does a root canal take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depending on the severity of infection, root canal treatment typically takes 1 to 3 sittings. Simple cases can often be completed in a single visit at our clinic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of dental implants in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of dental implants varies based on the brand, bone condition, and number of implants needed. Please contact us at +91-8674244241 for a personalised consultation and transparent pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer teeth whitening in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer professional in-clinic teeth whitening using advanced laser and bleaching techniques. Results are visible in a single session and are significantly more effective than over-the-counter products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What type of braces are available at Krishna Dental Clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer metal braces, ceramic (tooth-coloured) braces, and clear aligners for orthodontic correction. Braces treatment is available for children, teenagers, and adults."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you treat children at your dental clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide complete paediatric dental care including checkups, fluoride treatments, sealants, and child-friendly treatments in a comfortable, friendly environment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer wisdom tooth removal in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We perform simple and surgical wisdom tooth extractions including impacted wisdom teeth under local anaesthesia for a safe and comfortable experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a smile makeover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A smile makeover is a personalised combination of cosmetic dental treatments such as veneers, whitening, crowns, bonding, and gum contouring designed to completely transform your smile's appearance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are zirconia crowns and are they better than metal crowns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zirconia crowns are metal-free tooth-coloured crowns made from high-strength ceramic material. They are stronger, more aesthetic, and biocompatible compared to traditional metal or PFM crowns, making them ideal for both front and back teeth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I visit the dentist for a checkup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend visiting the dentist every 6 months for a routine checkup and professional cleaning to prevent cavities, gum disease, and other dental problems early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer full mouth rehabilitation in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Vidya specialises in full mouth rehabilitation — a complete restoration of all teeth using implants, crowns, bridges, and prosthetics for patients with severe wear, decay, or tooth loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods are accepted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept Cash, UPI, and Card payments at Krishna Multispeciality Dental Clinic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book an appointment at Krishna Dental Clinic Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book an appointment by calling +91-8674244241 or +91-7997444241, emailing vidya@krishnadental.in, or messaging on WhatsApp at +91-7997444241."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is gum disease treatable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Early-stage gum disease (gingivitis) is fully reversible with professional scaling and improved oral hygiene. Advanced periodontitis is managed with deep cleaning, root planing, and in some cases gum flap surgery available at our clinic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is composite bonding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Composite bonding is a quick, affordable cosmetic procedure where tooth-coloured resin is applied and shaped to repair chipped, cracked, gapped, or discoloured teeth — usually completed in a single visit without removing tooth structure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve patients from outside Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve patients from Gudivada and all surrounding areas including Machilipatnam, Eluru, Nuzvid, Kaikalur, Gudlavalleru, Pamarru, Nandivada, Mudinepalli, and across Krishna district, Andhra Pradesh."
+          }
+        }
       ]
     }
+
   ]
 }
-  </script>
+</script>
 </head>
 <body>
 
