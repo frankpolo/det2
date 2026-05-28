@@ -90,7 +90,7 @@
     .whatsapp-fab { position: fixed; bottom: 24px; right: 24px; z-index: 90; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.35); transition: transform 0.2s; text-decoration: none; }
     .whatsapp-fab:hover { transform: scale(1.08); }
     .whatsapp-fab svg { width: 28px; height: 28px; fill: #fff; }
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal { opacity: 1; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .faq-list { margin-top: 40px; }
     .faq-item { border-bottom: 1px solid var(--border); }
@@ -210,7 +210,6 @@
   </section>
   <section class="section section-alt">
     <div class="section-inner reveal">
-      <div class="section-label">Common questions</div>
       <h2 class="section-heading" style="margin-bottom:0">Frequently asked questions</h2>
       <div class="faq-list">
         <div class="faq-item">
@@ -251,18 +250,52 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Krishna Dental</h4>
-        <p>Gudivada's trusted multispeciality dental clinic. Modern treatments, gentle care, honest pricing.</p>
+        <p>Gudivada's trusted multispeciality dental clinic. Modern treatments, gentle care, honest pricing — since day one.</p>
         <div class="footer-social">
-          <a href="https://www.facebook.com/krishnadentalclinicgudivada" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="https://www.instagram.com/krishnadentalgudivada/" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></a>
-          <a href="https://wa.me/917997444241" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg></a>
+          <a href="https://www.facebook.com/krishnadentalclinicgudivada" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/krishnadentalgudivada/" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="https://wa.me/917997444241" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          </a>
         </div>
       </div>
-      <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="dental-treatment.html">All Treatments</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
-      <div class="footer-col"><h4>Treatments</h4><a href="root-canal-gudivada.html">Root Canal</a><a href="dental-implants-gudivada.html">Dental Implants</a><a href="teeth-whitening-gudivada.html">Teeth Whitening</a><a href="crowns-bridges-gudivada.html">Crowns &amp; Bridges</a><a href="orthodontics-gudivada.html">Orthodontics</a><a href="dental-cleaning-gudivada.html">Cleaning &amp; Scaling</a></div>
-      <div class="footer-col"><h4>Visit Us</h4><p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p><a href="tel:08674244241">086742 44241</a><a href="tel:07997444241">079974 44241</a><a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a><p style="margin-top:12px;font-size:13px;opacity:0.6;">Mon – Sat: 9:30 am – 8:30 pm<br>Sun: 10:00 am – 1:00 pm</p></div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="dental-treatment.html">All Treatments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <a href="root-canal-gudivada.html">Root Canal</a>
+        <a href="dental-implants-gudivada.html">Dental Implants</a>
+        <a href="teeth-whitening-gudivada.html">Teeth Whitening</a>
+        <a href="crowns-bridges-gudivada.html">Crowns & Bridges</a>
+        <a href="orthodontics-gudivada.html">Orthodontics</a>
+        <a href="dental-cleaning-gudivada.html">Cleaning & Scaling</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301</p>
+        <a href="tel:08674244241">086742 44241</a>
+        <a href="tel:07997444241">079974 44241</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
+        <p style="margin-top: 12px; font-size: 13px; opacity: 0.6;">
+          Mon – Sat: 9:30 am – 8:30 pm<br>
+          Sun: 10:00 am – 1:00 pm
+        </p>
+      </div>
     </div>
-    <div class="footer-bottom">&copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved.</div>
+    <div class="footer-bottom">
+      &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved.
+    </div>
   </footer>
   <a href="https://wa.me/917997444241" class="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
