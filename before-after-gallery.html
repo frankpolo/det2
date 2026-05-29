@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <meta property="og:title" content="Before & After Smile Gallery | Krishna Dental Clinic Gudivada">
   <meta property="og:description" content="Interactive before-and-after smile transformations. See the real aesthetic results of cosmetic dentistry, braces, and implants.">
   <meta property="og:url" content="https://www.krishnadental.in/before-after-gallery.html">
-  <meta property="og:image" content="https://www.krishnadental.in/images/smile-design-makeover-gudivada.png">
+  <meta property="og:image" content="https://www.krishnadental.in/images/smile-design-makeover-gudivada.webp">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -382,6 +382,63 @@
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://www.krishnadental.in/before-after-gallery.html#webpage",
+        "url": "https://www.krishnadental.in/before-after-gallery.html",
+        "name": "Before & After Patient Smile Gallery",
+        "description": "Interactive before-and-after smile transformations. See the real clinical aesthetic results of cosmetic dentistry, braces, and implants.",
+        "isPartOf": { "@id": "https://www.krishnadental.in#website" }
+      },
+      {
+        "@type": "Dentist",
+        "@id": "https://www.krishnadental.in#dentist",
+        "name": "Krishna Multispeciality Dental Clinic",
+        "url": "https://www.krishnadental.in",
+        "telephone": "+918674244241",
+        "image": "https://www.krishnadental.in/images/smile-design-makeover-gudivada.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+          "addressLocality": "Gudivada",
+          "addressRegion": "Andhra Pradesh",
+          "postalCode": "521301",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.krishnadental.in/before-after-gallery.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krishnadental.in" },
+          { "@type": "ListItem", "position": 2, "name": "Smile Gallery", "item": "https://www.krishnadental.in/before-after-gallery.html" }
+        ]
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://www.krishnadental.in/before-after-gallery.html#artwork-braces",
+        "name": "Orthodontic Braces Treatment Alignment Before & After",
+        "creator": { "@id": "https://www.krishnadental.in#physician-vidya" },
+        "artform": "Photograph",
+        "description": "Before and after dental alignment transformation showing the clinical results of braces treatment.",
+        "image": "https://www.krishnadental.in/images/treatmentpics/orthodontics-after.webp"
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://www.krishnadental.in/before-after-gallery.html#artwork-veneers",
+        "name": "Cosmetic Smile Makeover Veneers Before & After",
+        "creator": { "@id": "https://www.krishnadental.in#physician-vidya" },
+        "artform": "Photograph",
+        "description": "Before and after dental veneers smile makeover designed for structural aesthetics and alignment.",
+        "image": "https://www.krishnadental.in/images/treatmentpics/smile-makeover-after.webp"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -395,6 +452,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="before-after-gallery.html">Smile Gallery</a></li>
+        <li><a href="faq.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-cta-wrap"><a href="tel:08674244241" class="nav-cta">Call Now</a></div>
@@ -414,6 +472,7 @@
     <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
     <a href="blog.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Blog</a>
     <a href="before-after-gallery.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Smile Gallery</a>
+    <a href="faq.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">FAQs</a>
     <a href="contact.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
     <a href="tel:08674244241" style="color: var(--accent); border: none; margin-top: 24px;">Call 086742 44241</a>
   </div>
@@ -442,8 +501,8 @@
           <div class="slider-container" id="slider1">
             <span class="label-badge label-before">Before</span>
             <span class="label-badge label-after">After</span>
-            <img src="images/treatmentpics/orthodontics-before.png" alt="Braces vs. Clear Aligners before treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-before">
-            <img src="images/treatmentpics/orthodontics-after.png" alt="Braces vs. Clear Aligners after successful treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-after">
+            <img src="images/treatmentpics/orthodontics-before.webp" alt="Braces vs. Clear Aligners before treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-before" loading="lazy">
+            <img src="images/treatmentpics/orthodontics-after.webp" alt="Braces vs. Clear Aligners after successful treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-after" loading="lazy">
             <div class="slider-bar"></div>
             <div class="slider-button">
               <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
@@ -470,8 +529,8 @@
           <div class="slider-container" id="slider2">
             <span class="label-badge label-before">Before</span>
             <span class="label-badge label-after">After</span>
-            <img src="images/treatmentpics/smile-makeover-before.png" alt="Cosmetic Smile Makeover before treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-before">
-            <img src="images/treatmentpics/smile-makeover-after.png" alt="Cosmetic Smile Makeover after successful treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-after">
+            <img src="images/treatmentpics/smile-makeover-before.webp" alt="Cosmetic Smile Makeover before treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-before" loading="lazy">
+            <img src="images/treatmentpics/smile-makeover-after.webp" alt="Cosmetic Smile Makeover after successful treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-after" loading="lazy">
             <div class="slider-bar"></div>
             <div class="slider-button">
               <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
@@ -498,8 +557,8 @@
           <div class="slider-container" id="slider3">
             <span class="label-badge label-before">Before</span>
             <span class="label-badge label-after">After</span>
-            <img src="images/treatmentpics/teeth-whitening-before.png" alt="Laser Teeth Whitening before treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-before before-staining-filter">
-            <img src="images/treatmentpics/teeth-whitening-after.png" alt="Laser Teeth Whitening after successful treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-after">
+            <img src="images/treatmentpics/teeth-whitening-before.webp" alt="Laser Teeth Whitening before treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-before before-staining-filter" loading="lazy">
+            <img src="images/treatmentpics/teeth-whitening-after.webp" alt="Laser Teeth Whitening after successful treatment - Patient #01 at Krishna Dental Gudivada" class="slider-image image-after" loading="lazy">
             <div class="slider-bar"></div>
             <div class="slider-button">
               <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
@@ -679,8 +738,8 @@
     }
 
     function checkAndLoadPatient(treatment, patientNum) {
-      const fileBefore = `images/treatmentpics/${treatment.slug}-before-patient-${patientNum}.png`;
-      const fileAfter = `images/treatmentpics/${treatment.slug}-after-patient-${patientNum}.png`;
+      const fileBefore = `images/treatmentpics/${treatment.slug}-before-patient-${patientNum}.webp`;
+      const fileAfter = `images/treatmentpics/${treatment.slug}-after-patient-${patientNum}.webp`;
 
       // Quick pre-fetch check
       const img = new Image();
@@ -697,8 +756,8 @@
           <div class="slider-container" id="${currentSliderId}">
             <span class="label-badge label-before">Before</span>
             <span class="label-badge label-after">After</span>
-            <img src="${fileBefore}" alt="${treatment.name} before treatment - Patient #${patientNum} Gudivada" class="slider-image image-before${isWhitening}">
-            <img src="${fileAfter}" alt="${treatment.name} after treatment - Patient #${patientNum} Gudivada" class="slider-image image-after">
+            <img src="${fileBefore}" alt="${treatment.name} before treatment - Patient #${patientNum} Gudivada" class="slider-image image-before${isWhitening}" loading="lazy">
+            <img src="${fileAfter}" alt="${treatment.name} after treatment - Patient #${patientNum} Gudivada" class="slider-image image-after" loading="lazy">
             <div class="slider-bar"></div>
             <div class="slider-button">
               <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
