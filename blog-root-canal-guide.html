@@ -111,6 +111,16 @@
       max-width: 680px; margin: 0 auto;
       padding: 64px 24px 48px; text-align: center;
     }
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
     .hero-eyebrow {
       font-size: 15px; font-weight: 600; color: var(--accent);
       text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;
@@ -328,6 +338,62 @@
       padding: 0 0 24px;
       font-size: 15px; line-height: 1.7; color: var(--text-secondary);
     }
+
+    /* ── Step-by-Step Timeline ── */
+    .timeline-container {
+      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .timeline-step {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .timeline-step:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+    }
+    .step-number {
+      width: 48px;
+      height: 48px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex-grow: 1;
+    }
+    .step-content h3 {
+      margin-top: 0 !important;
+      margin-bottom: 8px !important;
+      color: var(--text-primary);
+      font-size: 20px;
+    }
+    .step-content p {
+      font-size: 15px !important;
+      line-height: 1.7 !important;
+      color: var(--text-secondary);
+      margin-bottom: 0 !important;
+    }
+    @media (max-width: 500px) {
+      .timeline-step {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
   </style>
 
   <script type="application/ld+json">
@@ -440,6 +506,7 @@
         <li><a href="dental-treatment.html">Treatments</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="before-after-gallery.html">Smile Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-cta-wrap"><a href="tel:08674244241" class="nav-cta">Call Now</a></div>
@@ -458,6 +525,7 @@
     <a href="dental-treatment.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Treatments</a>
     <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
     <a href="blog.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Blog</a>
+    <a href="before-after-gallery.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Smile Gallery</a>
     <a href="contact.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
     <a href="tel:08674244241" style="color: var(--accent); border: none; margin-top: 24px;">Call 086742 44241</a>
   </div>
@@ -480,6 +548,11 @@
       <span>✍️ Dr. Vidya, MDS (Prosthodontist)</span>
     </div>
   </section>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/root-canal-treatment-gudivada.png" alt="Premium 3D Clinical Root Canal Illustration" class="featured-image">
+  </div>
 
   <!-- Article Content -->
   <section class="section">
@@ -604,19 +677,48 @@
         <strong>Shorter Appointment Times:</strong> With modern techniques, many root canal treatments are completed in 30-45 minutes. The procedure that used to take several hours is now often done efficiently without extended mouth opening or discomfort.
       </p>
 
-      <h2>What Happens During a Root Canal: A Brief Overview</h2>
+      <h2>What Happens During a Root Canal: Step-by-Step</h2>
       <p>
-        Understanding what actually happens during a root canal can also reduce anxiety. Here's a simplified overview of the procedure:
+        Understanding what actually happens during a root canal can completely remove any anxiety. Here is a clear, step-by-step breakdown of how the procedure is performed today:
       </p>
-      <p>
-        Your dentist begins by taking X-rays to assess the extent of the infection and the shape and position of the tooth's root canals. After numbing the area with local anesthetic and confirming complete numbness, the dentist places a rubber dam to isolate the tooth. A small opening is created in the crown of the tooth to access the pulp chamber. Using specialized instruments, your dentist carefully removes the infected or inflamed pulp tissue from inside the tooth and from the root canals.
-      </p>
-      <p>
-        Once the pulp is removed, the canals are cleaned, shaped, and disinfected using a combination of mechanical instrumentation and antimicrobial solutions. The inside of the tooth is thoroughly rinsed and dried. Finally, the canals are filled with a biocompatible material called gutta-percha (a rubber-like substance) and sealed with a cement to ensure complete closure of the canal system. The access opening is then filled with a tooth-colored restoration material to seal the crown.
-      </p>
-      <p>
-        In most cases, a tooth that has undergone root canal treatment also requires a crown to protect it and restore its full function. This is usually placed in a separate appointment after the internal treatment is complete and the tooth has had time to settle.
-      </p>
+
+      <div class="timeline-container">
+        <!-- Step 1 -->
+        <div class="timeline-step reveal">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Step 1: Accessing the Pulp Chamber</h3>
+            <p>After administering local anesthetic to ensure complete numbness, a protective rubber dam is placed to keep the tooth dry and sterile. A precise, small opening is made in the crown of the tooth to access the inflamed or infected pulp inside.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step reveal">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Step 2: Cleaning and Shaping the Canals</h3>
+            <p>Using flexible, gentle rotary endodontic instruments, the diseased pulp tissue is carefully removed from the pulp chamber and root canals. The pathways are cleaned, shaped, and thoroughly disinfected with clinical solutions.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step reveal">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Step 3: Sealing the Tooth</h3>
+            <p>Once dry and sterile, the canals are filled using gutta-percha (a biocompatible rubber-like material) and sealed tightly with a clinical adhesive cement to prevent any future bacterial intrusion.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step reveal">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Step 4: Placing the Custom Crown</h3>
+            <p>A temporary or permanent tooth-colored filling seals the access hole. To restore full chewing strength and protect the tooth from fractures, a premium, natural-looking ceramic crown is custom-fitted over the treated tooth.</p>
+          </div>
+        </div>
+      </div>
 
       <h2>Recovery and What to Expect After Treatment</h2>
       <p>

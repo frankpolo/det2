@@ -314,7 +314,7 @@
 
     /* ── Scroll Reveal ── */
     .reveal {
-      opacity: 1; transform: translateY(24px);
+      opacity: 0; transform: translateY(24px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -332,7 +332,7 @@
       "telephone": ["+918674244241", "+917997444241"],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+        "streetAddress": "10/181-1 Eluru Road",
         "addressLocality": "Gudivada",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "521301",
@@ -363,44 +363,29 @@
         {"@type": "AdministrativeArea", "name": "Andhra Pradesh"}
       ],
       "medicalSpecialty": ["Dentistry", "Prosthodontics", "Orthodontics", "Endodontics"],
-      "priceRange": "\u20b9\u20b9",
-      "hasMap": "https://maps.google.com/?cid=9657636280680591640",
+      "priceRange": "₹₹",
+      "hasMap": "https://maps.app.goo.gl/DQnybh6CPpyL1vHs9",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
         "ratingCount": "40"
-      },
-      "sameAs": [
-        "https://maps.app.goo.gl/Yy31y5YBPtnsEaVR8",
-        "https://www.facebook.com/krishnadentalclinicgudivada",
-        "https://www.instagram.com/krishnadentalgudivada/",
-        "https://wa.me/917997444241"
-      ]
+      }
     },
     {
-      "@type": "Physician",
-      "@id": "https://www.krishnadental.in#physician-vidya",
-      "name": "Dr. Vidya Sahithi Atluri",
-      "jobTitle": "MDS Prosthodontist",
-      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.jpg",
-      "description": "Dr. Vidya is an MDS Prosthodontist and founder of Krishna Multispeciality Dental Clinic, Gudivada. Specialises in dental implants, cosmetic dentistry, and full mouth rehabilitation.",
-      "medicalSpecialty": "Dentistry",
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "MDS Prosthodontics"
-      },
-      "worksFor": { "@id": "https://www.krishnadental.in#dentist" },
+      "@type": "LocalBusiness",
+      "name": "Krishna Multispeciality Dental Clinic",
+      "image": "https://www.krishnadental.in/images/clinic.jpg",
+      "description": "Expert dental care in Gudivada by Dr. Vidya (MDS Prosthodontist). 5.0★ rated women-owned clinic offering root canals, implants, cosmetic dentistry, and more.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+        "streetAddress": "10/181-1 Eluru Road",
         "addressLocality": "Gudivada",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "521301",
         "addressCountry": "IN"
       },
       "telephone": "+918674244241",
-      "email": "vidya@krishnadental.in",
-      "url": "https://www.krishnadental.in/dr-vidya-prosthodontist.html"
+      "url": "https://www.krishnadental.in"
     },
     {
       "@type": "BreadcrumbList",
@@ -425,7 +410,7 @@
           "name": "Where is Krishna dental clinic located?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Krishna Multispeciality Dental Clinic is located at 10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301 — right next to MedPlus pharmacy and near the Homeopathy College. It's easily accessible from all parts of Gudivada."
+            "text": "Krishna Multispeciality Dental Clinic is located at 10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301 — right next to MedPlus pharmacy and near the Homeopathy College. It's easily accessible from all parts of Gudivada."
           }
         },
         {
@@ -469,6 +454,7 @@
         <li><a href="dental-treatment.html">Treatments</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="before-after-gallery.html">Smile Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-cta-wrap"><a href="tel:08674244241" class="nav-cta">Call Now</a></div>
@@ -487,6 +473,7 @@
     <a href="dental-treatment.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Treatments</a>
     <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
     <a href="blog.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Blog</a>
+    <a href="before-after-gallery.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Smile Gallery</a>
     <a href="contact.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
     <a href="tel:08674244241" style="color: var(--accent); border: none; margin-top: 24px;">Call 086742 44241</a>
   </div>
@@ -582,22 +569,22 @@
           <a href="tooth-extraction-gudivada.html">Tooth Extraction</a>
         </div>
         <div class="service-item">
-          <a href="periodontics-gudivada.html">Gum Disease Treatment (Periodontics)</a>
+          <a href="gum-disease-treatment-gudivada.html">Gum Disease Treatment</a>
         </div>
         <div class="service-item">
           <a href="dentures-gudivada.html">Dentures</a>
         </div>
         <div class="service-item">
-          <a href="cosmetic-dentistry-gudivada.html">Veneers</a>
+          <a href="veneers-gudivada.html">Veneers</a>
         </div>
         <div class="service-item">
-          <a href="cosmetic-dentistry-gudivada.html">Dental Bonding</a>
+          <a href="bonding-gudivada.html">Dental Bonding</a>
         </div>
         <div class="service-item">
-          <a href="pediatric-dentistry-gudivada.html">Fluoride Treatment</a>
+          <a href="fluoride-treatment-gudivada.html">Fluoride Treatment</a>
         </div>
         <div class="service-item">
-          <a href="contact.html">Emergency Care</a>
+          <a href="emergency-dental-care-gudivada.html">Emergency Care</a>
         </div>
       </div>
     </div>
@@ -611,7 +598,7 @@
       <div class="location-content">
         <div class="location-text">
           <h3>Our Address</h3>
-          <p><strong>Krishna Multispeciality Dental Clinic</strong><br>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301</p>
+          <p><strong>Krishna Multispeciality Dental Clinic</strong><br>10/181-1, Eluru Road<br>Gudivada, Andhra Pradesh 521301</p>
           <p style="margin-top: 24px;"><strong>Landmark:</strong> Right beside MedPlus pharmacy, near Homeopathy College, in the heart of Gudivada on the main Eluru Road.</p>
           <p style="margin-top: 24px;"><strong>Hours:</strong><br>Mon–Sat: 9:30 am – 8:30 pm<br>Sun: 10:00 am – 1:00 pm</p>
           <p style="margin-top: 24px;">
@@ -630,6 +617,7 @@
   <!-- FAQ -->
   <section class="section">
     <div class="section-inner reveal">
+      <div class="section-label">Common Questions</div>
       <h2 class="section-heading">Frequently Asked Questions</h2>
       <div class="faq-list">
         <div class="faq-item">
@@ -644,7 +632,7 @@
             Where exactly is Krishna dental clinic located?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">We're located at 10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301. Our clinic sits right beside MedPlus pharmacy on the main Eluru Road, near the Homeopathy College. It's centrally located and accessible from all parts of Gudivada — just look for the MedPlus sign and you'll find us.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">We're located at 10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301. Our clinic sits right beside MedPlus pharmacy on the main Eluru Road, near the Homeopathy College. It's centrally located and accessible from all parts of Gudivada — just look for the MedPlus sign and you'll find us.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
@@ -697,7 +685,7 @@
             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
           </a>
           <a href="https://wa.me/917997444241" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
           </a>
         </div>
       </div>
@@ -721,7 +709,7 @@
       </div>
       <div class="footer-col">
         <h4>Visit Us</h4>
-        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301</p>
+        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
         <a href="tel:08674244241">086742 44241</a>
         <a href="tel:07997444241">079974 44241</a>
         <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
@@ -732,7 +720,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved.
+      &copy; 2026 Krishna Multispeciality Dental Clinic. All rights reserved.
     </div>
   </footer>
 
