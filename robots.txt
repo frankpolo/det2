@@ -50,6 +50,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.krishnadental.in/sitemap.xml
+Sitemap: https://www.krishnadental.in/images-sitemap.xml
 
 # LLMs.txt location (AI content guide)
 # https://www.krishnadental.in/llms.txt

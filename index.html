@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krishna Multispeciality Dental Clinic | Best Dentist in Gudivada</title>
+  <title>Krishna Dental Clinic | Best Dentist in Gudivada</title>
   <meta name="description" content="Krishna Multispeciality Dental Clinic in Gudivada offers comprehensive dental care — root canals, implants, braces, whitening and more. Call 086742 44241.">
   <link rel="canonical" href="https://www.krishnadental.in">
   <meta property="og:title" content="Krishna Multispeciality Dental Clinic | Best Dentist in Gudivada">
@@ -200,6 +200,13 @@
     .treatment-card-image {
       width: 100%; height: 160px; background: linear-gradient(135deg, var(--accent-light) 0%, rgba(13, 115, 119, 0.06) 100%);
       display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .treatment-card-image img {
+      width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;
+    }
+    .treatment-card:hover .treatment-card-image img {
+      transform: scale(1.06);
     }
     .treatment-card-content {
       padding: 24px;
@@ -397,12 +404,7 @@
       "@id": "https://www.krishnadental.in#website",
       "url": "https://www.krishnadental.in",
       "name": "Krishna Multispeciality Dental Clinic",
-      "description": "Comprehensive dental care clinic in Gudivada offering root canals, dental implants, braces, whitening, and more.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.krishnadental.in/search?q={search_term_string}"
+      "description": "Comprehensive dental care clinic in Gudivada offering root canals, dental implants, braces, whitening, and more.""
         },
         "query-input": "required name=search_term_string"
       }
@@ -919,7 +921,9 @@
 
       <div class="treatment-grid">
         <a href="root-canal-gudivada.html" class="treatment-card reveal">
-          <div class="treatment-card-image"></div>
+          <div class="treatment-card-image">
+            <img src="images/root-canal-treatment-gudivada.webp" alt="Painless Root Canal Treatment in Gudivada at Krishna Dental Clinic" loading="lazy" width="600" height="600">
+          </div>
           <div class="treatment-card-content">
             <h3>Root Canal</h3>
             <p>Save severely damaged or infected teeth with our painless root canal treatment using modern techniques.</p>
@@ -928,7 +932,9 @@
         </a>
 
         <a href="dental-implants.html" class="treatment-card reveal">
-          <div class="treatment-card-image"></div>
+          <div class="treatment-card-image">
+            <img src="images/titanium-dental-implants-gudivada.webp" alt="Permanent Titanium Dental Implants in Gudivada - Krishna Dental" loading="lazy" width="600" height="600">
+          </div>
           <div class="treatment-card-content">
             <h3>Dental Implants</h3>
             <p>Replace missing teeth with permanent, natural-looking implants that restore your smile and confidence.</p>
@@ -937,7 +943,9 @@
         </a>
 
         <a href="teeth-whitening.html" class="treatment-card reveal">
-          <div class="treatment-card-image"></div>
+          <div class="treatment-card-image">
+            <img src="images/professional-teeth-whitening-gudivada.webp" alt="Professional Teeth Whitening Treatment in Gudivada" loading="lazy" width="600" height="600">
+          </div>
           <div class="treatment-card-content">
             <h3>Teeth Whitening</h3>
             <p>Brighten your smile with professional whitening treatments available as in-office or take-home options.</p>
@@ -946,7 +954,9 @@
         </a>
 
         <a href="cosmetic-dentistry-gudivada.html" class="treatment-card reveal">
-          <div class="treatment-card-image"></div>
+          <div class="treatment-card-image">
+            <img src="images/cosmetic-dentistry-veneers-gudivada.webp" alt="Cosmetic Dentistry Veneers and Smile Makeovers in Gudivada" loading="lazy" width="600" height="600">
+          </div>
           <div class="treatment-card-content">
             <h3>Cosmetic Dentistry</h3>
             <p>Enhance your smile with veneers, bonding, and other cosmetic treatments designed for beautiful results.</p>
@@ -955,7 +965,9 @@
         </a>
 
         <a href="clip-and-braces.html" class="treatment-card reveal">
-          <div class="treatment-card-image"></div>
+          <div class="treatment-card-image">
+            <img src="images/braces-clear-aligners-orthodontics-gudivada.webp" alt="Orthodontics Braces and Clear Aligners Treatment in Gudivada" loading="lazy" width="600" height="600">
+          </div>
           <div class="treatment-card-content">
             <h3>Orthodontics</h3>
             <p>Straighten your teeth with braces and modern aligners for a perfectly aligned smile.</p>
@@ -964,7 +976,9 @@
         </a>
 
         <a href="dental-cleaning-gudivada.html" class="treatment-card reveal">
-          <div class="treatment-card-image"></div>
+          <div class="treatment-card-image">
+            <img src="images/dental-cleaning-scaling-gudivada.webp" alt="Professional Dental Cleaning and Scaling in Gudivada" loading="lazy" width="600" height="600">
+          </div>
           <div class="treatment-card-content">
             <h3>Dental Cleaning</h3>
             <p>Keep your teeth and gums healthy with professional cleaning and scaling treatments.</p>
