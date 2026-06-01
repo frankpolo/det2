@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Dr. Vidya Sahithi, MDS | Krishna Dental Clinic Gudivada</title>
-  <meta name="description" content="Meet Dr. Vidya Sahithi Atluri (MDS Prosthodontist) & the team at Krishna Multispeciality Dental Clinic in Gudivada. Providing gentle, honest, and expert dental care.">
+  <title>About Krishna Dental Clinic Gudivada | Our Story & Team</title>
+  <meta name="description" content="Meet the team at Krishna Multispeciality Dental Clinic in Gudivada. Committed to gentle, honest dental care with modern technology. Serving families since day one.">
   <link rel="canonical" href="https://www.krishnadental.in/about.html">
   <meta property="og:title" content="About Krishna Dental Clinic Gudivada | Our Story & Team">
   <meta property="og:description" content="Krishna Dental Clinic's story, values, and team of dedicated dentists in Gudivada. Gentle care, honest advice, modern approach.">
   <meta property="og:url" content="https://www.krishnadental.in/about.html">
-  <meta property="og:image" content="https://www.krishnadental.in/images/og-krishna-dental-clinic-gudivada.webp">
+  <meta property="og:image" content="https://www.krishnadental.in/images/og-krishna-dental-clinic-gudivada.jpg">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -374,172 +374,6 @@
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* ── Clinic Gallery ── */
-    .clinic-gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      margin-top: 32px;
-    }
-    @media (max-width: 900px) {
-      .clinic-gallery { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    }
-    @media (max-width: 550px) {
-      .clinic-gallery { grid-template-columns: 1fr; }
-    }
-
-    .gallery-card {
-      background: var(--bg-primary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-    }
-    .gallery-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-    }
-
-    .gallery-image-wrapper {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16/11;
-      overflow: hidden;
-      cursor: pointer;
-      background: #f0f0f0;
-    }
-
-    .gallery-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    .gallery-card:hover .gallery-image {
-      transform: scale(1.06);
-    }
-
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(13, 115, 119, 0.4);
-      opacity: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.3s ease;
-      backdrop-filter: blur(2px);
-    }
-    .gallery-image-wrapper:hover .gallery-overlay {
-      opacity: 1;
-    }
-
-    .gallery-zoom-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      color: var(--accent);
-      transform: translateY(10px);
-      transition: transform 0.3s ease, background-color 0.2s;
-    }
-    .gallery-image-wrapper:hover .gallery-zoom-icon {
-      transform: translateY(0);
-    }
-    .gallery-zoom-icon:hover {
-      background-color: var(--accent-light);
-    }
-    .gallery-zoom-icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .gallery-card-info {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-grow: 1;
-    }
-    .gallery-card-info h3 {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-      letter-spacing: -0.2px;
-    }
-    .gallery-card-info p {
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ── Lightbox Modal ── */
-    .lightbox-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      background: rgba(29, 29, 31, 0.95);
-      backdrop-filter: blur(10px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 40px 24px;
-    }
-    .lightbox-modal.open {
-      display: flex;
-    }
-    .lightbox-image {
-      max-width: 90%;
-      max-height: 75vh;
-      object-fit: contain;
-      border-radius: var(--radius);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-      transform: scale(0.95);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .lightbox-modal.open .lightbox-image {
-      transform: scale(1);
-    }
-    .lightbox-caption {
-      margin-top: 20px;
-      color: #fff;
-      font-size: 16px;
-      text-align: center;
-      max-width: 600px;
-      font-weight: 500;
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      background: rgba(255,255,255,0.1);
-      border: none;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      color: #fff;
-      font-size: 28px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.2s, transform 0.2s;
-    }
-    .lightbox-close:hover {
-      background: rgba(255,255,255,0.2);
-      transform: scale(1.05);
-    }
   </style>
 
   <script type="application/ld+json">
@@ -549,7 +383,7 @@
       {
         "@type": "Dentist",
         "name": "Krishna Multispeciality Dental Clinic",
-      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
+      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.jpg",
         "@id": "https://www.krishnadental.in#dentist",
         "url": "https://www.krishnadental.in",
         "telephone": ["+918674244241", "+917997444241"],
@@ -565,22 +399,12 @@
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:30", "closes": "20:30" },
           { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "13:00" }
-        ],
-        "sameAs": [
-          "https://wa.me/917997444241",
-          "https://maps.app.goo.gl/Yy31y5YBPtnsEaVR8",
-          "https://www.practo.com/gudivada/clinic/krishna-multispeciality-dental-clinic-1-rajendra-nagar",
-          "https://jsdl.in/DT-99KS7HITHWI",
-          "https://maps.apple.com/place?place-id=IDC77F000FF3702C6",
-          "https://www.bing.com/maps?ss=ypid.YN4070x8565180883905302686",
-          "https://www.facebook.com/krishnadentalclinicgudivada",
-          "https://www.instagram.com/krishnadentalgudivada/"
         ]
       },
       {
         "@type": "Organization",
         "name": "Krishna Multispeciality Dental Clinic",
-      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
+      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.jpg",
         "@id": "https://www.krishnadental.in#organization",
         "url": "https://www.krishnadental.in",
         "description": "Multi-speciality dental clinic in Gudivada offering gentle, honest dental care with modern technology",
@@ -635,7 +459,6 @@
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="before-after-gallery.html">Smile Gallery</a></li>
-        <li><a href="faq.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-cta-wrap"><a href="tel:08674244241" class="nav-cta">Call Now</a></div>
@@ -655,7 +478,6 @@
     <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
     <a href="blog.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Blog</a>
     <a href="before-after-gallery.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Smile Gallery</a>
-    <a href="faq.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">FAQs</a>
     <a href="contact.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
     <a href="tel:08674244241" style="color: var(--accent); border: none; margin-top: 24px;">Call 086742 44241</a>
   </div>
@@ -671,7 +493,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-eyebrow">About Us</div>
-    <h1>Meet the Team at Krishna Dental, Gudivada</h1>
+    <h1>Your family's dental home in Gudivada.</h1>
     <p>Krishna Multispeciality Dental Clinic has been serving families in Gudivada and the Krishna district with gentle, honest dental care.</p>
   </section>
 
@@ -726,117 +548,14 @@
     </div>
   </section>
 
-  <!-- Inside Our Clinic (Modern Gallery Section) -->
-  <section class="section section-alt">
-    <div class="section-wide reveal">
-      <div class="section-label">Inside Our Clinic</div>
-      <h2 class="section-heading">A comfortable, sterile, and welcoming environment</h2>
-      <p class="section-body" style="max-width: 680px; margin-bottom: 32px;">
-        We believe a great dental experience starts with comfort. Take a visual tour of our modern, state-of-the-art clinical space in the heart of Gudivada.
-      </p>
-      
-      <div class="clinic-gallery">
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-gudivada-outside.webp" alt="Krishna Dental Clinic outside view on Eluru Road, Gudivada" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Clinic Exterior</h3>
-            <p>Conveniently located on Eluru Road, Satyanarayana Puram, Gudivada.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/receptionarea.webp" alt="Modern welcoming reception counter at Krishna Dental Clinic Gudivada" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Reception Area</h3>
-            <p>Our warm and accommodating front desk staff are here to assist with your visits.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/waitingarea.webp" alt="Spacious waiting lounge with comfortable seating for patients" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Patient Lounge</h3>
-            <p>A beautifully designed, fully air-conditioned space with comfortable seating.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-gudivada-chair1.webp" alt="Modern German dental treatment operatory chair" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Advanced Treatment Room I</h3>
-            <p>State-of-the-art dental chair featuring smart ergonomics and premium LED lighting.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-gudivada-chair2.webp" alt="Sterile clinical setup and treatment chair at Krishna Dental" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Advanced Treatment Room II</h3>
-            <p>Strict clinical sterilization protocols and high-definition diagnostics setups.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-clinic-gudivada.webp" alt="Spacious multispeciality clinic layout Krishna Dental Gudivada" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Multispeciality Suite</h3>
-            <p>A wide, spacious layout supporting pediatric, implant, and root canal procedures.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Our Team -->
-  <section class="section">
+  <section class="section section-alt">
     <div class="section-wide reveal">
       <div class="section-label">Our team</div>
       <h2 class="section-heading">Meet the people behind your smile</h2>
       <div class="team-grid">
         <a href="dr-vidya-prosthodontist.html" class="team-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="team-photo"><img src="images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp" alt="Dr. Vidya Sahithi Atluri - MDS Prosthodontist Krishna Dental Clinic Gudivada" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
+          <div class="team-photo"><img src="images/dr-vidya-sahithi-prosthodontist-krishna-dental.jpg" alt="Dr. Vidya Sahithi Atluri - MDS Prosthodontist Krishna Dental Clinic Gudivada" style="width:100%;height:100%;object-fit:cover;"></div>
           <div class="team-info">
             <h3>Dr. Vidya Sahithi Atluri<span class="ida-badge">IDA Member</span></h3>
             <div class="team-title">MDS (Prosthodontics) · IDA Member</div>
@@ -1069,45 +788,6 @@
     }, revealOptions);
 
     revealElements.forEach(element => revealOnScroll.observe(element));
-
-    // Lightbox Functionality
-    const lightboxModal = document.getElementById('lightboxModal');
-    const lightboxImage = document.getElementById('lightboxImage');
-    const lightboxCaption = document.getElementById('lightboxCaption');
-    const lightboxClose = document.getElementById('lightboxClose');
-
-    document.querySelectorAll('.gallery-image-wrapper').forEach(wrapper => {
-      wrapper.addEventListener('click', () => {
-        const img = wrapper.querySelector('.gallery-image');
-        const card = wrapper.closest('.gallery-card');
-        const title = card.querySelector('h3').textContent;
-        const desc = card.querySelector('p').textContent;
-
-        lightboxImage.src = img.src;
-        lightboxImage.alt = img.alt;
-        lightboxCaption.innerHTML = `<strong>${title}</strong> — ${desc}`;
-        lightboxModal.classList.add('open');
-        document.body.style.overflow = 'hidden'; // Stop scrolling background
-      });
-    });
-
-    function closeLightbox() {
-      lightboxModal.classList.remove('open');
-      document.body.style.overflow = '';
-      setTimeout(() => {
-        lightboxImage.src = '';
-      }, 300);
-    }
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightboxModal.addEventListener('click', (e) => {
-      if (e.target === lightboxModal) closeLightbox();
-    });
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightboxModal.classList.contains('open')) {
-        closeLightbox();
-      }
-    });
   </script>
 </body>
 </html>
