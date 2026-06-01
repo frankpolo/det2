@@ -364,7 +364,19 @@
       padding: 0 0 24px;
       font-size: 15px; line-height: 1.7; color: var(--text-secondary);
     }
-  </style>
+  
+    /* ── Featured Image ── */
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+</style>
 
   <script type="application/ld+json">
   {
@@ -465,6 +477,7 @@
     ]
   }
   </script>
+  <meta property="og:image" content="https://www.krishnadental.in/images/scaling_cleaning_1780130670101.webp">
 </head>
 <body>
 
@@ -521,6 +534,11 @@
       <span>by <strong>Dr. Vidya Sahithi Atluri, MDS</strong></span>
     </div>
   </section>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/scaling_cleaning_1780130670101.webp" alt="Professional teeth scaling and cleaning" class="featured-image">
+  </div>
 
   <!-- Article Content -->
   <section class="article-section article-body">

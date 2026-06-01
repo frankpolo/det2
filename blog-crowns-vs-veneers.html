@@ -364,7 +364,19 @@
       padding: 0 0 24px;
       font-size: 15px; line-height: 1.7; color: var(--text-secondary);
     }
-  </style>
+  
+    /* ── Featured Image ── */
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+</style>
 
   <script type="application/ld+json">
   {
@@ -410,6 +422,7 @@
     ]
   }
   </script>
+  <meta property="og:image" content="https://www.krishnadental.in/images/crowns_vs_veneers_1780130622839.webp">
 </head>
 <body>
 
@@ -461,9 +474,14 @@
     <h1>Dental Crowns vs Veneers</h1>
     <p>Which Is Right for Your Smile? A Complete Comparison</p>
     <div class="hero-meta">
-      February 5, 2026 Â· 7 min read Â· By Krishna Dental Team
+      February 5, 2026 · 7 min read · By Krishna Dental Team
     </div>
   </section>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/crowns_vs_veneers_1780130622839.webp" alt="Crowns vs veneers clinical comparison" class="featured-image">
+  </div>
 
   <!-- Article Content -->
   <article class="article reveal">

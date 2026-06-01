@@ -356,7 +356,19 @@
       .cta-banner { padding: 32px 20px; }
       .cta-banner h2 { font-size: 22px; }
     }
-  </style>
+  
+    /* ── Featured Image ── */
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+</style>
 
   <script type="application/ld+json">
   {
@@ -397,6 +409,7 @@
     ]
   }
   </script>
+  <meta property="og:image" content="https://www.krishnadental.in/images/traditional-dental-braces-gudivada.webp">
 </head>
 <body>
 
@@ -453,6 +466,11 @@
     </div>
     <p>Your complete guide to dental braces: types available in Gudivada, what to expect during treatment, care tips, and costs. Everything you need to know about straightening your smile.</p>
   </section>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/traditional-dental-braces-gudivada.webp" alt="Traditional orthodontic braces in Gudivada" class="featured-image">
+  </div>
 
   <!-- Article Content -->
   <article class="article">

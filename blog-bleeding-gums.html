@@ -341,7 +341,19 @@
       padding: 0 0 24px;
       font-size: 15px; line-height: 1.7; color: var(--text-secondary);
     }
-  </style>
+  
+    /* ── Featured Image ── */
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+</style>
 
   <script type="application/ld+json">
   {
@@ -388,6 +400,7 @@
     ]
   }
   </script>
+  <meta property="og:image" content="https://www.krishnadental.in/images/gum_treatment.webp">
 </head>
 <body>
 
@@ -436,6 +449,11 @@
   <!-- Hero -->
   <div class="hero">
     <div class="hero-eyebrow">Oral Hygiene</div>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/gum_treatment.webp" alt="Healthy gums and periodontics treatment at Krishna Dental Gudivada" class="featured-image">
+  </div>
     <h1>Why Bleeding Gums Shouldn't Be Ignored</h1>
     <p>Bleeding gums are a warning sign that deserves your attention. Learn what causes them, why they matter for your overall health, and how to treat and prevent gum disease.</p>
     <div class="hero-meta">

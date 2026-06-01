@@ -356,7 +356,19 @@
       padding: 0 0 24px;
       font-size: 15px; line-height: 1.7; color: var(--text-secondary);
     }
-  </style>
+  
+    /* ── Featured Image ── */
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+</style>
 
   <script type="application/ld+json">
   {
@@ -453,6 +465,7 @@
     ]
   }
   </script>
+  <meta property="og:image" content="https://www.krishnadental.in/images/fillings_comparison_1780130567785.webp">
 </head>
 <body>
 
@@ -509,6 +522,11 @@
     </div>
     <p>Everything you need to know about dental fillings — from the different materials available to what you can expect during recovery and cost options in Gudivada.</p>
   </section>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/fillings_comparison_1780130567785.webp" alt="Dental fillings composite vs amalgam comparison" class="featured-image">
+  </div>
 
   <!-- Article Content -->
   <article class="article">

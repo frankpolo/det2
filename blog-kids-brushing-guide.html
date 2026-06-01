@@ -335,7 +335,19 @@
       padding: 0 0 24px;
       font-size: 15px; line-height: 1.7; color: var(--text-secondary);
     }
-  </style>
+  
+    /* ── Featured Image ── */
+    .featured-image-container {
+      max-width: 800px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .featured-image {
+      width: 100%; height: auto;
+      aspect-ratio: 16/9; object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+</style>
 
   <script type="application/ld+json">
   {
@@ -385,6 +397,7 @@
     ]
   }
   </script>
+  <meta property="og:image" content="https://www.krishnadental.in/images/brushing_technique_1780130756558.webp">
 </head>
 <body>
 
@@ -436,9 +449,14 @@
     <h1>Teaching Your Child to Love Brushing</h1>
     <p>A Parent's Guide to Building Healthy Habits That Last a Lifetime</p>
     <div class="hero-meta">
-      February 20, 2026 Â· 7 min read Â· By Krishna Dental Team
+      February 20, 2026 · 7 min read · By Krishna Dental Team
     </div>
   </section>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container reveal">
+    <img src="images/brushing_technique_1780130756558.webp" alt="Teaching proper brushing technique to children" class="featured-image">
+  </div>
 
   <!-- Article Content -->
   <article class="article reveal">
