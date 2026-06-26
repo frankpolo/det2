@@ -414,7 +414,6 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "WebSite",
       "@id": "https://www.krishnadental.in#website",
@@ -430,9 +429,11 @@
         "query-input": "required name=search_term_string"
       }
     },
-
     {
-      "@type": ["Dentist", "MedicalOrganization"],
+      "@type": [
+        "Dentist",
+        "MedicalOrganization"
+      ],
       "@id": "https://www.krishnadental.in#dentist",
       "name": "Krishna Multispeciality Dental Clinic",
       "url": "https://www.krishnadental.in",
@@ -444,9 +445,12 @@
         "height": 200
       },
       "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
-      "telephone": ["+918674244241", "+917997444241"],
-      "email": "vidya&#64;krishnadental&#46;in",
-      "priceRange": "\u20b9\u20b9",
+      "telephone": [
+        "+918674244241",
+        "+917997444241"
+      ],
+      "email": "vidya@krishnadental.in",
+      "priceRange": "₹₹",
       "medicalSpecialty": "Dentistry",
       "currenciesAccepted": "INR",
       "paymentAccepted": "Cash, UPI, Card",
@@ -455,8 +459,10 @@
         "@type": "Person",
         "name": "Dr. Vidya Sahithi Atluri",
         "jobTitle": "MDS Prosthodontist",
-      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
-        "worksFor": { "@id": "https://www.krishnadental.in#dentist" }
+        "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
+        "worksFor": {
+          "@id": "https://www.krishnadental.in#dentist"
+        }
       },
       "employee": {
         "@id": "https://www.krishnadental.in#physician-vidya"
@@ -465,12 +471,15 @@
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "telephone": "+918674244241",
-        "email": "vidya&#64;krishnadental&#46;in",
-        "availableLanguage": ["English", "Telugu"]
+        "email": "vidya@krishnadental.in",
+        "availableLanguage": [
+          "English",
+          "Telugu"
+        ]
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram",
+        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
         "addressLocality": "Gudivada",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "521301",
@@ -484,7 +493,14 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
           "opens": "09:30",
           "closes": "20:30"
         },
@@ -495,21 +511,119 @@
           "closes": "13:00"
         }
       ],
-      "openingHours": ["Mo-Sa 09:30-20:30", "Su 10:00-13:00"],
+      "openingHours": [
+        "Mo-Sa 09:30-20:30",
+        "Su 10:00-13:00"
+      ],
       "areaServed": [
-        "Gudivada", "Rajendra Nagar", "Satyanarayanapuram", "Eluru Road", "Nehru Chowk", "Bhaskar Rao Peta", "Hanuman Nagar", "Venkateswara Rao Peta", "Bethavolu", "Billapadu", "Bommuluru", "Chilakamudi", "Chowtapalli", "Dondapadu", "Gangadharapuram", "Guntakoduru",
-        "Kalvapudi Agraharam", "Kasipudi", "Lingavaram", "Mandapadu", "Merakagudem", "Moturu", "Pedyerukapadu", "Ramachandrapuram",
-        "Ramanapudi", "Saidepudi", "Seepudi", "Seri Golvepalle", "Siddhantam", "Tativarru", "Valivarthipadu", "Nagavarapadu",
-        "Mandavalli", "Penumakalanka", "Manugunuru", "Kovvadalanka", "Chintapadu", "Dayyampadu", "Pulaparru", "Pillipadu", "Nutchumilli",
-        "Nandigamalanka", "Ingilipakalanka", "Thakkellapadu", "Prathipadu", "Bhyravapatnam", "Chavalipadu", "Unikili", "Singanapudi",
-        "Muduthallapadu", "Sobhanadripuram", "Appapuram", "Ayyavari Rudravaram", "Gannavaram", "Mokhasakalvapudi", "Perikegudem",
-        "Kanukollu", "Chintalapudi", "Putlacheruvu", "Pasalapudi", "Lellapudi", "Kaikalur", "Achavaram", "Alapadu", "Atapaka",
-        "Bhujabalapatnam", "Doddipatla", "Gonepadu", "Gopavaram", "Kolletikota", "Kottada", "Pallevada", "Penchikalamarru",
-        "Rachapatnam", "Ramavaram", "Seetanapalle", "Singapuram", "Someswaram", "Syamalambapuram", "Tamarakollu", "Vadarlapadu",
-        "Varahapatnam", "Vemavarappadu", "Vinjaram", "Mudinepalli", "Alluru", "Bomminampadu", "Chevuru", "Chigurukota",
-        "Chinapalaparru", "Dakaram", "Devapudi", "Devaram", "Gokinampadu", "Guraja", "Kakaravada", "Korraguntapalem",
-        "Mulakalapalle", "Pedagonnuru", "Komarru", "Gudlavalleru", "Pamarru", "Nandivada",
-        "Eluru", "Machilipatnam", "Nuzvid", "Krishna district", "Andhra Pradesh"
+        "Gudivada",
+        "Rajendra Nagar",
+        "Satyanarayanapuram",
+        "Eluru Road",
+        "Nehru Chowk",
+        "Bhaskar Rao Peta",
+        "Hanuman Nagar",
+        "Venkateswara Rao Peta",
+        "Bethavolu",
+        "Billapadu",
+        "Bommuluru",
+        "Chilakamudi",
+        "Chowtapalli",
+        "Dondapadu",
+        "Gangadharapuram",
+        "Guntakoduru",
+        "Kalvapudi Agraharam",
+        "Kasipudi",
+        "Lingavaram",
+        "Mandapadu",
+        "Merakagudem",
+        "Moturu",
+        "Pedyerukapadu",
+        "Ramachandrapuram",
+        "Ramanapudi",
+        "Saidepudi",
+        "Seepudi",
+        "Seri Golvepalle",
+        "Siddhantam",
+        "Tativarru",
+        "Valivarthipadu",
+        "Nagavarapadu",
+        "Mandavalli",
+        "Penumakalanka",
+        "Manugunuru",
+        "Kovvadalanka",
+        "Chintapadu",
+        "Dayyampadu",
+        "Pulaparru",
+        "Pillipadu",
+        "Nutchumilli",
+        "Nandigamalanka",
+        "Ingilipakalanka",
+        "Thakkellapadu",
+        "Prathipadu",
+        "Bhyravapatnam",
+        "Chavalipadu",
+        "Unikili",
+        "Singanapudi",
+        "Muduthallapadu",
+        "Sobhanadripuram",
+        "Appapuram",
+        "Ayyavari Rudravaram",
+        "Gannavaram",
+        "Mokhasakalvapudi",
+        "Perikegudem",
+        "Kanukollu",
+        "Chintalapudi",
+        "Putlacheruvu",
+        "Pasalapudi",
+        "Lellapudi",
+        "Kaikalur",
+        "Achavaram",
+        "Alapadu",
+        "Atapaka",
+        "Bhujabalapatnam",
+        "Doddipatla",
+        "Gonepadu",
+        "Gopavaram",
+        "Kolletikota",
+        "Kottada",
+        "Pallevada",
+        "Penchikalamarru",
+        "Rachapatnam",
+        "Ramavaram",
+        "Seetanapalle",
+        "Singapuram",
+        "Someswaram",
+        "Syamalambapuram",
+        "Tamarakollu",
+        "Vadarlapadu",
+        "Varahapatnam",
+        "Vemavarappadu",
+        "Vinjaram",
+        "Mudinepalli",
+        "Alluru",
+        "Bomminampadu",
+        "Chevuru",
+        "Chigurukota",
+        "Chinapalaparru",
+        "Dakaram",
+        "Devapudi",
+        "Devaram",
+        "Gokinampadu",
+        "Guraja",
+        "Kakaravada",
+        "Korraguntapalem",
+        "Mulakalapalle",
+        "Pedagonnuru",
+        "Komarru",
+        "Gudlavalleru",
+        "Pamarru",
+        "Nandivada",
+        "Eluru",
+        "Machilipatnam",
+        "Nuzvid",
+        "Krishna district",
+        "Andhra Pradesh"
       ],
       "availableService": [
         {
@@ -658,7 +772,7 @@
         "bestRating": "5",
         "worstRating": "1"
       },
-            "review": [
+      "review": [
         {
           "@type": "Review",
           "author": {
@@ -747,7 +861,6 @@
         "https://www.bing.com/maps?ss=ypid.YN4070x8565180883905302686"
       ]
     },
-
     {
       "@type": "Physician",
       "@id": "https://www.krishnadental.in#physician-vidya",
@@ -760,20 +873,24 @@
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "MDS Prosthodontics"
       },
-      "worksFor": { "@id": "https://www.krishnadental.in#dentist" },
+      "worksFor": {
+        "@id": "https://www.krishnadental.in#dentist"
+      },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram",
+        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
         "addressLocality": "Gudivada",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "521301",
         "addressCountry": "IN"
       },
       "telephone": "+918674244241",
-      "email": "vidya&#64;krishnadental&#46;in",
-      "url": "https://www.krishnadental.in/dr-vidya-prosthodontist.html"
+      "email": "vidya@krishnadental.in",
+      "url": "https://www.krishnadental.in/dr-vidya-prosthodontist.html",
+      "sameAs": [
+        "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311"
+      ]
     },
-
     {
       "@type": "FAQPage",
       "@id": "https://www.krishnadental.in#faq",
@@ -940,7 +1057,6 @@
         }
       ]
     }
-
   ]
 }
 </script>
@@ -1175,13 +1291,13 @@
       <div class="location-grid">
         <div class="location-info">
           <h3>Address</h3>
-          <p>10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram, Gudivada, Andhra Pradesh 521301<br>India</p>
+          <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301<br>India</p>
 
           <h3 style="margin-top: 24px;">Contact Us</h3>
           <p>
             <a href="tel:+918674244241">+918674244241</a><br>
             <a href="tel:+917997444241">+917997444241</a><br>
-            <a href="mailto:vidya&#64;krishnadental&#46;in">vidya&#64;krishnadental&#46;in</a>
+            <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
           </p>
 
           <div class="location-hours">
@@ -1253,10 +1369,10 @@
       </div>
       <div class="footer-col">
         <h3>Visit Us</h3>
-        <p>10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram, Gudivada, Andhra Pradesh 521301</p>
+        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301</p>
         <a href="tel:+918674244241">+918674244241</a>
         <a href="tel:+917997444241">+917997444241</a>
-        <a href="mailto:vidya&#64;krishnadental&#46;in">vidya&#64;krishnadental&#46;in</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
         <p style="margin-top: 12px; font-size: 13px; opacity: 0.85;">
           Mon - Sat: 9:30 am - 8:30 pm<br>
           Sun: 10:00 am - 1:00 pm
@@ -1265,6 +1381,9 @@
     </div>
     <div class="footer-bottom">
       &copy; 2024 - 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
+      <span style="opacity: 0.85; display: block; margin-top: 4px; line-height: 1.2;">ABDM Registered Healthcare Facility (ID: <a href="https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">IN2810020530</a>)</span>
+      
+      
     </div>
   </footer>
 

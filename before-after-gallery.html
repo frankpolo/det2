@@ -388,62 +388,81 @@
     .reveal.visible { opacity: 1; transform: translateY(0); }
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MedicalWebPage",
-        "@id": "https://www.krishnadental.in/before-after-gallery.html#webpage",
-        "url": "https://www.krishnadental.in/before-after-gallery.html",
-        "name": "Before & After Patient Smile Gallery",
-        "description": "Interactive before-and-after smile transformations. See the real clinical aesthetic results of cosmetic dentistry, braces, and implants.",
-        "isPartOf": { "@id": "https://www.krishnadental.in#website" }
-      },
-      {
-        "@type": "Dentist",
-        "@id": "https://www.krishnadental.in#dentist",
-        "name": "Krishna Multispeciality Dental Clinic",
-        "url": "https://www.krishnadental.in",
-        "telephone": "+918674244241",
-        "image": "https://www.krishnadental.in/images/smile-design-makeover-gudivada.webp",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram",
-          "addressLocality": "Gudivada",
-          "addressRegion": "Andhra Pradesh",
-          "postalCode": "521301",
-          "addressCountry": "IN"
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.krishnadental.in/before-after-gallery.html#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krishnadental.in" },
-          { "@type": "ListItem", "position": 2, "name": "Smile Gallery", "item": "https://www.krishnadental.in/before-after-gallery.html" }
-        ]
-      },
-      {
-        "@type": "VisualArtwork",
-        "@id": "https://www.krishnadental.in/before-after-gallery.html#artwork-braces",
-        "name": "Orthodontic Braces Treatment Alignment Before & After",
-        "creator": { "@id": "https://www.krishnadental.in#physician-vidya" },
-        "artform": "Photograph",
-        "description": "Before and after dental alignment transformation showing the clinical results of braces treatment.",
-        "image": "https://www.krishnadental.in/images/treatmentpics/orthodontics-after.webp"
-      },
-      {
-        "@type": "VisualArtwork",
-        "@id": "https://www.krishnadental.in/before-after-gallery.html#artwork-veneers",
-        "name": "Cosmetic Smile Makeover Veneers Before & After",
-        "creator": { "@id": "https://www.krishnadental.in#physician-vidya" },
-        "artform": "Photograph",
-        "description": "Before and after dental veneers smile makeover designed for structural aesthetics and alignment.",
-        "image": "https://www.krishnadental.in/images/treatmentpics/smile-makeover-after.webp"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://www.krishnadental.in/before-after-gallery.html#webpage",
+      "url": "https://www.krishnadental.in/before-after-gallery.html",
+      "name": "Before & After Patient Smile Gallery",
+      "description": "Interactive before-and-after smile transformations. See the real clinical aesthetic results of cosmetic dentistry, braces, and implants.",
+      "isPartOf": {
+        "@id": "https://www.krishnadental.in#website"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Dentist",
+      "@id": "https://www.krishnadental.in#dentist",
+      "name": "Krishna Multispeciality Dental Clinic",
+      "url": "https://www.krishnadental.in",
+      "telephone": "+918674244241",
+      "image": "https://www.krishnadental.in/images/smile-design-makeover-gudivada.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+        "addressLocality": "Gudivada",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "521301",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.krishnadental.in/before-after-gallery.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.krishnadental.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Smile Gallery",
+          "item": "https://www.krishnadental.in/before-after-gallery.html"
+        }
+      ]
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.krishnadental.in/before-after-gallery.html#artwork-braces",
+      "name": "Orthodontic Braces Treatment Alignment Before & After",
+      "creator": {
+        "@id": "https://www.krishnadental.in#physician-vidya"
+      },
+      "artform": "Photograph",
+      "description": "Before and after dental alignment transformation showing the clinical results of braces treatment.",
+      "image": "https://www.krishnadental.in/images/treatmentpics/orthodontics-after.webp"
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.krishnadental.in/before-after-gallery.html#artwork-veneers",
+      "name": "Cosmetic Smile Makeover Veneers Before & After",
+      "creator": {
+        "@id": "https://www.krishnadental.in#physician-vidya"
+      },
+      "artform": "Photograph",
+      "description": "Before and after dental veneers smile makeover designed for structural aesthetics and alignment.",
+      "image": "https://www.krishnadental.in/images/treatmentpics/smile-makeover-after.webp"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -644,10 +663,10 @@
       </div>
       <div class="footer-col">
         <h3>Visit Us</h3>
-        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
+        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram,<br>Gudivada, Andhra Pradesh 521301</p>
         <a href="tel:+918674244241">+918674244241</a>
         <a href="tel:+917997444241">+917997444241</a>
-        <a href="mailto:vidya&#64;krishnadental&#46;in">vidya&#64;krishnadental&#46;in</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
         <p style="margin-top: 12px; font-size: 13px; opacity: 0.85;">
           Mon – Sat: 9:30 am – 8:30 pm<br>
           Sun: 10:00 am – 1:00 pm
@@ -656,6 +675,7 @@
     </div>
     <div class="footer-bottom">
       &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
+      <span style="opacity: 0.85; display: block; margin-top: 4px; line-height: 1.2;">ABDM Registered Healthcare Facility (ID: <a href="https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">IN2810020530</a>)</span>
     </div>
   </footer>
 

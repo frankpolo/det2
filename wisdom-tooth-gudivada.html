@@ -312,171 +312,195 @@
 
   <script type="application/ld+json">
 {
-        "@context": "https://schema.org",
-        "@graph": [
-                {
-                        "@type": "Dentist",
-                        "name": "Krishna Multispeciality Dental Clinic",
-                        "@id": "https://www.krishnadental.in#dentist",
-                        "url": "https://www.krishnadental.in",
-                        "telephone": [
-                                "+918674244241",
-                                "+917997444241"
-                        ],
-                        "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram",
-                                "addressLocality": "Gudivada",
-                                "addressRegion": "Andhra Pradesh",
-                                "postalCode": "521301",
-                                "addressCountry": "IN"
-                        },
-                        "geo": {
-                                "@type": "GeoCoordinates",
-                                "latitude": 16.4424385,
-                                "longitude": 80.9895544
-                        },
-                        "openingHoursSpecification": [
-                                {
-                                        "@type": "OpeningHoursSpecification",
-                                        "dayOfWeek": [
-                                                "Monday",
-                                                "Tuesday",
-                                                "Wednesday",
-                                                "Thursday",
-                                                "Friday",
-                                                "Saturday"
-                                        ],
-                                        "opens": "09:30",
-                                        "closes": "20:30"
-                                },
-                                {
-                                        "@type": "OpeningHoursSpecification",
-                                        "dayOfWeek": "Sunday",
-                                        "opens": "10:00",
-                                        "closes": "13:00"
-                                }
-                        ],
-                        "areaServed": [
-        {"@type": "City", "name": "Gudivada"},
-        {"@type": "Neighborhood", "name": "Rajendra Nagar"},
-        {"@type": "Neighborhood", "name": "Satyanarayanapuram"},
-        {"@type": "Neighborhood", "name": "Eluru Road"},
-        {"@type": "Neighborhood", "name": "Nehru Chowk"},
-        {"@type": "AdministrativeArea", "name": "Krishna District"},
-        {"@type": "AdministrativeArea", "name": "Andhra Pradesh"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "name": "Krishna Multispeciality Dental Clinic",
+      "@id": "https://www.krishnadental.in#dentist",
+      "url": "https://www.krishnadental.in",
+      "telephone": [
+        "+918674244241",
+        "+917997444241"
       ],
-                        "medicalSpecialty": [
-                                "Dentistry",
-                                "Prosthodontics",
-                                "Orthodontics",
-                                "Endodontics"
-                        ],
-                        "openingHours": [
-                                "Mo-Sa 09:30-20:30",
-                                "Su 10:00-13:00"
-                        ],
-                        "priceRange": "â‚¹â‚¹",
-                        "hasMap": "https://maps.google.com/?cid=9656988855459684632"
-                },
-                {
-                        "@type": "MedicalProcedure",
-                        "name": "Wisdom Tooth Removal",
-                        "procedureType": "https://schema.org/InvasiveProcedure",
-                        "description": "Safe extraction of impacted or problematic wisdom teeth by experienced oral surgeons at Krishna Dental Hospital, Gudivada.",
-                        "howPerformed": "X-ray assessment, local anaesthesia, careful extraction technique, and comprehensive aftercare to ensure fast recovery.",
-                        "bodyLocation": "Wisdom Teeth",
-                        "availableService": {
-                                "@type": "MedicalClinic",
-                                "name": "Krishna Multispeciality Dental Clinic"
-                        },
-                        "expectedPrognosis": "Good outcomes with early treatment and proper post-procedure care.",
-                        "followUp": "Regular dental check-ups every 6 months recommended after treatment.",
-                        "status": "https://schema.org/ActiveActionStatus",
-                        "potentialAction": {
-                                "@type": "ReserveAction",
-                                "target": "tel:+918674244241",
-                                "name": "Book appointment"
-                        }
-                },
-                {
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                                {
-                                        "@type": "ListItem",
-                                        "position": 1,
-                                        "name": "Home",
-                                        "item": "https://www.krishnadental.in"
-                                },
-                                {
-                                        "@type": "ListItem",
-                                        "position": 2,
-                                        "name": "Treatments",
-                                        "item": "https://www.krishnadental.in/dental-treatment.html"
-                                },
-                                {
-                                        "@type": "ListItem",
-                                        "position": 3,
-                                        "name": "Wisdom Tooth Removal"
-                                }
-                        ]
-                },
-                {
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                                {
-                                        "@type": "Question",
-                                        "name": "Is wisdom tooth removal really necessary?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Not all wisdom teeth require extraction. However, if a third molar is impacted, crowding nearby teeth, or causing chronic swelling (pericoronitis), our specialists at Krishna Dental Hospital in Gudivada recommend surgical extraction to safeguard your overall oral health."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How painful is the extraction procedure?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "The wisdom tooth extraction procedure itself is completely painless. At our Gudivada clinic, our experienced oral surgeons use advanced local anesthetics to ensure complete numbness, so you only feel mild pressure during the procedure. Post-operative discomfort is easily managed with prescribed recovery medications."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How long is the recovery time after removal?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Initial soft tissue healing takes about 7 to 10 days. At Krishna Multispeciality Dental Hospital, we provide comprehensive recovery kits and instructions. While you can comfortably resume normal activities in Gudivada within a couple of days, complete bone healing in the socket takes about 3 to 6 months."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "Can I eat after wisdom tooth removal?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Yes, but you must stick to soft, cool foods (like curd, smoothies, and mashed potatoes) for the first 24 to 48 hours. Avoid hot, spicy, or crunchy foods, and do not use a straw, as the suction can dislodge the healing blood clot."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How much does wisdom tooth extraction cost in Gudivada?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "The cost of wisdom tooth removal in Gudivada depends on whether it is a simple extraction or a complex surgical extraction for an impacted tooth. At Krishna Dental, we provide transparent, upfront pricing details during your initial digital X-ray evaluation."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "What if I don't remove my wisdom teeth?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Leaving impacted wisdom teeth untreated can lead to severe tooth decay in neighboring molars, painful gum infections, cyst formation, and bite misalignment. Early surgical evaluation at our Gudivada clinic prevents these complex conditions."
-                                        }
-                                }
-                        ]
-                }
-        ]
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+        "addressLocality": "Gudivada",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "521301",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 16.4424385,
+        "longitude": 80.9895544
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:30",
+          "closes": "20:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "13:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Gudivada"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Rajendra Nagar"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Satyanarayanapuram"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Eluru Road"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Nehru Chowk"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Krishna District"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Andhra Pradesh"
+        }
+      ],
+      "medicalSpecialty": [
+        "Dentistry",
+        "Prosthodontics",
+        "Orthodontics",
+        "Endodontics"
+      ],
+      "openingHours": [
+        "Mo-Sa 09:30-20:30",
+        "Su 10:00-13:00"
+      ],
+      "priceRange": "â‚¹â‚¹",
+      "hasMap": "https://maps.google.com/?cid=9656988855459684632",
+      "sameAs": [
+        "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530"
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Wisdom Tooth Removal",
+      "procedureType": "https://schema.org/InvasiveProcedure",
+      "description": "Safe extraction of impacted or problematic wisdom teeth by experienced oral surgeons at Krishna Dental Hospital, Gudivada.",
+      "howPerformed": "X-ray assessment, local anaesthesia, careful extraction technique, and comprehensive aftercare to ensure fast recovery.",
+      "bodyLocation": "Wisdom Teeth",
+      "availableService": {
+        "@type": "MedicalClinic",
+        "name": "Krishna Multispeciality Dental Clinic"
+      },
+      "expectedPrognosis": "Good outcomes with early treatment and proper post-procedure care.",
+      "followUp": "Regular dental check-ups every 6 months recommended after treatment.",
+      "status": "https://schema.org/ActiveActionStatus",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "tel:+918674244241",
+        "name": "Book appointment"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.krishnadental.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Treatments",
+          "item": "https://www.krishnadental.in/dental-treatment.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wisdom Tooth Removal"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is wisdom tooth removal really necessary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not all wisdom teeth require extraction. However, if a third molar is impacted, crowding nearby teeth, or causing chronic swelling (pericoronitis), our specialists at Krishna Dental Hospital in Gudivada recommend surgical extraction to safeguard your overall oral health."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How painful is the extraction procedure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The wisdom tooth extraction procedure itself is completely painless. At our Gudivada clinic, our experienced oral surgeons use advanced local anesthetics to ensure complete numbness, so you only feel mild pressure during the procedure. Post-operative discomfort is easily managed with prescribed recovery medications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is the recovery time after removal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initial soft tissue healing takes about 7 to 10 days. At Krishna Multispeciality Dental Hospital, we provide comprehensive recovery kits and instructions. While you can comfortably resume normal activities in Gudivada within a couple of days, complete bone healing in the socket takes about 3 to 6 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I eat after wisdom tooth removal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but you must stick to soft, cool foods (like curd, smoothies, and mashed potatoes) for the first 24 to 48 hours. Avoid hot, spicy, or crunchy foods, and do not use a straw, as the suction can dislodge the healing blood clot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does wisdom tooth extraction cost in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of wisdom tooth removal in Gudivada depends on whether it is a simple extraction or a complex surgical extraction for an impacted tooth. At Krishna Dental, we provide transparent, upfront pricing details during your initial digital X-ray evaluation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I don't remove my wisdom teeth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leaving impacted wisdom teeth untreated can lead to severe tooth decay in neighboring molars, painful gum infections, cyst formation, and bite misalignment. Early surgical evaluation at our Gudivada clinic prevents these complex conditions."
+          }
+        }
+      ]
+    }
+  ]
 }
-  </script>
+</script>
 </head>
 <body>
 
@@ -811,10 +835,10 @@
       </div>
       <div class="footer-col">
         <h3>Visit Us</h3>
-        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
+        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram,<br>Gudivada, Andhra Pradesh 521301</p>
         <a href="tel:+918674244241">+918674244241</a>
         <a href="tel:+917997444241">+917997444241</a>
-        <a href="mailto:vidya&#64;krishnadental&#46;in">vidya&#64;krishnadental&#46;in</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
         <p style="margin-top: 12px; font-size: 13px; opacity: 0.85;">
           Mon – Sat: 9:30 am – 8:30 pm<br>
           Sun: 10:00 am – 1:00 pm
@@ -823,6 +847,7 @@
     </div>
     <div class="footer-bottom">
       &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
+      <span style="opacity: 0.85; display: block; margin-top: 4px; line-height: 1.2;">ABDM Registered Healthcare Facility (ID: <a href="https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">IN2810020530</a>)</span>
     </div>
   </footer>
 

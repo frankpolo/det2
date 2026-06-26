@@ -312,171 +312,195 @@
 
   <script type="application/ld+json">
 {
-        "@context": "https://schema.org",
-        "@graph": [
-                {
-                        "@type": "Dentist",
-                        "name": "Krishna Multispeciality Dental Clinic",
-                        "@id": "https://www.krishnadental.in#dentist",
-                        "url": "https://www.krishnadental.in",
-                        "telephone": [
-                                "+918674244241",
-                                "+917997444241"
-                        ],
-                        "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram",
-                                "addressLocality": "Gudivada",
-                                "addressRegion": "Andhra Pradesh",
-                                "postalCode": "521301",
-                                "addressCountry": "IN"
-                        },
-                        "geo": {
-                                "@type": "GeoCoordinates",
-                                "latitude": 16.4424385,
-                                "longitude": 80.9895544
-                        },
-                        "openingHoursSpecification": [
-                                {
-                                        "@type": "OpeningHoursSpecification",
-                                        "dayOfWeek": [
-                                                "Monday",
-                                                "Tuesday",
-                                                "Wednesday",
-                                                "Thursday",
-                                                "Friday",
-                                                "Saturday"
-                                        ],
-                                        "opens": "09:30",
-                                        "closes": "20:30"
-                                },
-                                {
-                                        "@type": "OpeningHoursSpecification",
-                                        "dayOfWeek": "Sunday",
-                                        "opens": "10:00",
-                                        "closes": "13:00"
-                                }
-                        ],
-                        "areaServed": [
-        {"@type": "City", "name": "Gudivada"},
-        {"@type": "Neighborhood", "name": "Rajendra Nagar"},
-        {"@type": "Neighborhood", "name": "Satyanarayanapuram"},
-        {"@type": "Neighborhood", "name": "Eluru Road"},
-        {"@type": "Neighborhood", "name": "Nehru Chowk"},
-        {"@type": "AdministrativeArea", "name": "Krishna District"},
-        {"@type": "AdministrativeArea", "name": "Andhra Pradesh"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "name": "Krishna Multispeciality Dental Clinic",
+      "@id": "https://www.krishnadental.in#dentist",
+      "url": "https://www.krishnadental.in",
+      "telephone": [
+        "+918674244241",
+        "+917997444241"
       ],
-                        "medicalSpecialty": [
-                                "Dentistry",
-                                "Prosthodontics",
-                                "Orthodontics",
-                                "Endodontics"
-                        ],
-                        "openingHours": [
-                                "Mo-Sa 09:30-20:30",
-                                "Su 10:00-13:00"
-                        ],
-                        "priceRange": "â‚¹â‚¹",
-                        "hasMap": "https://maps.google.com/?cid=9656988855459684632"
-                },
-                {
-                        "@type": "MedicalProcedure",
-                        "name": "Dental Implant",
-                        "procedureType": "https://schema.org/NoninvasiveProcedure",
-                        "description": "Permanent tooth replacement using biocompatible titanium implants at Krishna Dental Hospital, Gudivada.",
-                        "howPerformed": "A titanium post is surgically placed in the jawbone, allowed to integrate over several months, then crowned with a natural-looking restoration.",
-                        "bodyLocation": "Tooth",
-                        "availableService": {
-                                "@type": "MedicalClinic",
-                                "name": "Krishna Multispeciality Dental Clinic"
-                        },
-                        "expectedPrognosis": "Good outcomes with early treatment and proper post-procedure care.",
-                        "followUp": "Regular dental check-ups every 6 months recommended after treatment.",
-                        "status": "https://schema.org/ActiveActionStatus",
-                        "potentialAction": {
-                                "@type": "ReserveAction",
-                                "target": "tel:+918674244241",
-                                "name": "Book appointment"
-                        }
-                },
-                {
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                                {
-                                        "@type": "ListItem",
-                                        "position": 1,
-                                        "name": "Home",
-                                        "item": "https://www.krishnadental.in"
-                                },
-                                {
-                                        "@type": "ListItem",
-                                        "position": 2,
-                                        "name": "Treatments",
-                                        "item": "https://www.krishnadental.in/dental-treatment.html"
-                                },
-                                {
-                                        "@type": "ListItem",
-                                        "position": 3,
-                                        "name": "Dental Implants"
-                                }
-                        ]
-                },
-                {
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                                {
-                                        "@type": "Question",
-                                        "name": "Is the implant procedure painful?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "No, dental implant placement at Krishna Dental Hospital in Gudivada is a minor, comfortable surgical procedure. We perform the treatment under advanced local anesthesia to ensure you feel absolutely no pain — only slight pressure. Most patients find recovery is highly manageable with mild over-the-counter anti-inflammatories."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How long do dental implants last?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "With excellent oral hygiene, dental implants placed at our Gudivada practice can last a lifetime. Titanium is biocompatible and naturally osseointegrates (fuses) with your jawbone. While the structural implant post remains permanently, the visible custom porcelain crown is designed to resist wear for decades."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "What is the cost of dental implants in Gudivada?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "The cost of dental implants in Gudivada varies depending on bone density, number of missing teeth, and the implant system selected (such as Osstem or Straumann). Krishna Multispeciality Dental Hospital offers transparent treatment plans with easy EMI payment structures to fit your budget."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "Am I a candidate for dental implants?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Most adults in good systemic health with missing teeth are excellent candidates. During your diagnostic consultation in Gudivada, Dr. Vidya uses 3D digital scans to check your jawbone density. If bone height is insufficient, we perform minor bone grafting first to establish a solid implant foundation."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "What's the difference between implants and dentures?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Dental implants are permanent, stable replacements anchored into the jawbone that preserve bone structure and restore 100% chewing force. Removable dentures rest on the gums, can slip while eating or speaking, and accelerate bone loss over time. Implants offer superior stability and comfort."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How long is the recovery time?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Most patients resume light daily activities within 24 to 48 hours. Complete gum healing takes 7 to 10 days. The titanium post then fuses with the bone over a 3 to 6 month osseointegration period before Dr. Vidya fits your final custom zirconia crown at our Gudivada clinic."
-                                        }
-                                }
-                        ]
-                }
-        ]
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+        "addressLocality": "Gudivada",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "521301",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 16.4424385,
+        "longitude": 80.9895544
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:30",
+          "closes": "20:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "13:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Gudivada"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Rajendra Nagar"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Satyanarayanapuram"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Eluru Road"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Nehru Chowk"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Krishna District"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Andhra Pradesh"
+        }
+      ],
+      "medicalSpecialty": [
+        "Dentistry",
+        "Prosthodontics",
+        "Orthodontics",
+        "Endodontics"
+      ],
+      "openingHours": [
+        "Mo-Sa 09:30-20:30",
+        "Su 10:00-13:00"
+      ],
+      "priceRange": "â‚¹â‚¹",
+      "hasMap": "https://maps.google.com/?cid=9656988855459684632",
+      "sameAs": [
+        "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530"
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Dental Implant",
+      "procedureType": "https://schema.org/NoninvasiveProcedure",
+      "description": "Permanent tooth replacement using biocompatible titanium implants at Krishna Dental Hospital, Gudivada.",
+      "howPerformed": "A titanium post is surgically placed in the jawbone, allowed to integrate over several months, then crowned with a natural-looking restoration.",
+      "bodyLocation": "Tooth",
+      "availableService": {
+        "@type": "MedicalClinic",
+        "name": "Krishna Multispeciality Dental Clinic"
+      },
+      "expectedPrognosis": "Good outcomes with early treatment and proper post-procedure care.",
+      "followUp": "Regular dental check-ups every 6 months recommended after treatment.",
+      "status": "https://schema.org/ActiveActionStatus",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "tel:+918674244241",
+        "name": "Book appointment"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.krishnadental.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Treatments",
+          "item": "https://www.krishnadental.in/dental-treatment.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dental Implants"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the implant procedure painful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, dental implant placement at Krishna Dental Hospital in Gudivada is a minor, comfortable surgical procedure. We perform the treatment under advanced local anesthesia to ensure you feel absolutely no pain — only slight pressure. Most patients find recovery is highly manageable with mild over-the-counter anti-inflammatories."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do dental implants last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With excellent oral hygiene, dental implants placed at our Gudivada practice can last a lifetime. Titanium is biocompatible and naturally osseointegrates (fuses) with your jawbone. While the structural implant post remains permanently, the visible custom porcelain crown is designed to resist wear for decades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of dental implants in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of dental implants in Gudivada varies depending on bone density, number of missing teeth, and the implant system selected (such as Osstem or Straumann). Krishna Multispeciality Dental Hospital offers transparent treatment plans with easy EMI payment structures to fit your budget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Am I a candidate for dental implants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most adults in good systemic health with missing teeth are excellent candidates. During your diagnostic consultation in Gudivada, Dr. Vidya uses 3D digital scans to check your jawbone density. If bone height is insufficient, we perform minor bone grafting first to establish a solid implant foundation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between implants and dentures?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dental implants are permanent, stable replacements anchored into the jawbone that preserve bone structure and restore 100% chewing force. Removable dentures rest on the gums, can slip while eating or speaking, and accelerate bone loss over time. Implants offer superior stability and comfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is the recovery time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients resume light daily activities within 24 to 48 hours. Complete gum healing takes 7 to 10 days. The titanium post then fuses with the bone over a 3 to 6 month osseointegration period before Dr. Vidya fits your final custom zirconia crown at our Gudivada clinic."
+          }
+        }
+      ]
+    }
+  ]
 }
-  </script>
+</script>
 </head>
 <body>
 
@@ -809,10 +833,10 @@
       </div>
       <div class="footer-col">
         <h3>Visit Us</h3>
-        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
+        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram,<br>Gudivada, Andhra Pradesh 521301</p>
         <a href="tel:+918674244241">+918674244241</a>
         <a href="tel:+917997444241">+917997444241</a>
-        <a href="mailto:vidya&#64;krishnadental&#46;in">vidya&#64;krishnadental&#46;in</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
         <p style="margin-top: 12px; font-size: 13px; opacity: 0.85;">
           Mon – Sat: 9:30 am – 8:30 pm<br>
           Sun: 10:00 am – 1:00 pm
@@ -821,6 +845,7 @@
     </div>
     <div class="footer-bottom">
       &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
+      <span style="opacity: 0.85; display: block; margin-top: 4px; line-height: 1.2;">ABDM Registered Healthcare Facility (ID: <a href="https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">IN2810020530</a>)</span>
     </div>
   </footer>
 

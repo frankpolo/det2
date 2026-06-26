@@ -312,171 +312,195 @@
 
   <script type="application/ld+json">
 {
-        "@context": "https://schema.org",
-        "@graph": [
-                {
-                        "@type": "Dentist",
-                        "name": "Krishna Multispeciality Dental Clinic",
-                        "@id": "https://www.krishnadental.in#dentist",
-                        "url": "https://www.krishnadental.in",
-                        "telephone": [
-                                "+918674244241",
-                                "+917997444241"
-                        ],
-                        "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus pharmacy), Satyanarayana Puram",
-                                "addressLocality": "Gudivada",
-                                "addressRegion": "Andhra Pradesh",
-                                "postalCode": "521301",
-                                "addressCountry": "IN"
-                        },
-                        "geo": {
-                                "@type": "GeoCoordinates",
-                                "latitude": 16.4424385,
-                                "longitude": 80.9895544
-                        },
-                        "openingHoursSpecification": [
-                                {
-                                        "@type": "OpeningHoursSpecification",
-                                        "dayOfWeek": [
-                                                "Monday",
-                                                "Tuesday",
-                                                "Wednesday",
-                                                "Thursday",
-                                                "Friday",
-                                                "Saturday"
-                                        ],
-                                        "opens": "09:30",
-                                        "closes": "20:30"
-                                },
-                                {
-                                        "@type": "OpeningHoursSpecification",
-                                        "dayOfWeek": "Sunday",
-                                        "opens": "10:00",
-                                        "closes": "13:00"
-                                }
-                        ],
-                        "areaServed": [
-        {"@type": "City", "name": "Gudivada"},
-        {"@type": "Neighborhood", "name": "Rajendra Nagar"},
-        {"@type": "Neighborhood", "name": "Satyanarayanapuram"},
-        {"@type": "Neighborhood", "name": "Eluru Road"},
-        {"@type": "Neighborhood", "name": "Nehru Chowk"},
-        {"@type": "AdministrativeArea", "name": "Krishna District"},
-        {"@type": "AdministrativeArea", "name": "Andhra Pradesh"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "name": "Krishna Multispeciality Dental Clinic",
+      "@id": "https://www.krishnadental.in#dentist",
+      "url": "https://www.krishnadental.in",
+      "telephone": [
+        "+918674244241",
+        "+917997444241"
       ],
-                        "medicalSpecialty": [
-                                "Dentistry",
-                                "Prosthodontics",
-                                "Orthodontics",
-                                "Endodontics"
-                        ],
-                        "openingHours": [
-                                "Mo-Sa 09:30-20:30",
-                                "Su 10:00-13:00"
-                        ],
-                        "priceRange": "â‚¹â‚¹",
-                        "hasMap": "https://maps.google.com/?cid=9656988855459684632"
-                },
-                {
-                        "@type": "MedicalProcedure",
-                        "name": "Root Canal Treatment",
-                        "procedureType": "https://schema.org/NoninvasiveProcedure",
-                        "description": "Root canal treatment to save infected or damaged teeth using modern techniques at Krishna Dental Hospital, Gudivada.",
-                        "howPerformed": "The infected pulp is removed, the canal is cleaned and shaped, then sealed with a biocompatible material.",
-                        "bodyLocation": "Tooth",
-                        "availableService": {
-                                "@type": "MedicalClinic",
-                                "name": "Krishna Multispeciality Dental Clinic"
-                        },
-                        "expectedPrognosis": "Good outcomes with early treatment and proper post-procedure care.",
-                        "followUp": "Regular dental check-ups every 6 months recommended after treatment.",
-                        "status": "https://schema.org/ActiveActionStatus",
-                        "potentialAction": {
-                                "@type": "ReserveAction",
-                                "target": "tel:+918674244241",
-                                "name": "Book appointment"
-                        }
-                },
-                {
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                                {
-                                        "@type": "ListItem",
-                                        "position": 1,
-                                        "name": "Home",
-                                        "item": "https://www.krishnadental.in"
-                                },
-                                {
-                                        "@type": "ListItem",
-                                        "position": 2,
-                                        "name": "Treatments",
-                                        "item": "https://www.krishnadental.in/dental-treatment.html"
-                                },
-                                {
-                                        "@type": "ListItem",
-                                        "position": 3,
-                                        "name": "Root Canal Treatment"
-                                }
-                        ]
-                },
-                {
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                                {
-                                        "@type": "Question",
-                                        "name": "Is root canal treatment painful?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "No, modern root canal treatments at Krishna Dental Hospital in Gudivada are designed to be completely painless. Led by our MDS specialists, we use advanced localized anesthetics and digital rotary endodontics to ensure absolute comfort. The procedure is performed to immediately relieve the severe pain caused by infection, rather than causing pain."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How long does a root canal take?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "At our Gudivada clinic, a root canal typically takes 1 to 2 visits. For standard infections, Dr. Vidya can perform a single-sitting root canal in under 60 minutes. If the infection is complex or includes an abscess, a second visit is scheduled to place sterile, clinical-grade dressings inside the canals to ensure success before sealing it."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "What is the cost of root canal treatment in Gudivada?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "The cost of root canal treatment in Gudivada varies depending on the severity of the infection and if a custom zirconia crown is fitted. At Krishna Dental Hospital, we offer transparent pricing alongside easy monthly installment (EMI) options so that quality dental care is accessible to all families."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "How long does a root canal last?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "A root canal-treated tooth backed by a custom-fit crown can last a lifetime with proper oral hygiene. At Krishna Multispeciality Dental Hospital in Gudivada, we offer structural crowns (like Zirconia or CAD/CAM ceramic) to reinforce the tooth, followed by biannual check-ups to monitor stability."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "Is tooth extraction better than a root canal?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Preserving your natural tooth is almost always the best option. Extraction requires costly replacements like bridges or dental implants to prevent jawbone loss and shifting teeth. A root canal treatment at our Gudivada clinic effectively cleans the infection while keeping your natural tooth functioning."
-                                        }
-                                },
-                                {
-                                        "@type": "Question",
-                                        "name": "What happens if I delay root canal treatment?",
-                                        "acceptedAnswer": {
-                                                "@type": "Answer",
-                                                "text": "Delaying treatment allows the infection to spread to the jawbone, causing painful abscesses, bone erosion, and eventual tooth loss. If you notice persistent throbbing pain or sensitivity, our MDS specialists in Gudivada recommend scheduling a digital X-ray diagnostic scan immediately."
-                                        }
-                                }
-                        ]
-                }
-        ]
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+        "addressLocality": "Gudivada",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "521301",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 16.4424385,
+        "longitude": 80.9895544
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:30",
+          "closes": "20:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "13:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Gudivada"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Rajendra Nagar"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Satyanarayanapuram"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Eluru Road"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Nehru Chowk"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Krishna District"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Andhra Pradesh"
+        }
+      ],
+      "medicalSpecialty": [
+        "Dentistry",
+        "Prosthodontics",
+        "Orthodontics",
+        "Endodontics"
+      ],
+      "openingHours": [
+        "Mo-Sa 09:30-20:30",
+        "Su 10:00-13:00"
+      ],
+      "priceRange": "â‚¹â‚¹",
+      "hasMap": "https://maps.google.com/?cid=9656988855459684632",
+      "sameAs": [
+        "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530"
+      ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Root Canal Treatment",
+      "procedureType": "https://schema.org/NoninvasiveProcedure",
+      "description": "Root canal treatment to save infected or damaged teeth using modern techniques at Krishna Dental Hospital, Gudivada.",
+      "howPerformed": "The infected pulp is removed, the canal is cleaned and shaped, then sealed with a biocompatible material.",
+      "bodyLocation": "Tooth",
+      "availableService": {
+        "@type": "MedicalClinic",
+        "name": "Krishna Multispeciality Dental Clinic"
+      },
+      "expectedPrognosis": "Good outcomes with early treatment and proper post-procedure care.",
+      "followUp": "Regular dental check-ups every 6 months recommended after treatment.",
+      "status": "https://schema.org/ActiveActionStatus",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "tel:+918674244241",
+        "name": "Book appointment"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.krishnadental.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Treatments",
+          "item": "https://www.krishnadental.in/dental-treatment.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Root Canal Treatment"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is root canal treatment painful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, modern root canal treatments at Krishna Dental Hospital in Gudivada are designed to be completely painless. Led by our MDS specialists, we use advanced localized anesthetics and digital rotary endodontics to ensure absolute comfort. The procedure is performed to immediately relieve the severe pain caused by infection, rather than causing pain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a root canal take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At our Gudivada clinic, a root canal typically takes 1 to 2 visits. For standard infections, Dr. Vidya can perform a single-sitting root canal in under 60 minutes. If the infection is complex or includes an abscess, a second visit is scheduled to place sterile, clinical-grade dressings inside the canals to ensure success before sealing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of root canal treatment in Gudivada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of root canal treatment in Gudivada varies depending on the severity of the infection and if a custom zirconia crown is fitted. At Krishna Dental Hospital, we offer transparent pricing alongside easy monthly installment (EMI) options so that quality dental care is accessible to all families."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a root canal last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A root canal-treated tooth backed by a custom-fit crown can last a lifetime with proper oral hygiene. At Krishna Multispeciality Dental Hospital in Gudivada, we offer structural crowns (like Zirconia or CAD/CAM ceramic) to reinforce the tooth, followed by biannual check-ups to monitor stability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is tooth extraction better than a root canal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Preserving your natural tooth is almost always the best option. Extraction requires costly replacements like bridges or dental implants to prevent jawbone loss and shifting teeth. A root canal treatment at our Gudivada clinic effectively cleans the infection while keeping your natural tooth functioning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I delay root canal treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Delaying treatment allows the infection to spread to the jawbone, causing painful abscesses, bone erosion, and eventual tooth loss. If you notice persistent throbbing pain or sensitivity, our MDS specialists in Gudivada recommend scheduling a digital X-ray diagnostic scan immediately."
+          }
+        }
+      ]
+    }
+  ]
 }
-  </script>
+</script>
 </head>
 <body>
 
@@ -809,10 +833,10 @@
       </div>
       <div class="footer-col">
         <h3>Visit Us</h3>
-        <p>10/181-1 Eluru Road,<br>Gudivada, Andhra Pradesh 521301</p>
+        <p>10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram,<br>Gudivada, Andhra Pradesh 521301</p>
         <a href="tel:+918674244241">+918674244241</a>
         <a href="tel:+917997444241">+917997444241</a>
-        <a href="mailto:vidya&#64;krishnadental&#46;in">vidya&#64;krishnadental&#46;in</a>
+        <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
         <p style="margin-top: 12px; font-size: 13px; opacity: 0.85;">
           Mon – Sat: 9:30 am – 8:30 pm<br>
           Sun: 10:00 am – 1:00 pm
@@ -821,6 +845,7 @@
     </div>
     <div class="footer-bottom">
       &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
+      <span style="opacity: 0.85; display: block; margin-top: 4px; line-height: 1.2;">ABDM Registered Healthcare Facility (ID: <a href="https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">IN2810020530</a>)</span>
     </div>
   </footer>
 
