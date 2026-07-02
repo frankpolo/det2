@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Dental Hospital & Dentist in Gudivada | Krishna Dental</title>
+  <title>Best Dentist in Gudivada | Krishna Dental Hospital</title>
   <meta name="description" content="Gudivada's best dental hospital & dentist near you. Painless root canals, implants, braces & more by Dr. Vidya Sahithi (MDS). 5.0★ rated. Call now!">
   <link rel="canonical" href="https://www.krishnadental.in">
-  <meta property="og:title" content="Best Dental Hospital in Gudivada | Krishna Dental">
+  <meta property="og:title" content="Best Dentist in Gudivada | Krishna Dental Hospital">
   <meta property="og:description" content="Gudivada's best dental hospital & dentist near you. Painless root canals, implants, braces & more by Dr. Vidya Sahithi (MDS). 5.0★ rated. Visit us on Eluru Road">
   <meta property="og:url" content="https://www.krishnadental.in">
   <meta property="og:type" content="website">
@@ -401,12 +401,126 @@
       margin-top: 12px;
     }
 
+    /* ── FAQ Accordion ── */
+    .faq-list { margin-top: 40px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; text-align: left; font-size: 17px;
+      font-weight: 600; color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .faq-question:hover { color: var(--accent); }
+    .faq-chevron {
+      width: 20px; height: 20px; flex-shrink: 0;
+      transition: transform 0.3s ease; color: var(--text-tertiary);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-answer-inner {
+      padding: 0 0 24px;
+      font-size: 15px; line-height: 1.7; color: var(--text-secondary);
+    }
+    .faq-view-all {
+      text-align: center; margin-top: 32px;
+    }
+    .faq-view-all a {
+      font-size: 15px; font-weight: 600; color: var(--accent);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .faq-view-all a:hover { color: var(--text-primary); }
+
+    /* ── Reviews Strip ── */
+    .reviews-strip {
+      background: var(--bg-secondary);
+      padding: 48px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .reviews-strip-header {
+      max-width: 1080px; margin: 0 auto 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .reviews-strip-title {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .reviews-strip-title .stars-large {
+      color: #f5a623; font-size: 22px; letter-spacing: 2px; line-height: 1;
+    }
+    .reviews-strip-title .rating-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 22px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px;
+    }
+    .reviews-strip-title .rating-sub {
+      font-size: 13px; color: var(--text-secondary); font-weight: 500;
+    }
+    .reviews-google-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 13px; font-weight: 600; color: var(--accent);
+      text-decoration: none; border: 1px solid var(--accent);
+      padding: 6px 14px; border-radius: 980px; transition: all 0.2s;
+    }
+    .reviews-google-link:hover { background: var(--accent); color: #fff; }
+    .reviews-grid {
+      max-width: 1080px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    @media (max-width: 700px) { .reviews-grid { grid-template-columns: 1fr; } }
+    .review-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex; flex-direction: column; gap: 12px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .review-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.07); transform: translateY(-2px); }
+    .review-card-top {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
+    }
+    .review-author {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .review-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--accent); display: flex; align-items: center;
+      justify-content: center; font-size: 16px; font-weight: 700;
+      color: #fff; flex-shrink: 0;
+    }
+    .review-author-info .review-name {
+      font-size: 15px; font-weight: 600; color: var(--text-primary);
+    }
+    .review-author-info .review-date {
+      font-size: 12px; color: var(--text-tertiary); margin-top: 2px;
+    }
+    .review-stars { color: #f5a623; font-size: 14px; letter-spacing: 1px; }
+    .review-badge {
+      font-size: 11px; font-weight: 600; color: var(--accent);
+      background: var(--accent-light); padding: 3px 10px;
+      border-radius: 980px; white-space: nowrap; align-self: flex-start;
+    }
+    .review-text {
+      font-size: 14px; line-height: 1.65; color: var(--text-secondary);
+    }
+    .review-google-badge {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--text-tertiary); margin-top: auto;
+    }
+    .review-google-badge svg { width: 14px; height: 14px; }
+
     @media (max-width: 480px) {
       .hero { padding: 60px 20px; }
       .section { padding: 48px 20px; }
       .trust-strip { padding: 24px 20px; }
       .trust-grid { gap: 16px; }
       .cta-banner { padding: 40px 24px; }
+      .reviews-strip { padding: 32px 20px; }
     }
   </style>
 
@@ -1102,8 +1216,11 @@
       <h1>Best Dentist & Top-Rated Dental Hospital in Gudivada </h1>
       <p>Welcome to Krishna Multispeciality Dental Hospital. Experience modern, painless dental care from top MDS specialist in the heart of Gudivada.</p>
       <div class="hero-actions">
-        <a href="tel:+918674244241" class="btn-primary">Book Appointment</a>
-        <a href="dental-treatment.html" class="btn-secondary">View Treatments</a>
+        <a href="https://wa.me/917997444241?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment" class="btn-primary" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="tel:+918674244241" class="btn-secondary">Call to Book</a>
       </div>
     </div>
   </section>
@@ -1129,6 +1246,147 @@
           <div class="trust-label">Affordable Care</div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Patient Reviews — verbatim from Google, corroborates AggregateRating schema -->
+  <div class="reviews-strip reveal">
+    <div class="reviews-strip-header">
+      <div class="reviews-strip-title">
+        <span class="stars-large" aria-hidden="true">★★★★★</span>
+        <div>
+          <div class="rating-text">5.0 on Google</div>
+          <div class="rating-sub">Real reviews from our Gudivada patients</div>
+        </div>
+      </div>
+      <a href="https://maps.app.goo.gl/Yy31y5YBPtnsEaVR8" target="_blank" rel="noopener noreferrer" class="reviews-google-link">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        See all reviews on Google
+      </a>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">P</div>
+            <div class="review-author-info">
+              <div class="review-name">Priya Chimakurthy</div>
+              <div class="review-date">March 2025</div>
+            </div>
+          </div>
+          <span class="review-badge">Prosthodontics</span>
+        </div>
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"Outstanding dental treatment and a welcoming environment. Highly professional doctor with excellent attention to detail. Quality care and excellent results. Would definitely recommend. Thanks to Dr. Vidya Sahithi mam for your care towards patients."</p>
+        <div class="review-google-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google review · Verified patient
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">T</div>
+            <div class="review-author-info">
+              <div class="review-name">Thummalacharla Thummalacharla</div>
+              <div class="review-date">January 2025</div>
+            </div>
+          </div>
+          <span class="review-badge">Zirconia Crowns</span>
+        </div>
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"I had missing front teeth for a long time. After searching for experienced and specialised dentist near me, I visited Krishna Dental Hospital and got my fixed teeth replacement with zirconia caps. The final result exceeded my expectation. The clinic is clean and the staff are friendly. They provide very affordable dental treatment."</p>
+        <div class="review-google-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google review · Verified patient
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">S</div>
+            <div class="review-author-info">
+              <div class="review-name">Sravani V</div>
+              <div class="review-date">February 2025</div>
+            </div>
+          </div>
+          <span class="review-badge">Root Canal</span>
+        </div>
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"I had an excellent experience with my root canal treatment. Dr Sahithi was highly skilled, professional, and explained every step clearly, which helped put me at ease. The treatment was completed smoothly with minimal discomfort. They did regular follow ups and scheduled proper appointments which helped in reducing waiting times."</p>
+        <div class="review-google-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google review · Verified patient
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">V</div>
+            <div class="review-author-info">
+              <div class="review-name">Vennela Thummalacharla</div>
+              <div class="review-date">December 2024</div>
+            </div>
+          </div>
+          <span class="review-badge">Tooth Extraction</span>
+        </div>
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"I got my tooth removed by Dr Vidya madam. It was completely painless. I was scared of dental treatment before. And now I'm very happy with the treatment. I recommend Krishna Multi-Speciality Dental Hospital to everyone. It's the best dental hospital in and around Gudivada."</p>
+        <div class="review-google-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google review · Verified patient
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">U</div>
+            <div class="review-author-info">
+              <div class="review-name">USRK Prasad</div>
+              <div class="review-date">November 2024</div>
+            </div>
+          </div>
+          <span class="review-badge">Dental Implants</span>
+        </div>
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"I am from Guraja, I had missing front and back teeth, which made eating and smiling difficult. After teeth replacement my teeth look good and I can eat comfortably again. Dr Vidya Sahithi from Krishna Multi Speciality Dental Hospital explained everything clearly and did an excellent job. It's the best dental hospital in Gudivada."</p>
+        <div class="review-google-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google review · Verified patient
+        </div>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">K</div>
+            <div class="review-author-info">
+              <div class="review-name">Kittu Gummadi</div>
+              <div class="review-date">April 2025</div>
+            </div>
+          </div>
+          <span class="review-badge">Tooth Removal</span>
+        </div>
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"I was scared before coming here. I got my teeth removed and it was completely painless. They provide affordable treatments. It is one of the best dental hospitals in Gudivada. Thank you mam."</p>
+        <div class="review-google-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google review · Verified patient
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -1312,6 +1570,210 @@
     </div>
   </section>
 
+  <!-- FAQ Section — matches FAQPage schema in JSON-LD -->
+  <section class="section section-alt reveal" id="faq">
+    <div class="section-wide">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Where is Krishna Multispeciality Dental Hospital located?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Krishna Multispeciality Dental Hospital is located at 10/181-1, Eluru Road, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301. Our clinic is positioned near the Homeopathy College and beside MedPlus pharmacy, making it easily accessible for patients coming from Gudivada and surrounding Krishna district mandals.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What are the clinic timings at Krishna Dental?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">We are open Monday to Saturday from 9:30 AM to 8:30 PM. We also offer convenient Sunday morning appointments from 10:00 AM to 1:00 PM for dental emergencies and working professionals in Gudivada.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Who is the best dentist at Krishna Dental Hospital Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Our clinic is founded and led by Dr. Vidya Sahithi Atluri, a highly qualified MDS Prosthodontist and specialist in dental implants, cosmetic smile makeovers, and full mouth rehabilitations, providing Gudivada with advanced clinical care.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Does Krishna Dental Hospital offer dental implants in Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, we specialize in permanent tooth replacements including single-tooth implants, implant-supported bridges, and full-mouth dental implants. All procedures are planned digitally using CBCT guides by our resident MDS Prosthodontist for optimal placement and aesthetics.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Is root canal treatment painful?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">No, root canal treatments at Krishna Dental Hospital in Gudivada are designed to be painless. Using advanced computerized rotary endodontics and local anesthetics, our specialists relieve the throbbing pain of infected pulp comfortably, often in a single sitting.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            How many sittings does a root canal take?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">A root canal typically takes 1 to 2 sittings. For standard cases, our MDS specialists perform single-sitting root canals in Gudivada in under 60 minutes. Heavily infected cases may require a second sitting to sterilize the canals.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What is the cost of dental implants in Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Dental implant pricing in Gudivada varies depending on the implant system (like Osstem or Straumann) and jawbone volume. At Krishna Dental, we offer transparent pricing starting with a detailed diagnostic consultation and flexible payment options.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Do you offer teeth whitening in Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, we offer professional in-clinic laser teeth whitening that safely brightens your smile by several shades in a single 45-minute session, removing stains without damaging your natural enamel.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What type of braces and aligners are available at Krishna Dental?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">We offer a complete range of orthodontic solutions including traditional metal braces, ceramic braces, and modern transparent clear aligners (Invisalign) for kids, teens, and adults in Gudivada.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Do you treat children at your dental hospital?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, we provide gentle, child-friendly pediatric dental care including routine checkups, cavities prevention, and pit and fissure sealants to protect your child's developing teeth in a stress-free environment.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Do you offer wisdom tooth removal in Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, we perform simple and complex surgical wisdom tooth extractions. Guided by digital diagnostics, our oral surgeons remove impacted wisdom teeth comfortably under local anesthesia at our sterile Gudivada clinic.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What is a digital smile makeover?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">A digital smile makeover combines cosmetic treatments like ultra-thin porcelain veneers, zirconia crowns, gum contouring, and whitening. Dr. Vidya designs a custom layout matching your facial symmetry for a natural, beautiful smile.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What are zirconia crowns and are they better than metal crowns?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Zirconia crowns are metal-free, tooth-colored caps made from premium dental ceramics. They offer superior natural aesthetics, bio-compatibility, and durability compared to traditional metal crowns, making them ideal for front and back teeth restorations.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            How often should I visit the dentist for a checkup?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">We recommend visiting Krishna Dental Hospital in Gudivada every 6 months for a routine preventive examination and professional scaling to keep your gums healthy and catch any issues early.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Do you offer full mouth rehabilitation in Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, Dr. Vidya specializes in full mouth rehabilitation. This comprehensive restoration treats severely worn, decayed, or missing teeth using implants, zirconia crowns, and bridges to restore absolute chewing function and oral health.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            What payment methods are accepted?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">At Krishna Multispeciality Dental Hospital in Gudivada, we accept cash, UPI, credit/debit cards, and offer easy monthly installment options (EMI) for major treatments.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            How do I book an appointment at Krishna Dental Hospital Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">You can easily schedule a consultation with Dr. Vidya by contacting our front desk directly, booking online via our contact page, or messaging our official clinic number on WhatsApp.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Is gum disease treatable?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, gingivitis is fully reversible with professional cleaning. Advanced gum disease (periodontitis) is managed at our clinic using deep root scaling, scaling and planning, and surgical gum therapy to stop bone loss and save your teeth.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Do you serve patients from outside Gudivada?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">Yes, we treat patients from Gudivada and nearby areas including Kaikalur, Eluru, Machilipatnam, Nuzvid, Pamarru, Gudlavalleru, and Mudinepalli, providing regional multispecialty dental care.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="faq-view-all">
+        <a href="faq.html">View all FAQs →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Banner -->
   <section class="section reveal">
     <div class="cta-banner">
@@ -1385,6 +1847,25 @@
   </a>
 
   <script>
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+      // Close all open items
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-answer').style.maxHeight = null;
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      // Toggle clicked item
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
     // Scroll Reveal Animation
     const observerOptions = {
       threshold: 0.1,
