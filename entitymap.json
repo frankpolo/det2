@@ -1,0 +1,1436 @@
+{
+  "version": "1.0",
+  "schema": "https://entitymap.org/spec/v1.0",
+  "profile": "healthcare",
+  "verificationStatus": "self-declared",
+  "publisher": {
+    "name": "Krishna Multispeciality Dental Clinic",
+    "url": "https://krishnadental.in",
+    "sameAs": "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530"
+  },
+  "generated": "2026-06-29T07:15:26Z",
+  "entities": [
+    {
+      "entityId": "e_org_01",
+      "@type": "Organization",
+      "name": "Krishna Multispeciality Dental Clinic",
+      "description": "A multispeciality dental hospital in Gudivada, Andhra Pradesh. India's ABDM-registered (IN2810020530), IDA-accredited, women-owned clinic led by Dr. Vidya Sahithi (MDS Prosthodontics). Rated 5.0★ on Google (55+ reviews). Offers implants, root canals, orthodontics, cosmetic dentistry, and emergency care.",
+      "maturityStatus": "established",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_org_01",
+          "text": "Krishna Multispeciality Dental Hospital has been serving families in Gudivada and the Krishna district with gentle, honest dental care.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.98,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_org_02",
+          "text": "We treat every patient like family — listening to your concerns, explaining your options clearly, and recommending only the treatments you truly need. No pressure. No surprises. Just good medicine delivered with genuine care.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.95,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_org_03",
+          "text": "Verified reviews from Google Business Profile · 5.0 ★ (55 reviews). Serving patients from Gudivada, Eluru, Machilipatnam, Nuzvid, Kaikalur and across Krishna district, Andhra Pradesh.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "statistic",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_org_04",
+          "text": "Opening hours: Mon–Sat 9:30 am–8:30 pm, Sun 10:00 am–1:00 pm. Phone: +91-8674244241. ABDM Facility ID: IN2810020530.",
+          "sourceUrl": "https://krishnadental.in/contact.html",
+          "pageTitle": "Contact | Krishna Dental Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.9,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_org_05",
+          "text": "Transparent, affordable pricing with flexible payment options. No hidden costs or surprise charges. We recommend only what you need — nothing more. Honest advice and clear explanations at every visit.",
+          "sourceUrl": "https://krishnadental.in/index.html",
+          "pageTitle": "Best Dental Hospital & Dentist in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.94,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "AFFILIATED_WITH",
+          "targetName": "Dr. Vidya Sahithi Atluri"
+        },
+        {
+          "predicate": "AFFILIATED_WITH",
+          "targetName": "Dr. Manjeera Ramya"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Root Canal Treatment",
+          "targetId": "e_svc_01"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Dental Implants",
+          "targetId": "e_svc_02"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Teeth Whitening",
+          "targetId": "e_svc_03"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Cosmetic Dentistry",
+          "targetId": "e_svc_04"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Orthodontics & Braces",
+          "targetId": "e_svc_05"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Dental Cleaning & Scaling",
+          "targetId": "e_svc_06"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Emergency Dental Care",
+          "targetId": "e_svc_07"
+        },
+        {
+          "predicate": "OFFERS",
+          "targetName": "Crowns & Bridges",
+          "targetId": "e_svc_08"
+        },
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetName": "Google Business Profile — Krishna Dental Gudivada",
+          "targetUri": "https://g.page/r/CdC9YH8VNkf0EBM"
+        },
+        {
+          "predicate": "INSTANCE_OF",
+          "targetName": "Dental Hospital",
+          "targetUri": "https://www.wikidata.org/wiki/Q16917"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Gudivada",
+          "targetId": "e_place_gudivada",
+          "targetDescription": "Primary city location and main patient catchment area.",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Eluru",
+          "targetId": "e_place_eluru",
+          "targetDescription": "Nearby city whose residents travel to Krishna Dental for specialist care.",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Machilipatnam",
+          "targetId": "e_place_machilipatnam",
+          "targetDescription": "District HQ patients seeking specialist-level prosthodontic care.",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Nuzvid",
+          "targetId": "e_place_nuzvid",
+          "targetDescription": "Krishna district town within the clinic's patient catchment area.",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Kaikalur",
+          "targetId": "e_place_kaikalur",
+          "targetDescription": "Krishna district town within the clinic's patient catchment area.",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Krishna District",
+          "targetId": "e_place_krishna_dist",
+          "targetDescription": "Full administrative district forming the primary service region.",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "REGULATED_BY",
+          "targetName": "National Health Professional Registry (ABDM)",
+          "targetId": "e_auth_abdm",
+          "targetDescription": "Government-verified healthcare facility registration IN2810020530."
+        },
+        {
+          "predicate": "REGULATED_BY",
+          "targetName": "Indian Dental Association",
+          "targetId": "e_auth_ida",
+          "targetDescription": "IDA-accredited dental practice maintaining professional ethics standards."
+        },
+        {
+          "predicate": "REGULATED_BY",
+          "targetName": "ABDM Healthcare Professional Registry",
+          "targetId": "e_auth_hpr",
+          "targetUri": "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311",
+          "targetDescription": "Clinic's lead dentist Dr. Vidya Sahithi is HPR-registered (ID: 71-6403-6286-0311)."
+        }
+      ]
+    },
+    {
+      "entityId": "e_loc_01",
+      "@type": "Place",
+      "name": "Krishna Dental — Eluru Road, Gudivada",
+      "description": "Physical clinic of Krishna Multispeciality Dental Hospital at Eluru Road, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_loc_01",
+          "text": "10/181-1, Eluru Road, near Homeopathy College (beside MedPlus), Satyanarayana Puram, Gudivada, Andhra Pradesh 521301. Landmark: Opposite Ushodaya Supermarket.",
+          "sourceUrl": "https://krishnadental.in/contact.html",
+          "pageTitle": "Contact | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.99,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_loc_02",
+          "text": "Contact: +91 86742 44241 / +91 79974 44241. Email: vidya@krishnadental.in. Hours: Mon–Sat 9:30 AM–8:30 PM, Sunday 10:00 AM–1:00 PM. ABDM Facility ID: IN2810020530.",
+          "sourceUrl": "https://krishnadental.in/contact.html",
+          "pageTitle": "Contact | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        }
+      ]
+    },
+    {
+      "entityId": "e_per_01",
+      "@type": "Person",
+      "name": "Dr. Vidya Sahithi Atluri",
+      "alternateName": "Dr. Vidya Sahithi",
+      "description": "Dr. Vidya Sahithi Atluri, MDS (Prosthodontics), IDA Member. ABDM-registered healthcare professional (HPR ID: 71-6403-6286-0311). The only specialist-level prosthodontist practicing in the Gudivada region. Expert in crowns, bridges, implants, dentures, and full smile makeovers at Krishna Multispeciality Dental Clinic, Gudivada, Andhra Pradesh.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_per_01",
+          "text": "Dr. Vidya Sahithi Atluri: MDS (Prosthodontics) · IDA Member. Postgraduate specialist in prosthodontics — crowns, bridges, implants, dentures, and smile makeovers. A proud member of the Indian Dental Association (IDA).",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.99,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_per_02",
+          "text": "Gudivada's best dental hospital & dentist near you. Painless root canals, implants, braces & more by Dr. Vidya Sahithi (MDS). 5.0★ rated on Google.",
+          "sourceUrl": "https://krishnadental.in/index.html",
+          "pageTitle": "Best Dental Hospital & Dentist in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.95,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_per_03",
+          "text": "Outstanding dental treatment and a welcoming environment. Highly professional doctor with excellent attention to detail. Quality care and excellent results. — Priya Chimakurthy (Google review, verified).",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_per_04",
+          "text": "Dr. Vidya Sahithi is the only specialist-level prosthodontist practicing in the Gudivada region, ensuring patients receive care equivalent to that found in larger cities. IDA-accredited, women-owned practice.",
+          "sourceUrl": "https://krishnadental.in/crowns-bridges-gudivada.html",
+          "pageTitle": "Dental Crowns & Bridges in Gudivada — Premium Restorative Care | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_per_hpr",
+          "text": "Dr. Vidya Sahithi Atluri is registered with India's National Health Professional Registry (ABDM) under HPR ID 71-6403-6286-0311 — a government-verified credential confirming her licensed status as a dental specialist in Andhra Pradesh.",
+          "sourceUrl": "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311",
+          "pageTitle": "ABDM National Health Professional Registry — Dr. Vidya Sahithi Atluri",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.99,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "AFFILIATED_WITH",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        },
+        {
+          "predicate": "INSTANCE_OF",
+          "targetName": "MDS Prosthodontist",
+          "targetDescription": "Postgraduate specialist in prosthodontics.",
+          "targetUri": "https://www.wikidata.org/wiki/Q1349700"
+        },
+        {
+          "predicate": "AFFILIATED_WITH",
+          "targetName": "Indian Dental Association",
+          "targetId": "e_auth_ida"
+        },
+        {
+          "predicate": "AFFILIATED_WITH",
+          "targetName": "Gudivada",
+          "targetId": "e_place_gudivada"
+        },
+        {
+          "predicate": "REGULATED_BY",
+          "targetName": "ABDM Healthcare Professional Registry",
+          "targetId": "e_auth_hpr",
+          "targetUri": "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311",
+          "targetDescription": "Government-verified HPR ID: 71-6403-6286-0311 — confirms licensed status."
+        }
+      ],
+      "sameAs": "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311"
+    },
+    {
+      "entityId": "e_per_02",
+      "@type": "Person",
+      "name": "Dr. Manjeera Ramya",
+      "description": "Dr. Manjeera Ramya, BDS — root canal and pulpal therapy specialist at Krishna Multispeciality Dental Clinic, Gudivada. Dedicated to saving teeth and relieving pain with precision endodontic techniques.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_per_02b",
+          "text": "Dr. Manjeera Ramya: Specialist in root canal and pulpal therapies. Dedicated to saving teeth and relieving pain with precision and care.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_per_02c",
+          "text": "I had an excellent root canal experience. Dr Sahithi and the team were skilled, professional, and explained every step clearly. Regular follow-ups and proper appointment scheduling reduced waiting times significantly.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.9,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "AFFILIATED_WITH",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ]
+    },
+    {
+      "entityId": "e_svc_01",
+      "@type": "Service",
+      "name": "Root Canal Treatment",
+      "alternateName": "RCT",
+      "canonicalLabel": "Endodontic therapy",
+      "description": "Painless root canal treatment using modern rotary techniques to save severely damaged or infected teeth at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_01a",
+          "text": "Root canal treatment involves removing infected nerves and tissue, followed by cleaning, shaping, sterilizing, and filling the canal space to save the natural tooth and avoid extraction.",
+          "sourceUrl": "https://krishnadental.in/root-canal-gudivada.html",
+          "pageTitle": "Painless Root Canal Treatment in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.98,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_01b",
+          "text": "Modern anesthesia and advanced rotary techniques ensure minimal to no discomfort during root canal treatment. Even if pain is minimal, untreated infections can lead to abscess growth and systemic complications.",
+          "sourceUrl": "https://krishnadental.in/root-canal-gudivada.html",
+          "pageTitle": "Painless Root Canal Treatment in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_01c",
+          "text": "I had an excellent experience with my root canal treatment at this clinic. Dr Sahithi was highly skilled, professional, and explained every step clearly. The treatment was completed smoothly with minimal discomfort.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.9,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        },
+        {
+          "predicate": "SUITED_FOR",
+          "targetName": "Infected or Severely Damaged Teeth",
+          "targetDescription": "Teeth with pulp infection, deep decay, or trauma requiring nerve removal.",
+          "confidence": "declared"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q905815"
+    },
+    {
+      "entityId": "e_svc_02",
+      "@type": "Service",
+      "name": "Dental Implants",
+      "canonicalLabel": "Osseointegrated dental implant",
+      "description": "Permanent titanium implants to replace missing teeth with natural-looking, fully functional restorations at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_02a",
+          "text": "Dental implants are permanent, stable replacements anchored into the jawbone that preserve bone structure and restore 100% chewing force. With excellent oral hygiene, implants placed at Krishna Dental can last a lifetime.",
+          "sourceUrl": "https://krishnadental.in/dental-implants-gudivada.html",
+          "pageTitle": "Best Dental Implants in Gudivada — Permanent Titanium Tooth Replacement | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.98,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_02b",
+          "text": "3D imaging and surgical guides ensure precision placement — faster healing, better aesthetics, and fewer complications. The procedure is completed under local anaesthesia, usually in 20–60 minutes.",
+          "sourceUrl": "https://krishnadental.in/dental-implants-gudivada.html",
+          "pageTitle": "Best Dental Implants in Gudivada — Permanent Titanium Tooth Replacement | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "procedure",
+          "relevanceScore": 0.95,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_02c",
+          "text": "I had missing front and back teeth, which made eating and smiling difficult. After teeth replacement at Krishna Multi Speciality Dental Hospital, the final result exceeded my expectation.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.88,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        },
+        {
+          "predicate": "TARGETS",
+          "targetName": "Patients with Missing Teeth",
+          "targetDescription": "Adults missing one or more teeth seeking a permanent, bone-preserving replacement.",
+          "confidence": "declared"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q143680"
+    },
+    {
+      "entityId": "e_svc_03",
+      "@type": "Service",
+      "name": "Teeth Whitening",
+      "canonicalLabel": "Tooth bleaching",
+      "description": "Professional in-office and take-home teeth whitening treatments to brighten smiles at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_03a",
+          "text": "Krishna Dental provides professional-grade whitening to remove deep and surface stains caused by coffee, tea, wine, tobacco, medication, and natural aging. In-office whitening is completed in 45–60 minutes for immediate results.",
+          "sourceUrl": "https://krishnadental.in/teeth-whitening-gudivada.html",
+          "pageTitle": "Professional Teeth Whitening in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_03b",
+          "text": "At-home whitening uses custom-fitted trays for gradual, convenient whitening over 2–3 weeks. Desensitizing agents are available for patients with sensitive teeth, and gum barriers are applied for protection.",
+          "sourceUrl": "https://krishnadental.in/teeth-whitening-gudivada.html",
+          "pageTitle": "Professional Teeth Whitening in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "procedure",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q143458"
+    },
+    {
+      "entityId": "e_svc_04",
+      "@type": "Service",
+      "name": "Cosmetic Dentistry",
+      "canonicalLabel": "Aesthetic dentistry",
+      "description": "Comprehensive cosmetic dental treatments including veneers, bonding, and smile makeovers at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_04a",
+          "text": "Cosmetic dentistry focuses on improving the appearance of teeth, smiles, and bites while maintaining optimal dental function. Services include porcelain veneers, smile design, digital mockups, and tooth bonding.",
+          "sourceUrl": "https://krishnadental.in/cosmetic-dentistry-gudivada.html",
+          "pageTitle": "Cosmetic Dentistry in Gudivada — Smile Design & Makeover | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_04b",
+          "text": "Smile Design utilizes advanced digital software to create a preview of the ideal smile, analyzing facial proportions, skin tone, and features to ensure results feel natural and tailored to you.",
+          "sourceUrl": "https://krishnadental.in/cosmetic-dentistry-gudivada.html",
+          "pageTitle": "Cosmetic Dentistry in Gudivada — Smile Design & Makeover | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "procedure",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetName": "Teeth Whitening",
+          "targetId": "e_svc_03"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q2341717"
+    },
+    {
+      "entityId": "e_svc_05",
+      "@type": "Service",
+      "name": "Orthodontics & Braces",
+      "canonicalLabel": "Orthodontic treatment",
+      "description": "Metal braces, ceramic braces, and clear aligners (Invisalign-style) to straighten teeth and correct bite issues at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_05a",
+          "text": "Krishna Dental offers metal, ceramic, and self-ligating braces, plus clear aligners (Invisalign-style) using transparent, removable trays — custom-made to gradually straighten teeth. Popular with adults and professionals for their discreet appearance.",
+          "sourceUrl": "https://krishnadental.in/orthodontics-gudivada.html",
+          "pageTitle": "Orthodontics in Gudivada — Braces & Clear Aligners | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_05b",
+          "text": "Digital scans and 3D imaging map out the specific treatment timeline, allowing patients to see how their teeth will move before starting. Orthodontic specialists conduct individual assessments for each patient.",
+          "sourceUrl": "https://krishnadental.in/orthodontics-gudivada.html",
+          "pageTitle": "Orthodontics in Gudivada — Braces & Clear Aligners | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "procedure",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q118301"
+    },
+    {
+      "entityId": "e_svc_06",
+      "@type": "Service",
+      "name": "Dental Cleaning & Scaling",
+      "canonicalLabel": "Dental prophylaxis",
+      "description": "Professional teeth cleaning, scaling, and polishing to remove plaque, tartar, and prevent gum disease at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_06a",
+          "text": "Ultrasonic scalers remove hardened tartar buildup that regular brushing cannot reach — below the gumline and on tooth surfaces. Professional cleaning prevents gum disease, tooth decay, and freshens breath.",
+          "sourceUrl": "https://krishnadental.in/dental-cleaning-gudivada.html",
+          "pageTitle": "Dental Cleaning & Scaling in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_06b",
+          "text": "Regular professional scaling and cleaning is recommended every 6 months, or every 3–4 months for those with active gum disease. Scaling does not loosen teeth — this is a common misconception.",
+          "sourceUrl": "https://krishnadental.in/faq.html",
+          "pageTitle": "Frequently Asked Questions | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q17084824"
+    },
+    {
+      "entityId": "e_svc_07",
+      "@type": "Service",
+      "name": "Emergency Dental Care",
+      "canonicalLabel": "Dental emergency treatment",
+      "description": "Immediate, same-day emergency dental care for severe toothaches, broken teeth, and knocked-out teeth. Open Sundays in Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_07a",
+          "text": "Immediate, same-day relief for severe toothaches, broken or fractured teeth, and knocked-out teeth. Led by Dr. Vidya Sahithi (MDS Prosthodontist), ensuring emergencies are handled by a highly trained specialist.",
+          "sourceUrl": "https://krishnadental.in/emergency-dentist-gudivada.html",
+          "pageTitle": "Urgent Dental Emergency Care in Gudivada — Same-Day Relief | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.98,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_07b",
+          "text": "Open on Sundays from 10:00 am–1:00 pm. Advanced technology ensures efficient, accurate diagnosis. Call +91-8674244241 before arriving to confirm availability and receive guidance.",
+          "sourceUrl": "https://krishnadental.in/emergency-dentist-gudivada.html",
+          "pageTitle": "Urgent Dental Emergency Care in Gudivada — Same-Day Relief | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "procedure",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ]
+    },
+    {
+      "entityId": "e_svc_08",
+      "@type": "Service",
+      "name": "Crowns & Bridges",
+      "canonicalLabel": "Dental crown and fixed partial denture",
+      "description": "Custom zirconia and ceramic crowns and fixed bridges to restore function and aesthetics of damaged or missing teeth at Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_svc_08a",
+          "text": "Crowns and bridges restore function, strength, and natural aesthetics. High-quality options include zirconia, ceramic, and PFM (porcelain-fused-to-metal) crowns. With proper care, zirconia crowns can last 10–15 years or longer.",
+          "sourceUrl": "https://krishnadental.in/crowns-bridges-gudivada.html",
+          "pageTitle": "Dental Crowns & Bridges in Gudivada — Premium Restorative Care | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_svc_08b",
+          "text": "Dr. Vidya Sahithi is the only specialist-level prosthodontist practicing in the Gudivada region, ensuring patients receive care equivalent to that found in larger cities. The practice is IDA-accredited and women-owned.",
+          "sourceUrl": "https://krishnadental.in/crowns-bridges-gudivada.html",
+          "pageTitle": "Dental Crowns & Bridges in Gudivada — Premium Restorative Care | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "PART_OF",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        },
+        {
+          "predicate": "PART_OF",
+          "targetName": "Cosmetic Dentistry",
+          "targetId": "e_svc_04"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q143720"
+    },
+    {
+      "entityId": "e_hub_blog",
+      "@type": "Concept",
+      "name": "Dental Health Education Blog",
+      "description": "A collection of patient-education articles on oral hygiene, dental conditions, and treatment options published by Krishna Multispeciality Dental Clinic.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_hub_blog_01",
+          "text": "Practical dental health advice from the team at Krishna Dental, Gudivada. Topics include root canals, implants, braces, gum disease, emergency care, and cosmetic dentistry.",
+          "sourceUrl": "https://krishnadental.in/blog.html",
+          "pageTitle": "Dental Health Blog | Tips & Guides | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.95,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "COVERS",
+          "targetName": "Root Canal Symptoms & Warning Signs",
+          "targetId": "e_blog_01"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Dental Implants — Complete Guide",
+          "targetId": "e_blog_02"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Gum Disease Prevention",
+          "targetId": "e_blog_03"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Invisalign vs Traditional Braces",
+          "targetId": "e_blog_04"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Wisdom Tooth Pain & Extraction",
+          "targetId": "e_blog_05"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Dental Emergency First Aid",
+          "targetId": "e_blog_06"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Cosmetic Dentistry — Patient Guide",
+          "targetId": "e_blog_07"
+        },
+        {
+          "predicate": "COVERS",
+          "targetName": "Dental Fillings Explained",
+          "targetId": "e_blog_08"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Vidya Sahithi Atluri",
+          "targetId": "e_per_01"
+        }
+      ]
+    },
+    {
+      "entityId": "e_blog_01",
+      "@type": "Concept",
+      "name": "Root Canal Symptoms & Warning Signs",
+      "description": "Key symptoms and warning signs that indicate a patient may need root canal treatment.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_01",
+          "text": "Discover the key symptoms that indicate you might need root canal treatment — persistent toothache, sensitivity to hot/cold, darkening of the tooth, and swollen gums — and learn why modern procedures are virtually painless.",
+          "sourceUrl": "https://krishnadental.in/blog-root-canal-guide.html",
+          "pageTitle": "5 Signs You Need a Root Canal | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.94,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Root Canal Treatment",
+          "targetId": "e_svc_01"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Manjeera Ramya",
+          "targetId": "e_per_02"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q905815"
+    },
+    {
+      "entityId": "e_blog_02",
+      "@type": "Concept",
+      "name": "Dental Implants — Complete Guide",
+      "description": "Comprehensive patient guide covering the implant procedure timeline, aftercare, and long-term benefits.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_02",
+          "text": "Everything you need to know about dental implants — from the procedure timeline to aftercare and long-term benefits. Types include endosteal, zygomatic, mini implants, All-on-4, and All-on-6.",
+          "sourceUrl": "https://krishnadental.in/blog-dental-implants-guide.html",
+          "pageTitle": "The Complete Guide to Dental Implants | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Dental Implants",
+          "targetId": "e_svc_02"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Vidya Sahithi Atluri",
+          "targetId": "e_per_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q143680"
+    },
+    {
+      "entityId": "e_blog_03",
+      "@type": "Concept",
+      "name": "Gum Disease Prevention",
+      "description": "Stages, risk factors, and early treatment strategies for periodontal (gum) disease.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_03",
+          "text": "Most people with gum disease don't know they have it. Learn the stages — gingivitis to periodontitis — risk factors including smoking and diabetes, and how early professional cleaning can save your teeth.",
+          "sourceUrl": "https://krishnadental.in/blog-gum-disease-guide.html",
+          "pageTitle": "Gum Disease: The Silent Threat to Your Smile | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Dental Cleaning & Scaling",
+          "targetId": "e_svc_06"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Vidya Sahithi Atluri",
+          "targetId": "e_per_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q1059765"
+    },
+    {
+      "entityId": "e_blog_04",
+      "@type": "Concept",
+      "name": "Invisalign vs Traditional Braces",
+      "description": "Side-by-side comparison of clear aligners and metal braces on effectiveness, comfort, cost, and lifestyle suitability.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_04",
+          "text": "An honest side-by-side comparison of Invisalign clear aligners versus metal braces — effectiveness, comfort, cost, lifestyle impact, and who should choose which option.",
+          "sourceUrl": "https://krishnadental.in/blog-invisalign-vs-braces.html",
+          "pageTitle": "Invisalign vs Braces: Which Is Right for You? | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Orthodontics & Braces",
+          "targetId": "e_svc_05"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Vidya Sahithi Atluri",
+          "targetId": "e_per_01"
+        }
+      ]
+    },
+    {
+      "entityId": "e_blog_05",
+      "@type": "Concept",
+      "name": "Wisdom Tooth Pain & Extraction",
+      "description": "Signs of wisdom tooth eruption, when surgical removal is necessary, and what patients should expect.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_05",
+          "text": "That ache at the back of your jaw could be your wisdom teeth. Learn the signs of impaction, when removal is necessary, and what to expect before, during, and after the procedure.",
+          "sourceUrl": "https://krishnadental.in/blog-wisdom-tooth-pain.html",
+          "pageTitle": "Wisdom Tooth Pain? Here's What You Should Know | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Emergency Dental Care",
+          "targetId": "e_svc_07"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Manjeera Ramya",
+          "targetId": "e_per_02"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q202517"
+    },
+    {
+      "entityId": "e_blog_06",
+      "@type": "Concept",
+      "name": "Dental Emergency First Aid",
+      "description": "Immediate steps patients should take for knocked-out teeth, severe toothaches, and broken crowns before reaching a dental clinic.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_06",
+          "text": "Knocked-out tooth? Severe toothache? Broken crown? Quick steps to take before reaching Krishna Dental for emergency care in Gudivada — open on Sundays.",
+          "sourceUrl": "https://krishnadental.in/blog-dental-emergency.html",
+          "pageTitle": "How to Handle a Dental Emergency in Gudivada | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "procedure",
+          "relevanceScore": 0.94,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Emergency Dental Care",
+          "targetId": "e_svc_07"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Manjeera Ramya",
+          "targetId": "e_per_02"
+        }
+      ]
+    },
+    {
+      "entityId": "e_blog_07",
+      "@type": "Concept",
+      "name": "Cosmetic Dentistry — Patient Guide",
+      "description": "An honest overview of what cosmetic dentistry can achieve, including whitening, veneers, and smile makeovers.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_07",
+          "text": "From whitening to veneers to smile makeovers — an honest look at what cosmetic dentistry can and cannot achieve, with realistic expectations for each procedure.",
+          "sourceUrl": "https://krishnadental.in/blog-cosmetic-dentistry-worth-it.html",
+          "pageTitle": "Is Cosmetic Dentistry Worth It? A Gudivada Dentist's Honest Take | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.91,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Cosmetic Dentistry",
+          "targetId": "e_svc_04"
+        },
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Vidya Sahithi Atluri",
+          "targetId": "e_per_01"
+        }
+      ]
+    },
+    {
+      "entityId": "e_blog_08",
+      "@type": "Concept",
+      "name": "Dental Fillings Explained",
+      "description": "Overview of composite, amalgam, ceramic, and glass ionomer filling types, the procedure, and aftercare.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_blog_08",
+          "text": "Not all fillings are created equal. Composite, amalgam, ceramic, and glass ionomer options are available at our Gudivada clinic — each with different strength, aesthetics, and longevity profiles.",
+          "sourceUrl": "https://krishnadental.in/blog-dental-fillings-explained.html",
+          "pageTitle": "Dental Fillings Explained: Types, Process, and Aftercare | Krishna Dental Blog",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.9,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "AUTHORED_BY",
+          "targetName": "Dr. Vidya Sahithi Atluri",
+          "targetId": "e_per_01"
+        }
+      ]
+    },
+    {
+      "entityId": "e_gallery_01",
+      "@type": "Concept",
+      "name": "Smile Makeover Gallery",
+      "description": "Before-and-after patient photo gallery showing dental transformation results from Krishna Dental, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_gallery_01",
+          "text": "Explore our smile gallery to see real before-and-after results from patients who have undergone dental implants, crowns, veneers, and full smile makeovers at Krishna Dental.",
+          "sourceUrl": "https://krishnadental.in/before-after-gallery.html",
+          "pageTitle": "Smile Gallery — Before & After | Krishna Dental Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_gallery_02",
+          "text": "I had missing front and back teeth, which made eating and smiling difficult. After teeth replacement at Krishna Dental, the final result exceeded my expectation. — usrk prasad (Google, verified).",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.91,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetName": "Cosmetic Dentistry",
+          "targetId": "e_svc_04"
+        }
+      ]
+    },
+    {
+      "entityId": "e_faq_01",
+      "@type": "Concept",
+      "name": "Dental Treatment FAQs — Krishna Dental",
+      "description": "Frequently asked questions about dental procedures, pricing, and appointments at Krishna Multispeciality Dental Clinic, Gudivada.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_faq_01a",
+          "text": "Dental implants typically involve a 3–6 month timeline; 3D CBCT scans evaluate bone density to determine if bone grafts are needed. Root canal treatment usually takes 1–2 visits, with single-sitting options for standard cases.",
+          "sourceUrl": "https://krishnadental.in/faq.html",
+          "pageTitle": "Frequently Asked Questions | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.93,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_faq_01b",
+          "text": "Retainers are necessary after braces to prevent teeth from shifting back. Premium zirconia crowns last 10–15 years or longer with proper care. Professional scaling every 6 months maintains gum health.",
+          "sourceUrl": "https://krishnadental.in/faq.html",
+          "pageTitle": "Frequently Asked Questions | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.91,
+          "audienceType": "general"
+        }
+      ]
+    },
+    {
+      "entityId": "e_place_gudivada",
+      "@type": "Place",
+      "name": "Gudivada",
+      "description": "A city in Krishna district, Andhra Pradesh, India. Primary location of Krishna Multispeciality Dental Clinic.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_place_gudivada_01",
+          "text": "Krishna Multispeciality Dental Clinic is located in Gudivada, Andhra Pradesh — the heart of Krishna district. We are the region's only specialist-level prosthodontic practice.",
+          "sourceUrl": "https://krishnadental.in/index.html",
+          "pageTitle": "Best Dental Hospital & Dentist in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.99,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q2350125"
+    },
+    {
+      "entityId": "e_place_eluru",
+      "@type": "Place",
+      "name": "Eluru",
+      "description": "A city in West Godavari district, Andhra Pradesh, India. Served by Krishna Dental due to proximity and patient travel along Eluru Road.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_place_eluru_01",
+          "text": "Serving patients from Gudivada, Eluru, Machilipatnam, Nuzvid, Kaikalur and across Krishna district, Andhra Pradesh.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.95,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q1003496"
+    },
+    {
+      "entityId": "e_place_machilipatnam",
+      "@type": "Place",
+      "name": "Machilipatnam",
+      "description": "The district headquarters of Krishna district, Andhra Pradesh. Patients travel to Krishna Dental for specialist prosthodontic and implant care.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_place_machilipatnam_01",
+          "text": "Patients from Machilipatnam travel to Krishna Multispeciality Dental Clinic in Gudivada for specialist-level prosthodontic care — the only MDS Prosthodontist practicing in the region.",
+          "sourceUrl": "https://krishnadental.in/crowns-bridges-gudivada.html",
+          "pageTitle": "Dental Crowns & Bridges in Gudivada — Premium Restorative Care | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.92,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q845662"
+    },
+    {
+      "entityId": "e_place_nuzvid",
+      "@type": "Place",
+      "name": "Nuzvid",
+      "description": "A town in Krishna district, Andhra Pradesh, India. Part of the service catchment area of Krishna Multispeciality Dental Clinic.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_place_nuzvid_01",
+          "text": "Serving patients from Gudivada, Eluru, Machilipatnam, Nuzvid, Kaikalur and across Krishna district, Andhra Pradesh.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.9,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q1525547"
+    },
+    {
+      "entityId": "e_place_kaikalur",
+      "@type": "Place",
+      "name": "Kaikalur",
+      "description": "A mandal and town in Krishna district, Andhra Pradesh, India. Part of the service catchment area of Krishna Multispeciality Dental Clinic.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_place_kaikalur_01",
+          "text": "Serving patients from Gudivada, Eluru, Machilipatnam, Nuzvid, Kaikalur and across Krishna district, Andhra Pradesh.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.9,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "RELATES_TO",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q48728320"
+    },
+    {
+      "entityId": "e_place_krishna_dist",
+      "@type": "Place",
+      "name": "Krishna District",
+      "description": "An administrative district in Andhra Pradesh, India. The primary geographic service region of Krishna Multispeciality Dental Clinic.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_place_krishna_dist_01",
+          "text": "Serving patients from Gudivada, Eluru, Machilipatnam, Nuzvid, Kaikalur and across Krishna district, Andhra Pradesh. The clinic is a multispeciality dental hospital serving the entire Krishna district region.",
+          "sourceUrl": "https://krishnadental.in/index.html",
+          "pageTitle": "Best Dental Hospital & Dentist in Gudivada | Krishna Dental",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "general"
+        }
+      ],
+      "relations": [
+        {
+          "predicate": "INCLUDES",
+          "targetName": "Gudivada",
+          "targetId": "e_place_gudivada"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetName": "Machilipatnam",
+          "targetId": "e_place_machilipatnam"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetName": "Nuzvid",
+          "targetId": "e_place_nuzvid"
+        },
+        {
+          "predicate": "INCLUDES",
+          "targetName": "Kaikalur",
+          "targetId": "e_place_kaikalur"
+        },
+        {
+          "predicate": "DESCRIBED_BY",
+          "targetName": "Krishna Multispeciality Dental Clinic",
+          "targetId": "e_org_01"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q15382"
+    },
+    {
+      "entityId": "e_auth_ida",
+      "@type": "Organization",
+      "name": "Indian Dental Association",
+      "alternateName": "IDA",
+      "description": "The national professional body for dentists in India, promoting dental health, professional standards, and ethics since 1920.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_auth_ida_01",
+          "text": "Dr. Vidya Sahithi Atluri is a proud member of the Indian Dental Association (IDA) — India's premier national body for dental professionals, ensuring ethical practice and continuing education standards.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.96,
+          "audienceType": "general"
+        }
+      ]
+    },
+    {
+      "entityId": "e_auth_abdm",
+      "@type": "Organization",
+      "name": "National Health Professional Registry (ABDM)",
+      "alternateName": "NHPR",
+      "description": "India's Ayushman Bharat Digital Mission dual-registry system. Krishna Dental holds Healthcare Facility Registration (HFR) ID IN2810020530. Dr. Vidya Sahithi holds Healthcare Professional Registration (HPR) ID 71-6403-6286-0311. Both are independently verifiable government records confirming the clinic's legitimacy.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_auth_abdm_01",
+          "text": "Krishna Multispeciality Dental Clinic is registered with the National Health Professional Registry (ABDM) under Facility ID IN2810020530 — a government-verified healthcare facility in Gudivada, Andhra Pradesh.",
+          "sourceUrl": "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530",
+          "pageTitle": "ABDM Healthcare Facility Registry — IN2810020530",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.98,
+          "audienceType": "general"
+        },
+        {
+          "chunkId": "c_auth_abdm_02",
+          "text": "Krishna Multispeciality Dental Clinic holds two ABDM verifications: Healthcare Facility Registry (HFR ID: IN2810020530) for the clinic, and Healthcare Professional Registry (HPR ID: 71-6403-6286-0311) for Dr. Vidya Sahithi Atluri — both independently verifiable at nhpr.abdm.gov.in.",
+          "sourceUrl": "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530",
+          "pageTitle": "ABDM Healthcare Facility Registry — Krishna Multispeciality Dental Clinic (IN2810020530)",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.99,
+          "audienceType": "general"
+        }
+      ]
+    },
+    {
+      "entityId": "e_qual_mds",
+      "@type": "Standard",
+      "name": "MDS Prosthodontics",
+      "alternateName": "Master of Dental Surgery — Prosthodontics",
+      "description": "A postgraduate dental specialisation degree awarded by Indian dental universities, qualifying practitioners as specialists in crowns, bridges, implants, dentures, and smile rehabilitation.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_qual_mds_01",
+          "text": "MDS (Prosthodontics) is a postgraduate specialisation qualifying dentists to perform complex restorative procedures — crowns, bridges, implants, dentures, and smile makeovers — at specialist level. Dr. Vidya Sahithi holds this qualification.",
+          "sourceUrl": "https://krishnadental.in/about.html",
+          "pageTitle": "About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "definition",
+          "relevanceScore": 0.97,
+          "audienceType": "technical"
+        }
+      ]
+    },
+    {
+      "entityId": "e_auth_hpr",
+      "@type": "Standard",
+      "name": "ABDM Healthcare Professional Registry",
+      "alternateName": "HPR — ABDM",
+      "description": "India's Ayushman Bharat Digital Mission registry of verified individual healthcare professionals. Each registered practitioner receives a unique HPR ID verifiable at nhpr.abdm.gov.in. Dr. Vidya Sahithi Atluri is registered under HPR ID 71-6403-6286-0311.",
+      "audienceType": "general",
+      "status": "active",
+      "hasChunks": [
+        {
+          "chunkId": "c_auth_hpr_01",
+          "text": "Dr. Vidya Sahithi Atluri is a verified healthcare professional registered on India's National Health Professional Registry (ABDM) under HPR ID 71-6403-6286-0311. This government registration confirms her qualifications and professional standing as a licensed dental specialist in India.",
+          "sourceUrl": "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311",
+          "pageTitle": "ABDM National Health Professional Registry — Dr. Vidya Sahithi Atluri (HPR ID: 71-6403-6286-0311)",
+          "publisher": "Krishna Multispeciality Dental Clinic",
+          "retrieved": "2026-06-29T06:45:00Z",
+          "contentType": "evidence",
+          "relevanceScore": 0.99,
+          "audienceType": "general"
+        }
+      ]
+    }
+  ]
+}
