@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Hospital Gudivada</title>
-  <meta name="description" content="Meet Dr. Vidya Sahithi Atluri (MDS Prosthodontist) & the team at Krishna Multispeciality Dental Hospital in Gudivada. Providing gentle, honest, and expert dental care.">
+  <title>About Dr. Vidya Sahithi | MDS Prosthodontist Gudivada</title>
+  <meta name="description" content="Meet Dr. Vidya Sahithi, Gudivada's only MDS Prosthodontist. Read the story of Krishna Dental Hospital and our commitment to honest, expert dental care.">
   <link rel="canonical" href="https://www.krishnadental.in/about.html">
-  <meta property="og:title" content="About Krishna Dental Hospital Gudivada | Our Story & Team">
-  <meta property="og:description" content="Krishna Dental Hospital's story, values, and team of dedicated dentists in Gudivada. Gentle care, honest advice, modern approach.">
+  
+  <meta property="og:title" content="About Dr. Vidya Sahithi | Krishna Dental Hospital Gudivada">
+  <meta property="og:description" content="Meet Dr. Vidya Sahithi, Gudivada's only MDS Prosthodontist. Read the story of Krishna Dental Hospital.">
   <meta property="og:url" content="https://www.krishnadental.in/about.html">
-  <meta property="og:image" content="https://www.krishnadental.in/images/og-krishna-dental-clinic-gudivada.webp">
+  <meta property="og:image" content="https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,6 @@
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --text-primary: #1d1d1f;
       --text-secondary: #6e6e73;
@@ -38,9 +38,7 @@
       --radius: 12px;
       --radius-lg: 20px;
     }
-
     html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--text-primary);
@@ -48,7 +46,6 @@
       line-height: 1.6;
       font-size: 17px;
     }
-
     /* ── Navigation ── */
     .site-nav {
       position: sticky; top: 0; z-index: 100;
@@ -78,7 +75,7 @@
     .nav-cta:hover { opacity: 0.85; }
     .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
     .nav-hamburger svg { width: 22px; height: 22px; color: var(--text-primary); }
-
+    
     .mobile-menu {
       display: none; position: fixed; inset: 0; z-index: 200;
       background: rgba(255,255,255,0.97);
@@ -96,12 +93,10 @@
       background: none; border: none; cursor: pointer; padding: 8px;
     }
     .mobile-close svg { width: 24px; height: 24px; }
-
     @media (max-width: 768px) {
       .nav-links, .nav-cta-wrap { display: none; }
       .nav-hamburger { display: block; }
     }
-
     /* ── Breadcrumb ── */
     .breadcrumb {
       max-width: 680px; margin: 0 auto; padding: 20px 24px 0;
@@ -110,7 +105,7 @@
     .breadcrumb a { color: var(--text-tertiary); text-decoration: none; }
     .breadcrumb a:hover { color: var(--accent); }
     .breadcrumb span { margin: 0 6px; }
-
+    
     /* ── Hero ── */
     .hero {
       max-width: 680px; margin: 0 auto;
@@ -122,22 +117,21 @@
     }
     .hero h1 {
       font-family: 'DM Sans', sans-serif;
-      font-size: clamp(36px, 6vw, 56px); font-weight: 700;
-      letter-spacing: -1.5px; line-height: 1.08; color: var(--text-primary);
+      font-size: clamp(32px, 5vw, 48px); font-weight: 700;
+      letter-spacing: -1.2px; line-height: 1.1; color: var(--text-primary);
       margin-bottom: 20px;
     }
     .hero p {
       font-size: 19px; line-height: 1.5; color: var(--text-secondary);
       max-width: 520px; margin: 0 auto 32px;
     }
-
+    
     /* ── Sections ── */
     .section { padding: 80px 24px; }
     .section-alt { background: var(--bg-secondary); }
     .section-dark { background: var(--bg-dark); color: #fff; }
     .section-inner { max-width: 680px; margin: 0 auto; }
     .section-wide { max-width: 1080px; margin: 0 auto; }
-
     .section-label {
       font-size: 13px; font-weight: 600; color: var(--accent);
       text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 12px;
@@ -153,7 +147,7 @@
     .section-body p { margin-bottom: 16px; }
     .section-body p:last-child { margin-bottom: 0; }
     .section-body strong { color: var(--text-primary); font-weight: 600; }
-
+    
     /* ── Feature Grid ── */
     .feature-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -172,130 +166,113 @@
       align-items: center; justify-content: center; margin-bottom: 16px;
     }
     .feature-icon svg { width: 22px; height: 22px; color: var(--accent); }
-    .feature-card h3 {
-      font-size: 17px; font-weight: 600; margin-bottom: 8px;
-      letter-spacing: -0.2px;
-    }
-    .feature-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.5; }
-
+    
     /* ── Team Grid ── */
     .team-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 32px; margin-top: 48px;
     }
     @media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } }
-
     .team-card {
       background: var(--bg-primary); border-radius: var(--radius-lg);
       overflow: hidden; border: 1px solid var(--border);
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .team-card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
-
     .team-photo {
-      width: 100%; aspect-ratio: 1;
+      width: 100%; aspect-ratio: 1.2;
       background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
       display: flex; align-items: center; justify-content: center;
       color: var(--accent); font-size: 14px; font-weight: 600;
     }
-
-    .team-info {
-      padding: 24px;
-      text-align: center;
-    }
-
-    .team-card h3 {
-      font-size: 18px; font-weight: 600; margin-bottom: 4px;
-      letter-spacing: -0.2px;
-    }
-
-    .team-title {
-      font-size: 13px; font-weight: 600; color: var(--accent);
-      text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;
-    }
-
-    .team-card p {
-      font-size: 14px; color: var(--text-secondary); line-height: 1.6;
-    }
-
+    .team-info { padding: 24px; text-align: center; }
+    .team-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 4px; letter-spacing: -0.2px; }
+    .team-title { font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; }
+    .team-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
     .ida-badge {
       display: inline-block; font-size: 11px; font-weight: 700;
       color: #0d7377; background: #e0f2f1; padding: 3px 8px;
       border-radius: 4px; letter-spacing: 0.5px; margin-left: 8px;
       vertical-align: middle;
     }
-
+    
     /* ── Testimonials ── */
     .testimonials-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 24px; margin-top: 48px;
     }
-    @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
-
+    @media (max-width: 900px) { .testimonials-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .testimonials-grid { grid-template-columns: 1fr; } }
     .testimonial-card {
       background: var(--bg-primary); border: 1px solid var(--border);
       border-radius: 16px; padding: 28px;
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .testimonial-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-
-    .testimonial-stars {
-      display: flex; gap: 4px; margin-bottom: 16px;
-    }
+    .testimonial-stars { display: flex; gap: 4px; margin-bottom: 16px; }
     .testimonial-stars span { color: #f59e0b; font-size: 16px; }
-
-    .testimonial-text {
-      font-size: 15px; color: var(--text-secondary); line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .testimonial-author {
-      font-size: 14px; font-weight: 600; color: var(--text-primary);
-      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-    }
-
-    .treatment-tag {
-      font-size: 11px; font-weight: 500; color: var(--accent);
-      background: var(--accent-light); border-radius: 20px;
-      padding: 2px 10px; letter-spacing: 0.02em;
-    }
-
-    .testimonials-source {
-      font-size: 13px; color: var(--text-tertiary); text-align: center;
-      margin-top: 32px;
-    }
-
+    .testimonial-text { font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; }
+    .testimonial-author { font-size: 14px; font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .treatment-tag { font-size: 11px; font-weight: 500; color: var(--accent); background: var(--accent-light); border-radius: 20px; padding: 2px 10px; }
+    .testimonials-source { font-size: 13px; color: var(--text-tertiary); text-align: center; margin-top: 32px; }
+    
     /* ── Features List ── */
-    .features-list {
-      margin-top: 48px; display: grid;
-      grid-template-columns: 1fr 1fr; gap: 24px;
-    }
+    .features-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
     @media (max-width: 600px) { .features-list { grid-template-columns: 1fr; } }
-
-    .feature-item {
-      display: flex; gap: 16px;
-    }
-
+    .feature-item { display: flex; gap: 16px; }
     .feature-check {
       flex-shrink: 0; width: 24px; height: 24px;
       border-radius: 50%; background: var(--accent-light);
       display: flex; align-items: center; justify-content: center;
       margin-top: 2px;
     }
-
-    .feature-check svg {
-      width: 14px; height: 14px; color: var(--accent);
+    .feature-check svg { width: 14px; height: 14px; color: var(--accent); }
+    .feature-item h4 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .feature-item p { font-size: 14px; color: var(--text-secondary); }
+    
+    /* ── Clinic Gallery ── */
+    .clinic-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 32px; }
+    @media (max-width: 900px) { .clinic-gallery { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+    @media (max-width: 550px) { .clinic-gallery { grid-template-columns: 1fr; } }
+    .gallery-card {
+      background: var(--bg-primary); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
     }
-
-    .feature-item h4 {
-      font-size: 15px; font-weight: 600; color: var(--text-primary);
-      margin-bottom: 4px;
+    .gallery-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.06); }
+    .gallery-image-wrapper { position: relative; width: 100%; aspect-ratio: 16/11; overflow: hidden; cursor: pointer; }
+    .gallery-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .gallery-card:hover .gallery-image { transform: scale(1.06); }
+    .gallery-overlay {
+      position: absolute; inset: 0; background: rgba(13, 115, 119, 0.4); opacity: 0;
+      display: flex; align-items: center; justify-content: center; transition: opacity 0.3s ease;
+      backdrop-filter: blur(2px);
     }
-
-    .feature-item p {
-      font-size: 14px; color: var(--text-secondary);
+    .gallery-image-wrapper:hover .gallery-overlay { opacity: 1; }
+    .gallery-zoom-icon {
+      width: 48px; height: 48px; border-radius: 50%; background: #fff;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      color: var(--accent); transform: translateY(10px); transition: transform 0.3s ease;
     }
-
+    .gallery-image-wrapper:hover .gallery-zoom-icon { transform: translateY(0); }
+    .gallery-card-info { padding: 24px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
+    .gallery-card-info h3 { font-family: 'DM Sans', sans-serif; font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+    .gallery-card-info p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+    
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed; inset: 0; z-index: 1000; background: rgba(29, 29, 31, 0.95);
+      backdrop-filter: blur(10px); display: none; align-items: center; justify-content: center;
+      flex-direction: column; padding: 40px 24px;
+    }
+    .lightbox-modal.open { display: flex; }
+    .lightbox-image { max-width: 90%; max-height: 75vh; object-fit: contain; border-radius: var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+    .lightbox-caption { margin-top: 20px; color: #fff; font-size: 16px; text-align: center; max-width: 600px; }
+    .lightbox-close {
+      position: absolute; top: 24px; right: 24px; background: rgba(255,255,255,0.1);
+      border: none; width: 44px; height: 44px; border-radius: 50%; color: #fff; font-size: 28px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
     /* ── CTA Banner ── */
     .cta-banner {
       max-width: 1080px; margin: 0 auto;
@@ -316,10 +293,22 @@
     }
     .cta-banner .btn-white:hover { transform: scale(1.03); }
 
+    /* ── WhatsApp FAB ── */
+    .whatsapp-fab {
+      position: fixed; bottom: 24px; right: 24px; z-index: 90;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25d366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+      transition: transform 0.2s; text-decoration: none;
+    }
+    .whatsapp-fab:hover { transform: scale(1.08); }
+    .whatsapp-fab svg { width: 28px; height: 28px; fill: #fff; }
+
     /* ── Footer ── */
     .site-footer {
       background: var(--bg-dark); color: rgba(255,255,255,0.85);
       padding: 64px 24px 32px;
+      margin-top: 0;
     }
     .footer-grid {
       max-width: 1080px; margin: 0 auto;
@@ -356,316 +345,78 @@
       padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
       font-size: 13px; color: rgba(255,255,255,0.75); text-align: center;
     }
-
-    /* ── WhatsApp ── */
-    .whatsapp-fab {
-      position: fixed; bottom: 24px; right: 24px; z-index: 90;
-      width: 56px; height: 56px; border-radius: 50%;
-      background: #25d366; display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
-      transition: transform 0.2s; text-decoration: none;
-    }
-    .whatsapp-fab:hover { transform: scale(1.08); }
-    .whatsapp-fab svg { width: 28px; height: 28px; fill: #fff; }
-
-    /* ── Scroll Reveal ── */
-    .reveal {
-      opacity: 1; transform: translateY(24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* ── Clinic Gallery ── */
-    .clinic-gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      margin-top: 32px;
-    }
-    @media (max-width: 900px) {
-      .clinic-gallery { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    }
-    @media (max-width: 550px) {
-      .clinic-gallery { grid-template-columns: 1fr; }
-    }
-
-    .gallery-card {
-      background: var(--bg-primary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
-    }
-    .gallery-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-    }
-
-    .gallery-image-wrapper {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16/11;
-      overflow: hidden;
-      cursor: pointer;
-      background: #f0f0f0;
-    }
-
-    .gallery-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    .gallery-card:hover .gallery-image {
-      transform: scale(1.06);
-    }
-
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(13, 115, 119, 0.4);
-      opacity: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.3s ease;
-      backdrop-filter: blur(2px);
-    }
-    .gallery-image-wrapper:hover .gallery-overlay {
-      opacity: 1;
-    }
-
-    .gallery-zoom-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      color: var(--accent);
-      transform: translateY(10px);
-      transition: transform 0.3s ease, background-color 0.2s;
-    }
-    .gallery-image-wrapper:hover .gallery-zoom-icon {
-      transform: translateY(0);
-    }
-    .gallery-zoom-icon:hover {
-      background-color: var(--accent-light);
-    }
-    .gallery-zoom-icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .gallery-card-info {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-grow: 1;
-    }
-    .gallery-card-info h3 {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-      letter-spacing: -0.2px;
-    }
-    .gallery-card-info p {
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ── Lightbox Modal ── */
-    .lightbox-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      background: rgba(29, 29, 31, 0.95);
-      backdrop-filter: blur(10px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 40px 24px;
-    }
-    .lightbox-modal.open {
-      display: flex;
-    }
-    .lightbox-image {
-      max-width: 90%;
-      max-height: 75vh;
-      object-fit: contain;
-      border-radius: var(--radius);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-      transform: scale(0.95);
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .lightbox-modal.open .lightbox-image {
-      transform: scale(1);
-    }
-    .lightbox-caption {
-      margin-top: 20px;
-      color: #fff;
-      font-size: 16px;
-      text-align: center;
-      max-width: 600px;
-      font-weight: 500;
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      background: rgba(255,255,255,0.1);
-      border: none;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      color: #fff;
-      font-size: 28px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.2s, transform 0.2s;
-    }
-    .lightbox-close:hover {
-      background: rgba(255,255,255,0.2);
-      transform: scale(1.05);
-    }
   </style>
 
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Dentist",
-      "name": "Krishna Multispeciality Dental Clinic",
-      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
-      "@id": "https://www.krishnadental.in#dentist",
-      "url": "https://www.krishnadental.in",
-      "telephone": [
-        "+918674244241",
-        "+917997444241"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
-        "addressLocality": "Gudivada",
-        "addressRegion": "Andhra Pradesh",
-        "postalCode": "521301",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 16.4424385,
-        "longitude": 80.9895544
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "09:30",
-          "closes": "20:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "10:00",
-          "closes": "13:00"
-        }
-      ],
-      "sameAs": [
-        "https://wa.me/917997444241",
-        "https://maps.app.goo.gl/Yy31y5YBPtnsEaVR8",
-        "https://www.practo.com/gudivada/clinic/krishna-multispeciality-dental-clinic-1-rajendra-nagar?specialization=Dentist",
-        "https://jsdl.in/DT-99KS7HITHWI",
-        "https://maps.apple.com/place?place-id=IDC77F000FF3702C6",
-        "https://www.bing.com/maps?ss=ypid.YN4070x8565180883905302686",
-        "https://www.facebook.com/krishnadentalclinicgudivada",
-        "https://www.instagram.com/krishnadentalgudivada/",
-        "https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "name": "Krishna Multispeciality Dental Clinic",
-      "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
-      "@id": "https://www.krishnadental.in#organization",
-      "url": "https://www.krishnadental.in",
-      "description": "Multi-speciality dental hospital in Gudivada offering gentle, honest dental care with modern technology",
-      "email": "vidya@krishnadental.in"
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.krishnadental.in#dr-vidya",
-      "name": "Dr. Vidya",
-      "jobTitle": "MDS, Prosthodontist",
-      "description": "Postgraduate specialist in prosthodontics at Krishna Multispeciality Dental Hospital, Gudivada. Specialises in crowns, bridges, dental implants, smile design, and full-mouth rehabilitation.",
-      "worksFor": {
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
         "@type": "Dentist",
-        "@id": "https://www.krishnadental.in#dentist"
-      },
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "PostgraduateDegree",
-        "name": "MDS Prosthodontics"
-      },
-      "email": "vidya@krishnadental.in",
-      "url": "https://www.krishnadental.in/about.html",
-      "sameAs": [
-        "https://nhpr.abdm.gov.in/nhpr/v4/hpr/publicSearch?hprId=71-6403-6286-0311"
-      ]
-    },
-    {
-      "@type": "AggregateRating",
-      "itemReviewed": {
-        "@type": "Dentist",
-        "@id": "https://www.krishnadental.in#dentist"
-      },
-      "ratingValue": "5.0",
-      "reviewCount": "61",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.krishnadental.in"
+        "name": "Krishna Multispeciality Dental Hospital",
+        "image": "https://www.krishnadental.in/images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp",
+        "@id": "https://www.krishnadental.in#dentist",
+        "url": "https://www.krishnadental.in",
+        "telephone": ["+918674244241", "+917997444241"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram",
+          "addressLocality": "Gudivada",
+          "addressRegion": "Andhra Pradesh",
+          "postalCode": "521301",
+          "addressCountry": "IN"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About Us",
-          "item": "https://www.krishnadental.in/about.html"
-        }
-      ]
-    }
-  ]
-}
-</script>
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 16.4424385,
+          "longitude": 80.9895544
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "09:30",
+            "closes": "20:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "10:00",
+            "closes": "13:00"
+          }
+        ],
+        "sameAs": [
+          "https://wa.me/917997444241",
+          "https://maps.app.goo.gl/Yy31y5YBPtnsEaVR8"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "name": "Krishna Multispeciality Dental Hospital",
+        "@id": "https://www.krishnadental.in#organization",
+        "url": "https://www.krishnadental.in"
+      },
+      {
+        "@type": "AggregateRating",
+        "itemReviewed": {
+          "@type": "Dentist",
+          "@id": "https://www.krishnadental.in#dentist"
+        },
+        "ratingValue": "5.0",
+        "reviewCount": "61"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krishnadental.in"},
+          {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.krishnadental.in/about.html"}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="site-nav">
     <div class="nav-inner">
@@ -706,334 +457,337 @@
     <a href="index.html">Home</a><span>/</span>
     About Us
   </div>
+
   <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-eyebrow">About Our Practice</div>
+      <h1>Meet Dr. Vidya Sahithi, MDS — Gudivada's Only Prosthodontist</h1>
+      <p>Providing specialist-level dental implants, full mouth restorations, and gentle family dentistry at Krishna Multispeciality Dental Hospital.</p>
+    </section>
 
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-eyebrow">About Us</div>
-    <h1>Meet the Team at Krishna Dental, Gudivada</h1>
-    <p>Krishna Multispeciality Dental Hospital has been serving families in Gudivada and the Krishna district with gentle, honest dental care.</p>
-  </section>
-
-  <!-- Our Story -->
-  <section class="section section-alt">
-    <div class="section-inner reveal">
-      <div class="section-label">Our story</div>
-      <h2 class="section-heading">Built on trust, driven by care</h2>
-      <div class="section-body">
-        <p>At Krishna Dental, we believe that every patient deserves a dentist they can trust. We started with a simple mission: to bring compassionate, honest dental care to our community in Gudivada and the surrounding Krishna district.</p>
-        <p>We treat every patient like family — listening to your concerns, explaining your options clearly, and recommending only the treatments you truly need. No pressure. No surprises. Just good medicine delivered with genuine care.</p>
-        <p>Over the years, we've invested in the latest technology — from digital X-rays to advanced materials — because we believe modern dentistry should be better, faster, and more comfortable for you. But technology alone doesn't make a great clinic. <strong>People do.</strong> Our team is dedicated to making every visit a positive experience.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Values -->
-  <section class="section">
-    <div class="section-wide reveal">
-      <div class="section-label">Our values</div>
-      <h2 class="section-heading">What guides us every day</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          </div>
-          <h3>Gentle care</h3>
-          <p>We believe dental visits shouldn't be stressful. Everything we do is designed around your comfort.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <h3>Honest advice</h3>
-          <p>We recommend only what you need — nothing more. Transparent pricing, clear explanations.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <h3>Modern approach</h3>
-          <p>From digital X-rays to advanced materials, we invest in technology that makes treatment better and faster.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </div>
-          <h3>Community focus</h3>
-          <p>We're proud to serve Gudivada and the surrounding Krishna district. Your trust is our greatest reward.</p>
+    <!-- Our Story -->
+    <section class="section section-alt">
+      <div class="section-inner reveal">
+        <div class="section-label">Our story</div>
+        <h2 class="section-heading">Built on trust, driven by care</h2>
+        <div class="section-body">
+          <p>At Krishna Dental, we believe that every patient deserves a dentist they can trust. Led by <strong>Dr. Vidya Sahithi Atluri (MDS)</strong>, we started with a simple mission: to bring compassionate, honest dental care to our community in Gudivada and the surrounding Krishna district.</p>
+          <p>We treat every patient like family — listening to your concerns, explaining your options clearly, and recommending only the treatments you truly need. No pressure. No surprises. Just good medicine delivered with genuine care.</p>
+          <p>Over the years, we've invested in the latest technology — from digital X-rays to advanced materials — because we believe modern dentistry should be better, faster, and more comfortable for you. Read more about <a href="dr-vidya-prosthodontist.html" style="color:var(--accent); font-weight:600; text-decoration:underline;">Dr. Vidya's clinical credentials and specialist qualifications</a>.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Inside Our Clinic (Modern Gallery Section) -->
-  <section class="section section-alt">
-    <div class="section-wide reveal">
-      <div class="section-label">Inside Our Clinic</div>
-      <h2 class="section-heading">A comfortable, sterile, and welcoming environment</h2>
-      <p class="section-body" style="max-width: 680px; margin-bottom: 32px;">
-        We believe a great dental experience starts with comfort. Take a visual tour of our modern, state-of-the-art clinical space in the heart of Gudivada.
-      </p>
-      
-      <div class="clinic-gallery">
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-gudivada-outside.webp" alt="Krishna Dental Hospital outside view on Eluru Road, Gudivada" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
+    <!-- Our Values -->
+    <section class="section">
+      <div class="section-wide reveal">
+        <div class="section-label">Our values</div>
+        <h2 class="section-heading">What guides us every day</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
             </div>
+            <h3>Gentle care</h3>
+            <p>We believe dental visits shouldn't be stressful. Everything we do is designed around your comfort.</p>
           </div>
-          <div class="gallery-card-info">
-            <h3>Clinic Exterior</h3>
-            <p>Conveniently located on Eluru Road, Satyanarayana Puram, Gudivada.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/receptionarea.webp" alt="Modern welcoming reception counter at Krishna Dental Hospital Gudivada" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
+            <h3>Honest advice</h3>
+            <p>We recommend only what you need — nothing more. Transparent pricing, clear explanations.</p>
           </div>
-          <div class="gallery-card-info">
-            <h3>Reception Area</h3>
-            <p>Our warm and accommodating front desk staff are here to assist with your visits.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/waitingarea.webp" alt="Spacious waiting lounge with comfortable seating for patients" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
+            <h3>Modern approach</h3>
+            <p>From digital X-rays to advanced materials, we invest in technology that makes treatment better and faster.</p>
           </div>
-          <div class="gallery-card-info">
-            <h3>Patient Lounge</h3>
-            <p>A beautifully designed, fully air-conditioned space with comfortable seating.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-gudivada-chair1.webp" alt="Modern German dental treatment operatory chair" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Advanced Treatment Room I</h3>
-            <p>State-of-the-art dental chair featuring smart ergonomics and premium LED lighting.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-gudivada-chair2.webp" alt="Sterile clinical setup and treatment chair at Krishna Dental" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Advanced Treatment Room II</h3>
-            <p>Strict clinical sterilization protocols and high-definition diagnostics setups.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="gallery-image-wrapper">
-            <img src="images/krishna-dental-clinic-gudivada.webp" alt="Spacious multispeciality clinic layout Krishna Dental Gudivada" class="gallery-image" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
-              </span>
-            </div>
-          </div>
-          <div class="gallery-card-info">
-            <h3>Multispeciality Suite</h3>
-            <p>A wide, spacious layout supporting pediatric, implant, and root canal procedures.</p>
+            <h3>Community focus</h3>
+            <p>We're proud to serve Gudivada and the surrounding Krishna district. Your trust is our greatest reward.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Our Team -->
-  <section class="section">
-    <div class="section-wide reveal">
-      <div class="section-label">Our team</div>
-      <h2 class="section-heading">Meet the people behind your smile</h2>
-      <div class="team-grid">
-        <a href="dr-vidya-prosthodontist.html" class="team-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="team-photo"><img src="images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp" alt="Dr. Vidya Sahithi Atluri - MDS Prosthodontist Krishna Dental Hospital Gudivada" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
-          <div class="team-info">
-            <h3>Dr. Vidya Sahithi Atluri<span class="ida-badge">IDA Member</span></h3>
-            <div class="team-title">MDS (Prosthodontics) · IDA Member</div>
-            <p>Postgraduate specialist in prosthodontics — crowns, bridges, implants, dentures, and smile makeovers. A proud member of the Indian Dental Association (IDA), Dr. Vidya brings specialist-level expertise and a gentle, patient-first philosophy to every case.</p>
+    <!-- Inside Our Clinic (Modern Gallery Section) -->
+    <section class="section section-alt">
+      <div class="section-wide reveal">
+        <div class="section-label">Inside Our Clinic</div>
+        <h2 class="section-heading">A comfortable, sterile, and welcoming environment</h2>
+        <p class="section-body" style="max-width: 680px; margin-bottom: 32px;">
+          We believe a great dental experience starts with comfort. Take a visual tour of our modern, state-of-the-art clinical space in the heart of Gudivada.
+        </p>
+        
+        <div class="clinic-gallery">
+          <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+              <img src="images/krishna-dental-gudivada-outside.webp" alt="Krishna Dental Hospital outside view on Eluru Road, Gudivada" class="gallery-image" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Clinic Exterior</h3>
+              <p>Conveniently located on Eluru Road, Satyanarayana Puram, Gudivada.</p>
+            </div>
           </div>
+
+          <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+              <img src="images/receptionarea.webp" alt="Modern welcoming reception counter at Krishna Dental Hospital Gudivada" class="gallery-image" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Reception Area</h3>
+              <p>Our warm and accommodating front desk staff are here to assist with your visits.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+              <img src="images/waitingarea.webp" alt="Spacious waiting lounge with comfortable seating for patients" class="gallery-image" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Patient Lounge</h3>
+              <p>A beautifully designed, fully air-conditioned space with comfortable seating.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+              <img src="images/krishna-dental-gudivada-chair1.webp" alt="Modern German dental treatment operatory chair" class="gallery-image" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Advanced Treatment Room I</h3>
+              <p>State-of-the-art dental chair featuring smart ergonomics and premium LED lighting.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+              <img src="images/krishna-dental-gudivada-chair2.webp" alt="Sterile clinical setup and treatment chair at Krishna Dental" class="gallery-image" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Advanced Treatment Room II</h3>
+              <p>Strict clinical sterilization protocols and high-definition diagnostics setups.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+              <img src="images/krishna-dental-clinic-gudivada.webp" alt="Spacious multispeciality clinic layout Krishna Dental Gudivada" class="gallery-image" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Multispeciality Suite</h3>
+              <p>A wide, spacious layout supporting pediatric, implant, and root canal procedures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="section">
+      <div class="section-wide reveal">
+        <div class="section-label">Our team</div>
+        <h2 class="section-heading">Meet the people behind your smile</h2>
+        <div class="team-grid">
+          <a href="dr-vidya-prosthodontist.html" class="team-card" style="text-decoration: none; color: inherit; display: block;">
+            <div class="team-photo"><img src="images/dr-vidya-sahithi-prosthodontist-krishna-dental.webp" alt="Dr. Vidya Sahithi Atluri - MDS Prosthodontist Krishna Dental Hospital Gudivada" style="width:100%;height:100%;object-fit:cover;" loading="lazy"></div>
+            <div class="team-info">
+              <h3>Dr. Vidya Sahithi Atluri<span class="ida-badge">IDA Member</span></h3>
+              <div class="team-title">MDS (Prosthodontics) · IDA Member</div>
+              <p>Postgraduate specialist in prosthodontics — crowns, bridges, implants, dentures, and smile makeovers. A proud member of the Indian Dental Association (IDA), Dr. Vidya brings specialist-level expertise and a gentle, patient-first philosophy to every case.</p>
+            </div>
+          </a>
+          <div class="team-card">
+            <div class="team-photo" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e0f2f1 0%,#b2dfdb 100%);color:var(--accent);font-size:14px;font-weight:600;">Clinical Team Support</div>
+            <div class="team-info">
+              <h3>Dr. Manjeera Ramya</h3>
+              <div class="team-title">BDS</div>
+              <p>Resident general dentist specializing in root canal therapies, preventive treatments, and patient care. Working under MDS supervision to ensure precision.</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 32px; font-size: 15px; color: var(--text-secondary); text-align: center;">
+          Our full team includes dental hygienists, assistants, and support staff dedicated to your care.
+        </p>
+      </div>
+    </section>
+
+    <!-- Patient Testimonials -->
+    <section class="section section-alt">
+      <div class="section-wide reveal">
+        <div class="section-label">What patients say</div>
+        <h2 class="section-heading">Trusted by families across Gudivada</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"Outstanding dental treatment and a welcoming environment. Highly professional doctor with excellent attention to detail. Quality care and excellent results. Would definitely recommend. Thanks to Dr. Vidya Sahithi mam for your care towards patients."</p>
+            <p class="testimonial-author">Priya Chimakurthy <span class="treatment-tag">Dental Treatment</span></p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"I was scared before coming here, I got my teeth removed. It was completely Painless and they provide affordable treatments. It is one of the best dental hospital in Gudivada. Thank you mam."</p>
+            <p class="testimonial-author">Kittu gummadi2409 <span class="treatment-tag">Tooth Extraction</span></p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"I had missing front teeth for a long time and was looking for reliable solution. After searching for experienced and specialised dentist near me, I visited Krishna Dental Hospital and got my fixed teeth replacement with zirconia caps. The final result exceeded my expectation. If you are looking for best dental hospital in Gudivada, I highly recommend Krishna Dental Hospital. The clinic is clean and the staff are friendly. And they provide very affordable dental treatment."</p>
+            <p class="testimonial-author">Thummalacharla Thummalacharla <span class="treatment-tag">Zirconia Caps</span></p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"I had an excellent experience with my root canal treatment at this clinic. Dr Sahithi was highly skilled, professional, and explained every step of the procedure clearly, which helped put me at ease. The treatment was completed smoothly with minimal discomfort, and the entire team was friendly, caring, and supportive throughout. They did regular follow ups and scheduled proper appointments which helped in reducing waiting times. I am very satisfied with the treatment and the overall experience. I highly recommend this clinic to anyone looking for quality dental care and exceptional patient support. One of the best option for dental treatments for people in and around Gudivada."</p>
+            <p class="testimonial-author">sravani v <span class="treatment-tag">Root Canal Treatment</span></p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"I got my tooth removed by Dr Vidya madam. It was completely painless. I was scared of dental treatment before. And now I'm very happy with the treatment and it is completely painless. I recommend Krishna Multi-Speciality Dental Hospital to everyone. It's a best dental hospital in and around Gudivada."</p>
+            <p class="testimonial-author">Vennela Thummalacharla <span class="treatment-tag">Tooth Extraction</span></p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"I am from Guraja, I had missing front and back teeth, which made eating and smiling difficult. After teeth replacement my teeth look good and I can eat comfortably again. Dr Vidya Sahithi from Krishna Multi Speciality Dental Hospital explained everything clearly and did a excellent job. Thank you for care you have all taken. It's the best dental hospital in Gudivada."</p>
+            <p class="testimonial-author">usrk prasad <span class="treatment-tag">Fixed Teeth Replacement</span></p>
+          </div>
+        </div>
+        <p class="testimonials-source">
+          <svg style="width:16px;height:16px;vertical-align:middle;margin-right:6px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Verified reviews from Google Business Profile · 5.0 ★ (61 reviews)
+        </p>
+      </div>
+    </section>
+
+    <!-- Clinic Features -->
+    <section class="section">
+      <div class="section-inner reveal">
+        <h2 class="section-heading">What sets our clinic apart</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Digital X-rays & imaging</h4>
+              <p>Fast, accurate, and low-radiation diagnostics</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Sterilised instruments</h4>
+              <p>Autoclave-sterilized equipment and infection control</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Comfortable treatment rooms</h4>
+              <p>Relaxing environment designed for your peace of mind</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Child-friendly environment</h4>
+              <p>Making dental care approachable for younger patients</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Convenient Eluru Road location</h4>
+              <p>Easy access in the heart of Gudivada</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Flexible scheduling</h4>
+              <p>Appointments that fit your busy life</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Close image">&times;</button>
+      <img id="lightboxImage" class="lightbox-image" src="" alt="">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- CTA -->
+    <section class="section section-alt">
+      <div class="cta-banner reveal">
+        <h2>Ready to experience the difference?</h2>
+        <p>Book your visit at Krishna Dental. Walk-ins welcome, or click to WhatsApp.</p>
+        <a href="https://wa.me/917997444241?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment" class="btn-white" target="_blank" rel="noopener">
+          WhatsApp: +917997444241
         </a>
-        <div class="team-card">
-          <div class="team-photo" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e0f2f1 0%,#b2dfdb 100%);color:var(--accent);font-size:14px;font-weight:600;">Photo Coming Soon</div>
-          <div class="team-info">
-            <h3>Dr. Manjeera Ramya</h3>
-            <div class="team-title">BDS</div>
-            <p>Specialist in root canal and pulpal therapies. Dedicated to saving teeth and relieving pain with precision and care.</p>
-          </div>
-        </div>
       </div>
-      <p style="margin-top: 32px; font-size: 15px; color: var(--text-secondary); text-align: center;">
-        Our full team includes dental hygienists, assistants, and support staff dedicated to your care.
-      </p>
-    </div>
-  </section>
-
-  <!-- Patient Testimonials -->
-  <section class="section section-alt">
-    <div class="section-wide reveal">
-      <div class="section-label">What patients say</div>
-      <h2 class="section-heading">Trusted by families across Gudivada</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">"Outstanding dental treatment and a welcoming environment. Highly professional doctor with excellent attention to detail. Quality care and excellent results. Would definitely recommend. Thanks to Dr. Vidya Sahithi mam for your care towards patients."</p>
-          <p class="testimonial-author">Priya Chimakurthy <span class="treatment-tag">Dental Treatment</span></p>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">"I was scared before coming here, I got my teeth removed. It was completely Painless and they provide affordable treatments. It is one of the best dental hospital in Gudivada. Thank you mam."</p>
-          <p class="testimonial-author">Kittu gummadi2409 <span class="treatment-tag">Tooth Extraction</span></p>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">"I had missing front teeth for a long time and was looking for reliable solution. After searching for experienced and specialised dentist near me, I visited Krishna Dental Hospital and got my fixed teeth replacement with zirconia caps. The final result exceeded my expectation. If you are looking for best dental hospital in Gudivada, I highly recommend Krishna Dental Hospital. The clinic is clean and the staff are friendly. And they provide very affordable dental treatment."</p>
-          <p class="testimonial-author">Thummalacharla Thummalacharla <span class="treatment-tag">Zirconia Caps</span></p>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">"I had an excellent experience with my root canal treatment at this clinic. Dr Sahithi was highly skilled, professional, and explained every step of the procedure clearly, which helped put me at ease. The treatment was completed smoothly with minimal discomfort, and the entire team was friendly, caring, and supportive throughout. They did regular follow ups and scheduled proper appointments which helped in reducing waiting times. I am very satisfied with the treatment and the overall experience. I highly recommend this clinic to anyone looking for quality dental care and exceptional patient support. One of the best option for dental treatments for people in and around Gudivada."</p>
-          <p class="testimonial-author">sravani v <span class="treatment-tag">Root Canal Treatment</span></p>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">"I got my tooth removed by Dr Vidya madam. It was completely painless. I was scared of dental treatment before. And now I'm very happy with the treatment and it is completely painless. I recommend Krishna Multi-Speciality Dental Hospital to everyone. It's a best dental hospital in and around Gudivada."</p>
-          <p class="testimonial-author">Vennela Thummalacharla <span class="treatment-tag">Tooth Extraction</span></p>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <p class="testimonial-text">"I am from Guraja, I had missing front and back teeth, which made eating and smiling difficult. After teeth replacement my teeth look good and I can eat comfortably again. Dr Vidya Sahithi from Krishna Multi Speciality Dental Hospital explained everything clearly and did a excellent job. Thank you for care you have all taken. It's the best dental hospital in Gudivada."</p>
-          <p class="testimonial-author">usrk prasad <span class="treatment-tag">Fixed Teeth Replacement</span></p>
-        </div>
-      </div>
-      <p class="testimonials-source">
-        <svg style="width:16px;height:16px;vertical-align:middle;margin-right:6px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-        Verified reviews from Google Business Profile · 5.0 ★ (61 reviews)
-      </p>
-    </div>
-  </section>
-
-  <!-- Clinic Features -->
-  <section class="section">
-    <div class="section-inner reveal">
-      <h2 class="section-heading">What sets our clinic apart</h2>
-      <div class="features-list">
-        <div class="feature-item">
-          <div class="feature-check">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </div>
-          <div>
-            <h4>Digital X-rays & imaging</h4>
-            <p>Fast, accurate, and low-radiation diagnostics</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-check">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </div>
-          <div>
-            <h4>Sterilised instruments</h4>
-            <p>Autoclave-sterilized equipment and infection control</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-check">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </div>
-          <div>
-            <h4>Comfortable treatment rooms</h4>
-            <p>Relaxing environment designed for your peace of mind</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-check">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </div>
-          <div>
-            <h4>Child-friendly environment</h4>
-            <p>Making dental care approachable for younger patients</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-check">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </div>
-          <div>
-            <h4>Convenient Eluru Road location</h4>
-            <p>Easy access in the heart of Gudivada</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-check">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </div>
-          <div>
-            <h4>Flexible scheduling</h4>
-            <p>Appointments that fit your busy life</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section">
-    <div class="cta-banner reveal">
-      <h2>Ready to experience the difference?</h2>
-      <p>Book your visit at Krishna Dental. Walk-ins welcome, or call ahead.</p>
-      <a href="tel:+918674244241" class="btn-white">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        Call +918674244241
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  
+    </section>
   </main>
-<footer class="site-footer">
+
+  <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-col">
         <h3>Krishna Multispeciality Dental Clinic</h3>
@@ -1075,13 +829,13 @@
         <a href="tel:+917997444241">+917997444241</a>
         <a href="mailto:vidya@krishnadental.in">vidya@krishnadental.in</a>
         <p style="margin-top: 12px; font-size: 13px; opacity: 0.85;">
-          Mon – Sat: 9:30 am – 8:30 pm<br>
-          Sun: 10:00 am – 1:00 pm
+          Mon - Sat: 9:30 am - 8:30 pm<br>
+          Sun: 10:00 am - 1:00 pm
         </p>
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2024 – 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
+      &copy; 2024 - 2026 Krishna Multispeciality Dental Clinic. All rights reserved. Led by Dr. Vidya Sahithi, MDS.
       <span style="opacity: 0.85; display: block; margin-top: 4px; line-height: 1.2;">ABDM Registered Healthcare Facility (ID: <a href="https://nhpr.abdm.gov.in/nhpr/v4/hfr/publicSearch?facilityId=IN2810020530" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">IN2810020530</a>)</span>
     </div>
   </footer>
@@ -1095,12 +849,10 @@
   <script>
     // Scroll Reveal
     const revealElements = document.querySelectorAll('.reveal');
-
     const revealOptions = {
       threshold: 0.15,
       rootMargin: '0px 0px -100px 0px'
     };
-
     const revealOnScroll = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1109,7 +861,6 @@
         }
       });
     }, revealOptions);
-
     revealElements.forEach(element => revealOnScroll.observe(element));
 
     // Lightbox Functionality
@@ -1129,7 +880,7 @@
         lightboxImage.alt = img.alt;
         lightboxCaption.innerHTML = `<strong>${title}</strong> — ${desc}`;
         lightboxModal.classList.add('open');
-        document.body.style.overflow = 'hidden'; // Stop scrolling background
+        document.body.style.overflow = 'hidden';
       });
     });
 
