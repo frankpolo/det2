@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Photo Geotagger</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/piexifjs/1.0.6/piexif.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<style>
+  :root{
+    --bg:#12161d;
+    --panel:#1a2029;
+    --panel-2:#212938;
+    --line:#2b3444;
+    --text:#e8ebef;
+    --muted:#8b95a7;
+    --amber:#e8a33d;
+    --amber-dim:#5c4a26;
+    --good:#5fb890;
+    --bad:#d9705b;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+    --sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:1080px; margin:0 auto; padding:28px 20px 80px; }
+  header{
+    display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+    border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:22px; flex-wrap:wrap;
+  }
+  header .brand{ display:flex; align-items:center; gap:10px; }
+  header .pin{ width:26px;height:26px; display:inline-flex;align-items:center;justify-content:center; color:var(--amber); flex-shrink:0; }
+  header h1{ font-size:18px; margin:0; letter-spacing:0.01em; font-weight:650; }
+  header p{ margin:2px 0 0; color:var(--muted); font-size:13px; }
+  .tag{
+    font-family:var(--mono); font-size:11px; color:var(--amber);
+    border:1px solid var(--amber-dim); background:rgba(232,163,61,0.08);
+    padding:4px 9px; border-radius:100px; letter-spacing:0.04em; white-space:nowrap;
+  }
+
+  /* tabs */
+  .tabs{ display:flex; gap:8px; margin-bottom:22px; border-bottom:1px solid var(--line); }
+  .tab-btn{
+    background:transparent; border:none; color:var(--muted); font-size:13.5px; font-weight:600;
+    padding:10px 4px; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px;
+  }
+  .tab-btn + .tab-btn{ margin-left:14px; }
+  .tab-btn:hover{ color:var(--text); }
+  .tab-btn.active{ color:var(--amber); border-bottom-color:var(--amber); }
+  .tab-panel{ display:none; }
+  .tab-panel.active{ display:block; }
+
+  .grid-top{ display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
+  @media (max-width:800px){ .grid-top{ grid-template-columns:1fr; } }
+
+  .panel{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .panel h2{ font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin:0 0 14px; font-weight:650; }
+
+  .field{ margin-bottom:14px; }
+  .field label{ display:block; font-size:12.5px; color:var(--muted); margin-bottom:6px; }
+  .field input{
+    width:100%; background:var(--panel-2); border:1px solid var(--line); border-radius:8px;
+    color:var(--text); padding:10px 11px; font-size:14px; font-family:var(--sans);
+  }
+  .field input:focus{ outline:none; border-color:var(--amber); }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:7px;
+    border-radius:8px; border:1px solid var(--line); background:var(--panel-2); color:var(--text);
+    padding:10px 14px; font-size:13.5px; font-weight:560; cursor:pointer;
+    transition:border-color .15s, transform .05s; white-space:nowrap;
+  }
+  .btn:hover{ border-color:#3a4457; }
+  .btn:active{ transform:scale(0.98); }
+  .btn.primary{ background:var(--amber); color:#241b09; border-color:var(--amber); }
+  .btn.primary:hover{ filter:brightness(1.06); }
+  .btn.ghost{ background:transparent; }
+  .btn:disabled{ opacity:0.45; cursor:not-allowed; }
+  .btn-row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; }
+
+  .loc-hint{ font-size:12px; color:var(--muted); margin-top:4px; line-height:1.5; }
+  .loc-hint.err{ color:var(--bad); }
+  .loc-hint.ok{ color:var(--good); }
+
+  /* metadata preview / verify results */
+  .meta-list{ border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  .meta-row{
+    display:grid; grid-template-columns:150px 1fr; gap:10px; padding:10px 12px;
+    border-bottom:1px solid var(--line); font-size:12.5px;
+  }
+  .meta-row:last-child{ border-bottom:none; }
+  .meta-row:nth-child(odd){ background:var(--panel-2); }
+  .meta-row .k{ font-family:var(--mono); color:var(--muted); font-size:11px; letter-spacing:0.02em; text-transform:uppercase; align-self:center; }
+  .meta-row .v{ font-family:var(--mono); color:var(--text); word-break:break-word; align-self:center; }
+  .meta-row .v.empty{ color:var(--muted); font-style:italic; }
+  .meta-row .v.good{ color:var(--good); }
+  .preview-note{ font-size:12px; color:var(--muted); margin-top:12px; line-height:1.5; }
+
+  .dropzone{
+    border:1.5px dashed var(--line); border-radius:10px; padding:26px 16px; text-align:center;
+    cursor:pointer; color:var(--muted); font-size:13.5px; transition:border-color .15s, background .15s;
+  }
+  .dropzone:hover, .dropzone.drag{ border-color:var(--amber); background:rgba(232,163,61,0.05); }
+  .dropzone strong{ color:var(--text); }
+  input[type=file]{ display:none; }
+
+  section.gallery{ margin-top:22px; }
+  .gallery-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:10px; }
+  .gallery-head h2{ font-size:14px; margin:0; font-weight:650; }
+  .count{ font-family:var(--mono); font-size:12px; color:var(--muted); }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:14px; }
+  .card{ background:var(--panel); border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  .card .thumb{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; background:#0f1319; }
+  .card .body{ padding:10px 12px 12px; }
+  .card .fname{ font-size:12.5px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-bottom:6px; }
+  .status{
+    font-family:var(--mono); font-size:10.5px; letter-spacing:0.03em; padding:3px 7px;
+    border-radius:100px; display:inline-flex; align-items:center; gap:5px;
+  }
+  .status.pending{ color:var(--muted); background:rgba(139,149,167,0.12); }
+  .status.exif{ color:var(--good); background:rgba(95,184,144,0.12); }
+  .status.converted{ color:var(--amber); background:rgba(232,163,61,0.12); }
+  .status.nofmt{ color:var(--bad); background:rgba(217,112,91,0.12); }
+  .card .actions{ margin-top:9px; display:flex; gap:8px; }
+  .card .actions button{ flex:1; font-size:11.5px; padding:7px 8px; }
+  .remove-x{
+    position:absolute; top:6px; right:6px; background:rgba(10,13,18,0.75); border:none; color:#fff;
+    width:22px;height:22px; border-radius:6px; cursor:pointer; font-size:13px; line-height:1;
+  }
+  .thumb-wrap{ position:relative; }
+  .verify-card .body{ padding:0 0 12px; }
+  .verify-card .fname{ padding:10px 12px 0; margin-bottom:8px; }
+  .verify-card .meta-list{ margin:0 12px; width:calc(100% - 24px); }
+  .verify-card .preview-note{ margin:10px 12px 0; }
+
+  footer{ margin-top:36px; border-top:1px solid var(--line); padding-top:16px; color:var(--muted); font-size:12px; line-height:1.6; }
+  a{ color:var(--amber); text-decoration:none; }
+  code{ background:var(--panel-2); padding:1px 5px; border-radius:5px; font-family:var(--mono); font-size:11.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="pin">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C12 22 19 15.5 19 10C19 5.58 15.42 2 12 2C8.58 2 5 5.58 5 10C5 15.5 12 22 12 22Z" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="10" r="2.6" fill="currentColor"/>
+        </svg>
+      </span>
+      <div>
+        <h1>Site Photo Geotagger</h1>
+        <p>Writes business info &amp; location into EXIF metadata — the photo itself is never touched.</p>
+      </div>
+    </div>
+    <span class="tag">RUNS 100% LOCAL · NO UPLOAD</span>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="write">Write EXIF</button>
+    <button class="tab-btn" data-tab="verify">Verify EXIF</button>
+  </div>
+
+  <!-- ================= WRITE TAB ================= -->
+  <div class="tab-panel active" id="tab-write">
+
+    <div class="grid-top">
+      <div class="panel">
+        <h2>Job details</h2>
+
+        <!-- Business name / address / phone / website are fixed defaults for this clinic and
+             intentionally not shown in the UI — they're still written into EXIF from the
+             hidden fields below. -->
+        <input type="hidden" id="bizName" value="Krishna Multi Speciality Dental Clinic">
+        <input type="hidden" id="bizAddress" value="10/181-1 Eluru Road, Gudivada, Andhra Pradesh 521301">
+        <input type="hidden" id="bizPhone" value="086742 44241">
+        <input type="hidden" id="bizWebsite" value="www.krishnadental.in">
+
+        <div class="field">
+          <label for="treatName">Treatment name</label>
+          <input id="treatName" type="text" placeholder="e.g. Quarterly Termite Treatment">
+        </div>
+
+        <div class="field">
+          <label>Coordinates <span style="color:var(--muted); font-weight:400;">(defaults to the clinic's exact location — override freely, or reset any time)</span></label>
+          <div class="row2">
+            <input id="lat" type="text" inputmode="decimal" placeholder="Latitude, e.g. 17.4239" value="16.4424385">
+            <input id="lon" type="text" inputmode="decimal" placeholder="Longitude, e.g. 78.4738" value="80.9921293">
+          </div>
+          <div class="btn-row">
+            <button class="btn ghost" id="useLocBtn" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 22C12 22 19 15.5 19 10C19 5.58 15.42 2 12 2C8.58 2 5 5.58 5 10C5 15.5 12 22 12 22Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" fill="currentColor"/></svg>
+              Use my current GPS location
+            </button>
+            <button class="btn ghost" id="resetLocBtn" type="button">Reset to clinic default</button>
+          </div>
+          <div class="loc-hint" id="locHint"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Metadata preview</h2>
+        <div class="meta-list">
+          <div class="meta-row"><span class="k">GPSLatitude</span><span class="v" id="mvLat">—</span></div>
+          <div class="meta-row"><span class="k">GPSLongitude</span><span class="v" id="mvLon">—</span></div>
+          <div class="meta-row"><span class="k">Artist</span><span class="v" id="mvBiz">—</span></div>
+          <div class="meta-row"><span class="k">Copyright</span><span class="v" id="mvSite">—</span></div>
+          <div class="meta-row"><span class="k">ImageDescription</span><span class="v" id="mvDesc">—</span></div>
+          <div class="meta-row"><span class="k">DateTime</span><span class="v" id="mvDate">—</span></div>
+        </div>
+        <div class="preview-note">
+          Nothing is drawn on the photo — no overlay box, no visible text. Business name, address, phone, and
+          website are fixed for this clinic; only <strong>treatment name</strong> and <strong>coordinates</strong>
+          need your input.
+        </div>
+      </div>
+    </div>
+
+    <section class="gallery">
+      <div class="gallery-head">
+        <h2>Photos</h2>
+        <span class="count" id="fileCount">0 loaded</span>
+      </div>
+
+      <div class="dropzone" id="dropzone">
+        <strong>Click to choose photos</strong> or drag & drop — JPG, PNG, WEBP, GIF, BMP<br>
+        <input type="file" id="fileInput" multiple accept="image/*">
+      </div>
+
+      <div style="height:16px;"></div>
+
+      <div class="cards" id="cards"></div>
+
+      <div class="btn-row" style="margin-top:18px;" id="bulkActions" hidden>
+        <button class="btn primary" id="processAllBtn">Write EXIF to all photos</button>
+        <button class="btn" id="downloadZipBtn" disabled>Download all as ZIP</button>
+        <button class="btn ghost" id="clearAllBtn">Clear all</button>
+      </div>
+    </section>
+
+    <footer>
+      True EXIF metadata only exists in the JPEG/TIFF format. JPEG photos get the clinic's details, treatment,
+      and GPS coordinates written directly into their existing EXIF block — the image data is not re-encoded, so
+      quality is unchanged. PNG, WEBP, GIF, and BMP don't support this kind of metadata natively, so those are
+      converted to JPEG first and the metadata is written into the new file; the badge on each photo tells you
+      which happened. Everything runs entirely inside this browser tab.
+    </footer>
+  </div>
+
+  <!-- ================= VERIFY TAB ================= -->
+  <div class="tab-panel" id="tab-verify">
+    <div class="panel" style="margin-bottom:20px;">
+      <h2>Verify EXIF on a photo</h2>
+      <p style="color:var(--muted); font-size:13px; margin:0 0 14px;">
+        Upload a photo — ideally one already processed on the Write tab — and this reads back exactly what's
+        stored in its EXIF tags, so you can confirm the geotag and business info actually took.
+      </p>
+      <div class="dropzone" id="verifyDropzone">
+        <strong>Click to choose photos</strong> or drag & drop to check their EXIF data<br>
+        <input type="file" id="verifyFileInput" multiple accept="image/*">
+      </div>
+    </div>
+
+    <div class="cards" id="verifyCards"></div>
+
+    <div class="btn-row" style="margin-top:18px;" id="verifyBulkActions" hidden>
+      <button class="btn ghost" id="verifyClearBtn">Clear all</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  const state = { items: [] }; // write-tab items
+  let seq = 0;
+
+  const $ = (id) => document.getElementById(id);
+  const bizInput = $('bizName'), addrInput = $('bizAddress'), phoneInput = $('bizPhone'), websiteInput = $('bizWebsite');
+  const treatInput = $('treatName'), latInput = $('lat'), lonInput = $('lon');
+  const mvLat = $('mvLat'), mvLon = $('mvLon'), mvBiz = $('mvBiz'), mvSite = $('mvSite'), mvDesc = $('mvDesc'), mvDate = $('mvDate');
+  const cardsEl = $('cards'), fileCountEl = $('fileCount');
+  const bulkActions = $('bulkActions');
+  const dropzone = $('dropzone'), fileInput = $('fileInput');
+
+  const DEFAULT_LAT = '16.4424385';
+  const DEFAULT_LON = '80.9921293';
+
+  // ---- tabs ----
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      $('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+
+  $('resetLocBtn').addEventListener('click', () => {
+    latInput.value = DEFAULT_LAT;
+    lonInput.value = DEFAULT_LON;
+    const hint = $('locHint');
+    hint.textContent = 'Reset to the clinic\'s default coordinates.';
+    hint.className = 'loc-hint ok';
+    updatePreview();
+  });
+
+  function fmtDateExif(d){
+    const pad = n => String(n).padStart(2,'0');
+    return `${d.getFullYear()}:${pad(d.getMonth()+1)}:${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+  }
+
+  function setVal(el, text){
+    if(text && text.trim()){ el.textContent = text; el.classList.remove('empty'); }
+    else { el.textContent = '—'; el.classList.add('empty'); }
+  }
+
+  function updatePreview(){
+    const biz = bizInput.value.trim();
+    const addr = addrInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const website = websiteInput.value.trim();
+    const treat = treatInput.value.trim();
+    const lat = parseFloat(latInput.value);
+    const lon = parseFloat(lonInput.value);
+    setVal(mvLat, !isNaN(lat) ? `${Math.abs(lat).toFixed(6)} ${lat>=0?'N':'S'}` : '');
+    setVal(mvLon, !isNaN(lon) ? `${Math.abs(lon).toFixed(6)} ${lon>=0?'E':'W'}` : '');
+    setVal(mvBiz, [biz, phone].filter(Boolean).join(' · '));
+    setVal(mvSite, website);
+    let descPreview = [biz, addr].filter(Boolean).join(' - ');
+    if(treat) descPreview = descPreview ? `${descPreview} - Treatment description: ${treat}` : `Treatment description: ${treat}`;
+    setVal(mvDesc, descPreview);
+    setVal(mvDate, fmtDateExif(new Date()));
+  }
+  [treatInput, latInput, lonInput].forEach(el => el.addEventListener('input', updatePreview));
+  updatePreview();
+
+  // ---- device GPS ----
+  $('useLocBtn').addEventListener('click', () => {
+    const hint = $('locHint');
+    hint.className = 'loc-hint';
+    if(!navigator.geolocation){
+      hint.textContent = 'Geolocation is not available in this browser.';
+      hint.classList.add('err');
+      return;
+    }
+    hint.textContent = 'Requesting location…';
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        latInput.value = pos.coords.latitude.toFixed(6);
+        lonInput.value = pos.coords.longitude.toFixed(6);
+        hint.textContent = `Location captured (±${Math.round(pos.coords.accuracy)}m accuracy).`;
+        hint.classList.add('ok');
+        updatePreview();
+      },
+      err => { hint.textContent = 'Could not get location: ' + err.message; hint.classList.add('err'); },
+      { enableHighAccuracy:true, timeout:10000 }
+    );
+  });
+
+  // ---- file intake (write tab) ----
+  dropzone.addEventListener('click', () => fileInput.click());
+  dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag'); });
+  dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag'));
+  dropzone.addEventListener('drop', e => {
+    e.preventDefault(); dropzone.classList.remove('drag');
+    addFiles(e.dataTransfer.files);
+  });
+  fileInput.addEventListener('change', e => addFiles(e.target.files));
+
+  function addFiles(fileList){
+    Array.from(fileList).forEach(file => {
+      if(!file.type.startsWith('image/')) return;
+      const id = 'f' + (seq++);
+      const isJPEG = /jpe?g/i.test(file.type) || /\.jpe?g$/i.test(file.name);
+      const item = { id, file, name: file.name, isJPEG, status:'pending' };
+      state.items.push(item);
+      const reader = new FileReader();
+      reader.onload = e => { item.origDataURL = e.target.result; renderCards(); };
+      reader.readAsDataURL(file);
+    });
+    renderCards();
+  }
+
+  function renderCards(){
+    fileCountEl.textContent = state.items.length + ' loaded';
+    bulkActions.hidden = state.items.length === 0;
+    cardsEl.innerHTML = '';
+    state.items.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      const thumbSrc = item.origDataURL || '';
+      const statusBadge = statusHTML(item);
+      card.innerHTML = `
+        <div class="thumb-wrap">
+          <img class="thumb" src="${thumbSrc}" alt="">
+          <button class="remove-x" data-id="${item.id}" title="Remove">✕</button>
+        </div>
+        <div class="body">
+          <div class="fname">${item.name}</div>
+          ${statusBadge}
+          <div class="actions">
+            <button class="btn" data-act="process" data-id="${item.id}">${item.outBlob ? 'Re-write' : 'Write EXIF'}</button>
+            <button class="btn" data-act="dl" data-id="${item.id}" ${item.outBlob ? '' : 'disabled'}>Download</button>
+          </div>
+        </div>`;
+      cardsEl.appendChild(card);
+    });
+  }
+
+  function statusHTML(item){
+    if(item.status === 'exif') return `<span class="status exif">EXIF WRITTEN (JPEG, original quality)</span>`;
+    if(item.status === 'converted') return `<span class="status converted">CONVERTED TO JPEG + EXIF WRITTEN</span>`;
+    if(item.status === 'error') return `<span class="status nofmt">FAILED</span>`;
+    return `<span class="status pending">PENDING</span>`;
+  }
+
+  cardsEl.addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    const id = btn.dataset.id;
+    const item = state.items.find(i => i.id === id);
+    if(btn.classList.contains('remove-x')){
+      state.items = state.items.filter(i => i.id !== id);
+      renderCards();
+      return;
+    }
+    if(btn.dataset.act === 'process'){ processOne(item).then(renderCards); }
+    if(btn.dataset.act === 'dl'){ downloadOne(item); }
+  });
+
+  $('processAllBtn').addEventListener('click', async () => {
+    for(const item of state.items){ await processOne(item); renderCards(); }
+    $('downloadZipBtn').disabled = !state.items.some(i => i.outBlob);
+  });
+
+  $('clearAllBtn').addEventListener('click', () => {
+    state.items = [];
+    renderCards();
+    $('downloadZipBtn').disabled = true;
+  });
+
+  $('downloadZipBtn').addEventListener('click', async () => {
+    const zip = new JSZip();
+    const ready = state.items.filter(i => i.outBlob);
+    if(ready.length === 0) return;
+    ready.forEach(item => zip.file(outName(item), item.outBlob));
+    const blob = await zip.generateAsync({ type:'blob' });
+    triggerDownload(blob, 'geotagged-photos.zip');
+  });
+
+  function outName(item){
+    const dot = item.name.lastIndexOf('.');
+    const base = dot > -1 ? item.name.slice(0, dot) : item.name;
+    return base + '-geotagged.jpg';
+  }
+
+  function triggerDownload(blob, filename){
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  }
+
+  function downloadOne(item){
+    if(!item.outBlob) return;
+    triggerDownload(item.outBlob, outName(item));
+  }
+
+  // ---- GPS decimal -> EXIF rational DMS ----
+  function toDMSRational(deg){
+    const abs = Math.abs(deg);
+    const d = Math.floor(abs);
+    const minFloat = (abs - d) * 60;
+    const m = Math.floor(minFloat);
+    const s = Math.round((minFloat - m) * 60 * 100);
+    return [[d,1],[m,1],[s,100]];
+  }
+
+  // ---- EXIF rational DMS -> decimal ----
+  function fromDMSRational(dms, ref){
+    if(!dms || dms.length < 3) return null;
+    const toNum = a => (a && a[1]) ? a[0] / a[1] : 0;
+    const d = toNum(dms[0]), m = toNum(dms[1]), s = toNum(dms[2]);
+    let dec = d + m / 60 + s / 3600;
+    if(ref === 'S' || ref === 'W') dec = -dec;
+    return dec;
+  }
+
+  function asciiSafe(str){
+    if(!str) return str;
+    return String(str)
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[—–]/g, '-')
+      .replace(/[’‘]/g, "'")
+      .replace(/[“”]/g, '"')
+      .replace(/[^\x00-\x7F]/g, '')
+      .trim();
+  }
+
+  function buildExif(lat, lon, biz, addr, phone, website, treat){
+    biz = asciiSafe(biz);
+    addr = asciiSafe(addr);
+    phone = asciiSafe(phone);
+    website = asciiSafe(website);
+    treat = asciiSafe(treat);
+
+    const zeroth = {};
+    const gps = {};
+    const leadParts = [biz, addr].filter(Boolean);
+    let desc = leadParts.join(' - ');
+    if(treat) desc = desc ? `${desc} - Treatment description: ${treat}` : `Treatment description: ${treat}`;
+    if(desc) zeroth[piexif.ImageIFD.ImageDescription] = desc;
+    zeroth[piexif.ImageIFD.Software] = "Site Photo Geotagger";
+    zeroth[piexif.ImageIFD.DateTime] = fmtDateExif(new Date());
+    const artistParts = [biz, phone].filter(Boolean);
+    if(artistParts.length) zeroth[piexif.ImageIFD.Artist] = artistParts.join(' | ');
+    if(website) zeroth[piexif.ImageIFD.Copyright] = website;
+
+    if(!isNaN(lat) && !isNaN(lon)){
+      gps[piexif.GPSIFD.GPSVersionID] = [2,3,0,0];
+      gps[piexif.GPSIFD.GPSLatitudeRef] = lat >= 0 ? 'N' : 'S';
+      gps[piexif.GPSIFD.GPSLatitude] = toDMSRational(lat);
+      gps[piexif.GPSIFD.GPSLongitudeRef] = lon >= 0 ? 'E' : 'W';
+      gps[piexif.GPSIFD.GPSLongitude] = toDMSRational(lon);
+      if(addr) gps[piexif.GPSIFD.GPSAreaInformation] = addr;
+    }
+    return { "0th": zeroth, "GPS": gps };
+  }
+
+  function dataURLtoBlob(dataURL){
+    const [head, body] = dataURL.split(',');
+    const mime = head.match(/:(.*?);/)[1];
+    const bin = atob(body);
+    const arr = new Uint8Array(bin.length);
+    for(let i=0;i<bin.length;i++) arr[i] = bin.charCodeAt(i);
+    return new Blob([arr], { type: mime });
+  }
+
+  function toJpegDataURL(origDataURL){
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        resolve(canvas.toDataURL('image/jpeg', 0.95));
+      };
+      img.onerror = reject;
+      img.src = origDataURL;
+    });
+  }
+
+  async function processOne(item){
+    if(!item.origDataURL) return;
+    const biz = bizInput.value.trim();
+    const addr = addrInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const website = websiteInput.value.trim();
+    const treat = treatInput.value.trim();
+    const lat = parseFloat(latInput.value);
+    const lon = parseFloat(lonInput.value);
+
+    try{
+      let jpegDataURL;
+      let wasConverted = false;
+      if(item.isJPEG){
+        jpegDataURL = item.origDataURL;
+      } else {
+        jpegDataURL = await toJpegDataURL(item.origDataURL);
+        wasConverted = true;
+      }
+
+      const exifObj = buildExif(lat, lon, biz, addr, phone, website, treat);
+      const exifBytes = piexif.dump(exifObj);
+      const stampedDataURL = piexif.insert(exifBytes, jpegDataURL);
+
+      item.outBlob = dataURLtoBlob(stampedDataURL);
+      item.status = wasConverted ? 'converted' : 'exif';
+    } catch(err){
+      console.error('EXIF write failed', err);
+      item.status = 'error';
+    }
+  }
+
+  // =========================================================
+  // VERIFY TAB
+  // =========================================================
+  const verifyDropzone = $('verifyDropzone'), verifyFileInput = $('verifyFileInput');
+  const verifyCardsEl = $('verifyCards'), verifyBulkActions = $('verifyBulkActions');
+
+  verifyDropzone.addEventListener('click', () => verifyFileInput.click());
+  verifyDropzone.addEventListener('dragover', e => { e.preventDefault(); verifyDropzone.classList.add('drag'); });
+  verifyDropzone.addEventListener('dragleave', () => verifyDropzone.classList.remove('drag'));
+  verifyDropzone.addEventListener('drop', e => {
+    e.preventDefault(); verifyDropzone.classList.remove('drag');
+    addVerifyFiles(e.dataTransfer.files);
+  });
+  verifyFileInput.addEventListener('change', e => addVerifyFiles(e.target.files));
+
+  $('verifyClearBtn').addEventListener('click', () => {
+    verifyCardsEl.innerHTML = '';
+    verifyBulkActions.hidden = true;
+  });
+
+  function addVerifyFiles(fileList){
+    Array.from(fileList).forEach(file => {
+      if(!file.type.startsWith('image/')) return;
+      const reader = new FileReader();
+      reader.onload = e => renderVerifyCard(file, e.target.result);
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function metaRow(label, value, ok){
+    const cls = value ? (ok ? 'v good' : 'v') : 'v empty';
+    return `<div class="meta-row"><span class="k">${label}</span><span class="${cls}">${value || '— not present —'}</span></div>`;
+  }
+
+  function renderVerifyCard(file, dataURL){
+    const isJPEG = /jpe?g/i.test(file.type) || /\.jpe?g$/i.test(file.name);
+    const card = document.createElement('div');
+    card.className = 'card verify-card';
+
+    let bodyHTML;
+    if(!isJPEG){
+      bodyHTML = `<div class="preview-note" style="color:var(--bad);">
+        This format (${file.type || 'unknown'}) doesn't carry standard EXIF metadata. Use the Write tab first —
+        non-JPEG photos get converted to JPEG there, which is what actually holds the tags.
+      </div>`;
+    } else {
+      let exifObj = null;
+      try{ exifObj = piexif.load(dataURL); } catch(err){ exifObj = null; }
+      const zeroth = (exifObj && exifObj['0th']) || {};
+      const gps = (exifObj && exifObj['GPS']) || {};
+      const hasAny = Object.keys(zeroth).length > 0 || Object.keys(gps).length > 0;
+
+      if(!hasAny){
+        bodyHTML = `<div class="preview-note" style="color:var(--bad);">No EXIF metadata found in this file.</div>`;
+      } else {
+        const lat = fromDMSRational(gps[piexif.GPSIFD.GPSLatitude], gps[piexif.GPSIFD.GPSLatitudeRef]);
+        const lon = fromDMSRational(gps[piexif.GPSIFD.GPSLongitude], gps[piexif.GPSIFD.GPSLongitudeRef]);
+        const rows = [
+          metaRow('GPSLatitude', lat !== null ? `${lat.toFixed(6)} (${gps[piexif.GPSIFD.GPSLatitudeRef] || ''})` : '', true),
+          metaRow('GPSLongitude', lon !== null ? `${lon.toFixed(6)} (${gps[piexif.GPSIFD.GPSLongitudeRef] || ''})` : '', true),
+          metaRow('Artist', zeroth[piexif.ImageIFD.Artist] || '', true),
+          metaRow('Copyright', zeroth[piexif.ImageIFD.Copyright] || '', true),
+          metaRow('ImageDescription', zeroth[piexif.ImageIFD.ImageDescription] || '', true),
+          metaRow('DateTime', zeroth[piexif.ImageIFD.DateTime] || '', true),
+          metaRow('Software', zeroth[piexif.ImageIFD.Software] || '', true),
+          metaRow('GPSAreaInformation', gps[piexif.GPSIFD.GPSAreaInformation] || '', true),
+        ].join('');
+        bodyHTML = `<div class="meta-list">${rows}</div>`;
+      }
+    }
+
+    card.innerHTML = `
+      <img class="thumb" src="${dataURL}" alt="">
+      <div class="body">
+        <div class="fname">${file.name}</div>
+        ${bodyHTML}
+      </div>`;
+    verifyCardsEl.appendChild(card);
+    verifyBulkActions.hidden = false;
+  }
+
+})();
+</script>
+</body>
+</html>
