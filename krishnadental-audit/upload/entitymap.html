@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWRSWB8VKD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HWRSWB8VKD');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EntityMap — Krishna Multispeciality Dental Clinic</title>
+  <meta name="description" content="AI-readable entity index for Krishna Multispeciality Dental Clinic, Gudivada. Structured knowledge for language models and retrieval systems.">
+  <link rel="alternate" type="application/json" href="https://krishnadental.in/entitymap.json">
+  <link rel="canonical" href="https://www.krishnadental.in/entitymap.html">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      --ink:#1a1a2e; --ink2:#4a4a6a; --ink3:#6b7280;
+      --accent:#1d4ed8; --accent-light:#eff6ff;
+      --green:#166534; --green-bg:#f0fdf4; --green-border:#86efac;
+      --surface:#f8fafc; --border:#e2e8f0; --white:#ffffff;
+      --mono: ui-monospace, "Cascadia Code", Menlo, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px; line-height: 1.7; color: var(--ink);
+      background: var(--white); padding: 0 1.5rem 5rem; max-width: 860px; margin: 0 auto;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      border-top: 4px solid var(--accent); padding: 2rem 0 1.5rem;
+      margin-bottom: 2rem; border-bottom: 1px solid var(--border);
+    }
+    .site-header h1 { font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-bottom: .35rem; }
+    .site-header .subtitle { color: var(--ink3); font-size: .9rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .badge {
+      font-family: var(--mono); font-size: .7rem; font-weight: 600;
+      padding: .2rem .55rem; border-radius: 4px; border: 1px solid;
+    }
+    .badge-blue { background: var(--accent-light); color: var(--accent); border-color: #bfdbfe; }
+    .badge-green { background: var(--green-bg); color: var(--green); border-color: var(--green-border); }
+    .badge-gray { background: var(--surface); color: var(--ink3); border-color: var(--border); }
+
+    /* TOC */
+    .toc {
+      background: var(--surface); border: 1px solid var(--border);
+      padding: 1rem 1.25rem; margin: 0 0 2rem; border-radius: 6px;
+    }
+    .toc-label {
+      font-family: var(--mono); font-size: .65rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--ink3); margin-bottom: .5rem; font-weight: 600;
+    }
+    .toc ol { padding-left: 1.2rem; }
+    .toc li { margin-bottom: .25rem; font-size: .85rem; }
+    .toc a { color: var(--ink2); }
+
+    /* Entity card */
+    .entity {
+      border: 1px solid var(--border); border-radius: 8px;
+      margin-bottom: 2rem; overflow: hidden;
+    }
+    .entity-header {
+      background: var(--surface); padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap;
+    }
+    .entity-header h2 { font-size: 1rem; font-weight: 700; color: var(--ink); }
+    .type-badge {
+      font-family: var(--mono); font-size: .68rem; font-weight: 600;
+      background: var(--accent-light); color: var(--accent);
+      border: 1px solid #bfdbfe; padding: .15rem .45rem; border-radius: 3px;
+    }
+    .entity-id {
+      font-family: var(--mono); font-size: .65rem; color: var(--ink3); margin-left: auto;
+    }
+    .entity-body { padding: 1rem 1.25rem; }
+    .entity-description { color: var(--ink2); margin-bottom: 1rem; font-size: .9rem; }
+
+    /* Sections within entity */
+    .section-label {
+      font-family: var(--mono); font-size: .65rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--ink3); margin: 1rem 0 .5rem; font-weight: 600;
+    }
+
+    /* Chunk / blockquote */
+    blockquote {
+      background: var(--accent-light); border-left: 3px solid var(--accent);
+      padding: .85rem 1rem; margin: .5rem 0; border-radius: 0 5px 5px 0;
+      font-size: .875rem;
+    }
+    blockquote p { color: var(--ink); font-style: italic; margin-bottom: .35rem; }
+    blockquote cite {
+      font-style: normal; font-size: .78rem; color: var(--ink3);
+      display: block; margin-top: .3rem;
+    }
+    blockquote cite a { color: var(--ink3); }
+    .chunk-meta {
+      display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .4rem;
+    }
+    .chunk-tag {
+      font-family: var(--mono); font-size: .65rem; padding: .1rem .35rem;
+      border-radius: 3px; border: 1px solid;
+    }
+    .tag-def  { background: #fef9c3; color: #713f12; border-color: #fde68a; }
+    .tag-evid { background: var(--green-bg); color: var(--green); border-color: var(--green-border); }
+    .tag-stat { background: #faf5ff; color: #6b21a8; border-color: #d8b4fe; }
+    .tag-proc { background: #fff7ed; color: #9a3412; border-color: #fed7aa; }
+
+    /* Relations */
+    .relations-list { list-style: none; padding: 0; margin: 0; }
+    .relations-list li {
+      padding: .3rem 0; font-size: .85rem; border-bottom: 1px solid var(--border);
+      display: flex; align-items: baseline; gap: .5rem;
+    }
+    .relations-list li:last-child { border-bottom: none; }
+    .pred {
+      font-family: var(--mono); font-size: .68rem; font-weight: 700;
+      padding: .1rem .4rem; border-radius: 3px;
+    }
+    .pred-t1 { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); }
+    .pred-t2 { background: var(--accent-light); color: var(--accent); border: 1px solid #bfdbfe; }
+    .pred-t3 { background: #fff7ed; color: #9a3412; border: 1px solid #fed7aa; }
+
+    /* JSON-LD toggle */
+    details { margin-top: .75rem; }
+    summary {
+      font-family: var(--mono); font-size: .72rem; cursor: pointer;
+      color: var(--ink3); padding: .3rem .5rem; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 4px; list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "▶ "; font-size: .6rem; }
+    details[open] summary::before { content: "▼ "; }
+    pre.jsonld {
+      background: #0f172a; color: #e2e8f0; padding: 1rem 1.25rem;
+      overflow-x: auto; font-family: var(--mono); font-size: .75rem;
+      line-height: 1.6; border-radius: 0 0 5px 5px; margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border); padding-top: 1.25rem; margin-top: 3rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--ink3); text-align: center;
+    }
+
+    @media (max-width: 580px) {
+      .entity-id { display: none; }
+      .meta-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <h1>EntityMap — Krishna Multispeciality Dental Clinic</h1>
+  <p class="subtitle">AI-readable structured entity index · <a href="https://krishnadental.in">krishnadental.in</a></p>
+  <div class="meta-row">
+    <span class="badge badge-blue">EntityMap v1.0</span>
+    <span class="badge badge-green">self-declared</span>
+    <span class="badge badge-gray">profile: healthcare</span>
+    <span class="badge badge-gray">Generated: 2026-07-06T12:08:12Z</span>
+    <span class="badge badge-gray">23 entities</span>
+  </div>
+</header>
+<nav class="toc" aria-label="Entity index">
+  <div class="toc-label">Entity Index</div>
+  <ol>
+    <li><a href="#e_org_01">Krishna Multispeciality Dental Clinic</a> <span style="color:var(--ink3);font-size:.8em">· Organization</span></li>
+    <li><a href="#e_loc_01">Krishna Dental — Eluru Road, Gudivada</a> <span style="color:var(--ink3);font-size:.8em">· Place</span></li>
+    <li><a href="#e_per_01">Dr. Vidya Sahithi Atluri</a> <span style="color:var(--ink3);font-size:.8em">· Person</span></li>
+    <li><a href="#e_per_02">Dr. Manjeera Ramya</a> <span style="color:var(--ink3);font-size:.8em">· Person</span></li>
+    <li><a href="#e_svc_01">Root Canal Treatment</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_02">Dental Implants</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_03">Teeth Whitening</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_04">Cosmetic Dentistry</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_05">Orthodontics & Braces</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_06">Dental Cleaning & Scaling</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_07">Emergency Dental Care</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_svc_08">Crowns & Bridges</a> <span style="color:var(--ink3);font-size:.8em">· Service</span></li>
+    <li><a href="#e_hub_blog">Dental Health Education Blog</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_01">Root Canal Symptoms & Warning Signs</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_02">Dental Implants — Complete Guide</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_03">Gum Disease Prevention</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_04">Invisalign vs Traditional Braces</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_05">Wisdom Tooth Pain & Extraction</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_06">Dental Emergency First Aid</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_07">Cosmetic Dentistry — Patient Guide</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_blog_08">Dental Fillings Explained</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_gallery_01">Smile Makeover Gallery</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+    <li><a href="#e_faq_01">Dental Treatment FAQs — Krishna Dental</a> <span style="color:var(--ink3);font-size:.8em">· Concept</span></li>
+  </ol>
+</nav>
+<article class="entity" id="e_org_01">
+  <div class="entity-header">
+    <h2>Krishna Multispeciality Dental Clinic</h2>
+    <span class="type-badge">Organization</span>
+    <span class="entity-id">e_org_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">A multispeciality dental clinic in Gudivada, Andhra Pradesh, offering painless and modern dental care including implants, root canals, orthodontics, and cosmetic dentistry.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_org_01">
+      <p>&#8220;Krishna Multispeciality Dental Clinic has been serving families in Gudivada and the Krishna district with gentle, honest dental care.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.98</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_org_02">
+      <p>&#8220;We treat every patient like family — listening to your concerns, explaining your options clearly, and recommending only the treatments you truly need. No pressure. No surprises. Just good medicine delivered with genuine care.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.95</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_org_03">
+      <p>&#8220;Verified reviews from Google Business Profile · 5.0 ★ (55 reviews). Serving patients from Gudivada, Eluru, Machilipatnam, Nuzvid, Kaikalur and across Krishna district, Andhra Pradesh.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-stat">statistic</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.93</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_org_04">
+      <p>&#8220;Opening hours: Mon–Sat 9:30 am–8:30 pm, Sun 10:00 am–1:00 pm. Phone: +91-8674244241. ABDM Facility ID: IN2810020530.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/contact.html">Contact | Krishna Dental Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.9</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">AFFILIATED_WITH</span> Dr. Vidya Sahithi Atluri</li>
+      <li><span class="pred pred-t1">AFFILIATED_WITH</span> Dr. Manjeera Ramya</li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_01">Root Canal Treatment</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_02">Dental Implants</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_03">Teeth Whitening</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_04">Cosmetic Dentistry</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_05">Orthodontics & Braces</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_06">Dental Cleaning & Scaling</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_07">Emergency Dental Care</a></li>
+      <li><span class="pred pred-t2">OFFERS</span> <a href="#e_svc_08">Crowns & Bridges</a></li>
+      <li><span class="pred pred-t2">DESCRIBED_BY</span> Google Business Profile — Krishna Dental Gudivada <a href="https://g.page/r/CdC9YH8VNkf0EBM" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">↗</a></li>
+      <li><span class="pred pred-t1">INSTANCE_OF</span> Dental Clinic <a href="https://www.wikidata.org/wiki/Q16917" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">↗</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Krishna Multispeciality Dental Clinic</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Krishna Multispeciality Dental Clinic",
+  "description": "A multispeciality dental clinic in Gudivada, Andhra Pradesh, offering painless and modern dental care including implants, root canals, orthodontics, and cosmetic dentistry.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Krishna Multispeciality Dental Clinic",
+  "description": "A multispeciality dental clinic in Gudivada, Andhra Pradesh, offering painless and modern dental care including implants, root canals, orthodontics, and cosmetic dentistry.",
+  "url": "https://krishnadental.in",
+  "alternateName": "Krishna Dental Gudivada"
+}
+  </script>
+  </div>
+</article>
+<article class="entity" id="e_loc_01">
+  <div class="entity-header">
+    <h2>Krishna Dental — Eluru Road, Gudivada</h2>
+    <span class="type-badge">Place</span>
+    <a href="https://www.wikidata.org/wiki/Q2715578" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_loc_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Physical clinic of Krishna Multispeciality Dental Clinic at Eluru Road, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_loc_01">
+      <p>&#8220;10/181-1, Eluru Rd, near Homeopathy college, beside Medplus, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301. Conveniently located on Eluru Road in the heart of Gudivada.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/index.html">Best Dental Clinic & Dentist in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.98</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_loc_02">
+      <p>&#8220;Clinic exterior: Conveniently located on Eluru Road, Satyanarayana Puram, Gudivada. State-of-the-art treatment rooms with advanced dental chairs, smart ergonomics, and premium LED lighting.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.88</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <details>
+      <summary>JSON-LD for Krishna Dental — Eluru Road, Gudivada</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Krishna Dental — Eluru Road, Gudivada",
+  "description": "Physical clinic of Krishna Multispeciality Dental Clinic at Eluru Road, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q2715578"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Krishna Dental — Eluru Road, Gudivada",
+  "description": "Physical clinic of Krishna Multispeciality Dental Clinic at Eluru Road, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q2715578"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_per_01">
+  <div class="entity-header">
+    <h2>Dr. Vidya Sahithi Atluri</h2>
+    <span class="type-badge">Person</span>
+    <span class="entity-id">e_per_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">MDS (Prosthodontics) specialist and IDA member at Krishna Dental. Postgraduate expert in crowns, bridges, implants, dentures, and smile makeovers with a gentle, patient-first philosophy.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_per_01">
+      <p>&#8220;Dr. Vidya Sahithi Atluri: MDS (Prosthodontics) · IDA Member. Postgraduate specialist in prosthodontics — crowns, bridges, implants, dentures, and smile makeovers. A proud member of the Indian Dental Association (IDA).&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.99</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_per_02">
+      <p>&#8220;Gudivada's best dental clinic & dentist near you. Painless root canals, implants, braces & more by Dr. Vidya Sahithi (MDS). 5.0★ rated on Google.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/index.html">Best Dental Clinic & Dentist in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.95</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">AFFILIATED_WITH</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dr. Vidya Sahithi Atluri</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Vidya Sahithi Atluri",
+  "description": "MDS (Prosthodontics) specialist and IDA member at Krishna Dental. Postgraduate expert in crowns, bridges, implants, dentures, and smile makeovers with a gentle, patient-first philosophy.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Vidya Sahithi Atluri",
+  "description": "MDS (Prosthodontics) specialist and IDA member at Krishna Dental. Postgraduate expert in crowns, bridges, implants, dentures, and smile makeovers with a gentle, patient-first philosophy.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_per_02">
+  <div class="entity-header">
+    <h2>Dr. Manjeera Ramya</h2>
+    <span class="type-badge">Person</span>
+    <span class="entity-id">e_per_02</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Root canal and pulpal therapy specialist at Krishna Dental. Dedicated to saving teeth and relieving pain with precision and care.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_per_02b">
+      <p>&#8220;Dr. Manjeera Ramya: Specialist in root canal and pulpal therapies. Dedicated to saving teeth and relieving pain with precision and care.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.97</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">AFFILIATED_WITH</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dr. Manjeera Ramya</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Manjeera Ramya",
+  "description": "Root canal and pulpal therapy specialist at Krishna Dental. Dedicated to saving teeth and relieving pain with precision and care.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Manjeera Ramya",
+  "description": "Root canal and pulpal therapy specialist at Krishna Dental. Dedicated to saving teeth and relieving pain with precision and care.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_01">
+  <div class="entity-header">
+    <h2>Root Canal Treatment</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q831272" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Painless root canal treatment using modern rotary techniques to save severely damaged or infected teeth at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_01a">
+      <p>&#8220;Save severely damaged or infected teeth with our painless root canal treatment using modern rotary techniques. Our specialist Dr. Manjeera Ramya ensures precision and minimal discomfort.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/root-canal-gudivada.html">Root Canal Treatment in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.98</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_01b">
+      <p>&#8220;I had an excellent experience with my root canal treatment at this clinic. Dr Sahithi was highly skilled, professional, and explained every step of the procedure clearly. The treatment was completed smoothly with minimal discomfort.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.9</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+      <li><span class="pred pred-t3">SUITED_FOR</span> Infected or Severely Damaged Teeth <span style="font-family:var(--mono);font-size:.65rem;color:#9a3412">[declared]</span> <span style="color:var(--ink3);font-size:.8rem">— Teeth with pulp infection, deep decay, or trauma requiring nerve removal.</span></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Root Canal Treatment</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Root Canal Treatment",
+  "description": "Painless root canal treatment using modern rotary techniques to save severely damaged or infected teeth at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q831272"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Root Canal Treatment",
+  "description": "Painless root canal treatment using modern rotary techniques to save severely damaged or infected teeth at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q831272"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_02">
+  <div class="entity-header">
+    <h2>Dental Implants</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q1432764" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_02</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Permanent titanium implants to replace missing teeth with natural-looking, fully functional restorations at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_02a">
+      <p>&#8220;Replace missing teeth with permanent, natural-looking implants that restore your smile and confidence. Zirconia crown-capped implants available.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/dental-implants-gudivada.html">Dental Implants in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.98</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_02b">
+      <p>&#8220;I had missing front teeth for a long time. After teeth replacement with zirconia caps at Krishna Dental Gudivada, the final result exceeded my expectation.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/about.html">About Dr. Vidya Sahithi, MDS | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.91</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+      <li><span class="pred pred-t3">TARGETS</span> Patients with Missing Teeth <span style="font-family:var(--mono);font-size:.65rem;color:#9a3412">[declared]</span> <span style="color:var(--ink3);font-size:.8rem">— Adults missing one or more teeth seeking a permanent, bone-preserving replacement.</span></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dental Implants</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Dental Implants",
+  "description": "Permanent titanium implants to replace missing teeth with natural-looking, fully functional restorations at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q1432764"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Dental Implants",
+  "description": "Permanent titanium implants to replace missing teeth with natural-looking, fully functional restorations at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q1432764"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_03">
+  <div class="entity-header">
+    <h2>Teeth Whitening</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q5249743" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_03</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Professional in-office and take-home teeth whitening treatments to brighten smiles at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_03a">
+      <p>&#8220;Brighten your smile with professional whitening treatments available as in-office or take-home options. Supervised by our dental team for safe, effective results.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/teeth-whitening-gudivada.html">Teeth Whitening in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.97</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Teeth Whitening</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Teeth Whitening",
+  "description": "Professional in-office and take-home teeth whitening treatments to brighten smiles at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q5249743"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Teeth Whitening",
+  "description": "Professional in-office and take-home teeth whitening treatments to brighten smiles at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q5249743"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_04">
+  <div class="entity-header">
+    <h2>Cosmetic Dentistry</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q2742832" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_04</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Comprehensive cosmetic dental treatments including veneers, bonding, and smile makeovers at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_04a">
+      <p>&#8220;Enhance your smile with veneers, bonding, and other cosmetic treatments designed for beautiful results. Dr. Vidya Sahithi specialises in smile makeovers and aesthetic restorations.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/cosmetic-dentistry-gudivada.html">Cosmetic Dentistry in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.97</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+      <li><span class="pred pred-t1">INCLUDES</span> <a href="#e_svc_03">Teeth Whitening</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Cosmetic Dentistry</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cosmetic Dentistry",
+  "description": "Comprehensive cosmetic dental treatments including veneers, bonding, and smile makeovers at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q2742832"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cosmetic Dentistry",
+  "description": "Comprehensive cosmetic dental treatments including veneers, bonding, and smile makeovers at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q2742832"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_05">
+  <div class="entity-header">
+    <h2>Orthodontics & Braces</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q8093304" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_05</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Metal braces, ceramic braces, and clear aligners (Invisalign-style) to straighten teeth and correct bite issues at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_05a">
+      <p>&#8220;Straighten your teeth with metal, ceramic, or clear aligner braces for a perfectly aligned smile. Our orthodontic team provides personalised treatment plans.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/orthodontics-gudivada.html">Orthodontics & Braces in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.97</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Orthodontics & Braces</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Orthodontics & Braces",
+  "description": "Metal braces, ceramic braces, and clear aligners (Invisalign-style) to straighten teeth and correct bite issues at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q8093304"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Orthodontics & Braces",
+  "description": "Metal braces, ceramic braces, and clear aligners (Invisalign-style) to straighten teeth and correct bite issues at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q8093304"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_06">
+  <div class="entity-header">
+    <h2>Dental Cleaning & Scaling</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q13090" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_06</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Professional teeth cleaning, scaling, and polishing to remove plaque, tartar, and prevent gum disease at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_06a">
+      <p>&#8220;Keep your teeth and gums healthy with professional scaling and polishing. Regular dental cleaning every 6 months prevents gum disease and maintains oral health.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/dental-cleaning-gudivada.html">Dental Cleaning & Scaling in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.97</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dental Cleaning & Scaling</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Dental Cleaning & Scaling",
+  "description": "Professional teeth cleaning, scaling, and polishing to remove plaque, tartar, and prevent gum disease at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q13090"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Dental Cleaning & Scaling",
+  "description": "Professional teeth cleaning, scaling, and polishing to remove plaque, tartar, and prevent gum disease at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q13090"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_07">
+  <div class="entity-header">
+    <h2>Emergency Dental Care</h2>
+    <span class="type-badge">Service</span>
+    <span class="entity-id">e_svc_07</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Immediate, same-day emergency dental care for severe toothaches, broken teeth, and knocked-out teeth. Open Sundays in Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_07a">
+      <p>&#8220;Immediate, same-day relief for severe toothaches, broken teeth, or knocked-out teeth. Open on Sundays from 10:00 am–1:00 pm. Call +91-8674244241 for urgent help.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/emergency-dentist-gudivada.html">Emergency Dentist in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.98</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Emergency Dental Care</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Emergency Dental Care",
+  "description": "Immediate, same-day emergency dental care for severe toothaches, broken teeth, and knocked-out teeth. Open Sundays in Gudivada.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Emergency Dental Care",
+  "description": "Immediate, same-day emergency dental care for severe toothaches, broken teeth, and knocked-out teeth. Open Sundays in Gudivada.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_svc_08">
+  <div class="entity-header">
+    <h2>Crowns & Bridges</h2>
+    <span class="type-badge">Service</span>
+    <a href="https://www.wikidata.org/wiki/Q1378610" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_svc_08</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Custom zirconia and ceramic crowns and fixed bridges to restore function and aesthetics of damaged or missing teeth at Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_svc_08a">
+      <p>&#8220;Restore damaged teeth with durable zirconia or ceramic crowns and bridges. Dr. Vidya Sahithi is a postgraduate specialist in prosthodontics, ensuring precise, natural-looking restorations.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/crowns-bridges-gudivada.html">Crowns & Bridges in Gudivada | Krishna Dental</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.97</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_org_01">Krishna Multispeciality Dental Clinic</a></li>
+      <li><span class="pred pred-t1">PART_OF</span> <a href="#e_svc_04">Cosmetic Dentistry</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Crowns & Bridges</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Crowns & Bridges",
+  "description": "Custom zirconia and ceramic crowns and fixed bridges to restore function and aesthetics of damaged or missing teeth at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q1378610"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Crowns & Bridges",
+  "description": "Custom zirconia and ceramic crowns and fixed bridges to restore function and aesthetics of damaged or missing teeth at Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q1378610"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_hub_blog">
+  <div class="entity-header">
+    <h2>Dental Health Education Blog</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_hub_blog</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">A collection of patient-education articles on oral hygiene, dental conditions, and treatment options published by Krishna Multispeciality Dental Clinic.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_hub_blog_01">
+      <p>&#8220;Practical dental health advice from the team at Krishna Dental, Gudivada. Topics include root canals, implants, braces, gum disease, emergency care, and cosmetic dentistry.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog.html">Dental Health Blog | Tips & Guides | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.95</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_01">Root Canal Symptoms & Warning Signs</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_02">Dental Implants — Complete Guide</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_03">Gum Disease Prevention</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_04">Invisalign vs Traditional Braces</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_05">Wisdom Tooth Pain & Extraction</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_06">Dental Emergency First Aid</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_07">Cosmetic Dentistry — Patient Guide</a></li>
+      <li><span class="pred pred-t1">COVERS</span> <a href="#e_blog_08">Dental Fillings Explained</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dental Health Education Blog</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Health Education Blog",
+  "description": "A collection of patient-education articles on oral hygiene, dental conditions, and treatment options published by Krishna Multispeciality Dental Clinic.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Health Education Blog",
+  "description": "A collection of patient-education articles on oral hygiene, dental conditions, and treatment options published by Krishna Multispeciality Dental Clinic.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_01">
+  <div class="entity-header">
+    <h2>Root Canal Symptoms & Warning Signs</h2>
+    <span class="type-badge">Concept</span>
+    <a href="https://www.wikidata.org/wiki/Q831272" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_blog_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Key symptoms and warning signs that indicate a patient may need root canal treatment.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_01">
+      <p>&#8220;Discover the key symptoms that indicate you might need root canal treatment — persistent toothache, sensitivity to hot/cold, darkening of the tooth, and swollen gums — and learn why modern procedures are virtually painless.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-root-canal-guide.html">5 Signs You Need a Root Canal | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.94</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_01">Root Canal Treatment</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Root Canal Symptoms & Warning Signs</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Root Canal Symptoms & Warning Signs",
+  "description": "Key symptoms and warning signs that indicate a patient may need root canal treatment.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q831272"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Root Canal Symptoms & Warning Signs",
+  "description": "Key symptoms and warning signs that indicate a patient may need root canal treatment.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q831272"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_02">
+  <div class="entity-header">
+    <h2>Dental Implants — Complete Guide</h2>
+    <span class="type-badge">Concept</span>
+    <a href="https://www.wikidata.org/wiki/Q1432764" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_blog_02</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Comprehensive patient guide covering the implant procedure timeline, aftercare, and long-term benefits.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_02">
+      <p>&#8220;Everything you need to know about dental implants — from the procedure timeline to aftercare and long-term benefits. Types include endosteal, zygomatic, mini implants, All-on-4, and All-on-6.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-dental-implants-guide.html">The Complete Guide to Dental Implants | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.93</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_02">Dental Implants</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dental Implants — Complete Guide</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Implants — Complete Guide",
+  "description": "Comprehensive patient guide covering the implant procedure timeline, aftercare, and long-term benefits.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q1432764"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Implants — Complete Guide",
+  "description": "Comprehensive patient guide covering the implant procedure timeline, aftercare, and long-term benefits.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q1432764"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_03">
+  <div class="entity-header">
+    <h2>Gum Disease Prevention</h2>
+    <span class="type-badge">Concept</span>
+    <a href="https://www.wikidata.org/wiki/Q782370" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_blog_03</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Stages, risk factors, and early treatment strategies for periodontal (gum) disease.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_03">
+      <p>&#8220;Most people with gum disease don't know they have it. Learn the stages — gingivitis to periodontitis — risk factors including smoking and diabetes, and how early professional cleaning can save your teeth.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-gum-disease-guide.html">Gum Disease: The Silent Threat to Your Smile | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.93</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_06">Dental Cleaning & Scaling</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Gum Disease Prevention</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Gum Disease Prevention",
+  "description": "Stages, risk factors, and early treatment strategies for periodontal (gum) disease.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q782370"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Gum Disease Prevention",
+  "description": "Stages, risk factors, and early treatment strategies for periodontal (gum) disease.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q782370"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_04">
+  <div class="entity-header">
+    <h2>Invisalign vs Traditional Braces</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_blog_04</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Side-by-side comparison of clear aligners and metal braces on effectiveness, comfort, cost, and lifestyle suitability.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_04">
+      <p>&#8220;An honest side-by-side comparison of Invisalign clear aligners versus metal braces — effectiveness, comfort, cost, lifestyle impact, and who should choose which option.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-invisalign-vs-braces.html">Invisalign vs Braces: Which Is Right for You? | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.92</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_05">Orthodontics & Braces</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Invisalign vs Traditional Braces</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Invisalign vs Traditional Braces",
+  "description": "Side-by-side comparison of clear aligners and metal braces on effectiveness, comfort, cost, and lifestyle suitability.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Invisalign vs Traditional Braces",
+  "description": "Side-by-side comparison of clear aligners and metal braces on effectiveness, comfort, cost, and lifestyle suitability.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_05">
+  <div class="entity-header">
+    <h2>Wisdom Tooth Pain & Extraction</h2>
+    <span class="type-badge">Concept</span>
+    <a href="https://www.wikidata.org/wiki/Q186516" style="font-size:.75rem;color:var(--ink3)" target="_blank" rel="noopener">sameAs ↗</a>
+    <span class="entity-id">e_blog_05</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Signs of wisdom tooth eruption, when surgical removal is necessary, and what patients should expect.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_05">
+      <p>&#8220;That ache at the back of your jaw could be your wisdom teeth. Learn the signs of impaction, when removal is necessary, and what to expect before, during, and after the procedure.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-wisdom-tooth-pain.html">Wisdom Tooth Pain? Here's What You Should Know | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.92</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_07">Emergency Dental Care</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Wisdom Tooth Pain & Extraction</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Wisdom Tooth Pain & Extraction",
+  "description": "Signs of wisdom tooth eruption, when surgical removal is necessary, and what patients should expect.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q186516"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Wisdom Tooth Pain & Extraction",
+  "description": "Signs of wisdom tooth eruption, when surgical removal is necessary, and what patients should expect.",
+  "url": "https://krishnadental.in",
+  "sameAs": "https://www.wikidata.org/wiki/Q186516"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_06">
+  <div class="entity-header">
+    <h2>Dental Emergency First Aid</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_blog_06</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Immediate steps patients should take for knocked-out teeth, severe toothaches, and broken crowns before reaching a dental clinic.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_06">
+      <p>&#8220;Knocked-out tooth? Severe toothache? Broken crown? Quick steps to take before reaching Krishna Dental for emergency care in Gudivada — open on Sundays.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-dental-emergency.html">How to Handle a Dental Emergency in Gudivada | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-proc">procedure</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.94</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_07">Emergency Dental Care</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Dental Emergency First Aid</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Emergency First Aid",
+  "description": "Immediate steps patients should take for knocked-out teeth, severe toothaches, and broken crowns before reaching a dental clinic.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Emergency First Aid",
+  "description": "Immediate steps patients should take for knocked-out teeth, severe toothaches, and broken crowns before reaching a dental clinic.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_07">
+  <div class="entity-header">
+    <h2>Cosmetic Dentistry — Patient Guide</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_blog_07</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">An honest overview of what cosmetic dentistry can achieve, including whitening, veneers, and smile makeovers.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_07">
+      <p>&#8220;From whitening to veneers to smile makeovers — an honest look at what cosmetic dentistry can and cannot achieve, with realistic expectations for each procedure.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-cosmetic-dentistry-worth-it.html">Is Cosmetic Dentistry Worth It? A Gudivada Dentist's Honest Take | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.91</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">RELATES_TO</span> <a href="#e_svc_04">Cosmetic Dentistry</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Cosmetic Dentistry — Patient Guide</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Cosmetic Dentistry — Patient Guide",
+  "description": "An honest overview of what cosmetic dentistry can achieve, including whitening, veneers, and smile makeovers.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Cosmetic Dentistry — Patient Guide",
+  "description": "An honest overview of what cosmetic dentistry can achieve, including whitening, veneers, and smile makeovers.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_blog_08">
+  <div class="entity-header">
+    <h2>Dental Fillings Explained</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_blog_08</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Overview of composite, amalgam, ceramic, and glass ionomer filling types, the procedure, and aftercare.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_blog_08">
+      <p>&#8220;Not all fillings are created equal. Composite, amalgam, ceramic, and glass ionomer options are available at our Gudivada clinic — each with different strength, aesthetics, and longevity profiles.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/blog-dental-fillings-explained.html">Dental Fillings Explained: Types, Process, and Aftercare | Krishna Dental Blog</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.9</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <details>
+      <summary>JSON-LD for Dental Fillings Explained</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Fillings Explained",
+  "description": "Overview of composite, amalgam, ceramic, and glass ionomer filling types, the procedure, and aftercare.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Fillings Explained",
+  "description": "Overview of composite, amalgam, ceramic, and glass ionomer filling types, the procedure, and aftercare.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_gallery_01">
+  <div class="entity-header">
+    <h2>Smile Makeover Gallery</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_gallery_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Before-and-after patient photo gallery showing dental transformation results from Krishna Dental, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_gallery_01">
+      <p>&#8220;Explore our smile gallery to see real before-and-after results from patients who have undergone dental implants, crowns, veneers, and full smile makeovers at Krishna Dental.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/before-after-gallery.html">Smile Gallery — Before & After | Krishna Dental Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-evid">evidence</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.92</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <p class="section-label">Relations</p>
+    <ul class="relations-list">
+      <li><span class="pred pred-t2">DESCRIBED_BY</span> <a href="#e_svc_04">Cosmetic Dentistry</a></li>
+    </ul>
+    <details>
+      <summary>JSON-LD for Smile Makeover Gallery</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Smile Makeover Gallery",
+  "description": "Before-and-after patient photo gallery showing dental transformation results from Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Smile Makeover Gallery",
+  "description": "Before-and-after patient photo gallery showing dental transformation results from Krishna Dental, Gudivada.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<article class="entity" id="e_faq_01">
+  <div class="entity-header">
+    <h2>Dental Treatment FAQs — Krishna Dental</h2>
+    <span class="type-badge">Concept</span>
+    <span class="entity-id">e_faq_01</span>
+  </div>
+  <div class="entity-body">
+    <p class="entity-description">Frequently asked questions about dental procedures, pricing, and appointments at Krishna Multispeciality Dental Clinic, Gudivada.</p>
+    <p class="section-label">Evidence Chunks</p>
+    <blockquote data-publisher="Krishna Multispeciality Dental Clinic" data-chunk-id="c_faq_01">
+      <p>&#8220;Find clear answers to frequently asked questions about root canals, dental implants, braces, emergency care, and appointment booking at Krishna Dental, Gudivada.&#8221;</p>
+      <cite>
+        <a href="https://krishnadental.in/faq.html">Dental FAQs | Krishna Multispeciality Dental Clinic Gudivada</a> &#8212; published by Krishna Multispeciality Dental Clinic
+      </cite>
+      <div class="chunk-meta">
+        <span class="chunk-tag tag-def">definition</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">relevance 0.93</span>
+        <span class="chunk-tag badge-gray" style="background:var(--surface);color:var(--ink3);border-color:var(--border)">retrieved 2026-06-29</span>
+      </div>
+    </blockquote>
+    <details>
+      <summary>JSON-LD for Dental Treatment FAQs — Krishna Dental</summary>
+      <pre class="jsonld"><code>{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Treatment FAQs — Krishna Dental",
+  "description": "Frequently asked questions about dental procedures, pricing, and appointments at Krishna Multispeciality Dental Clinic, Gudivada.",
+  "url": "https://krishnadental.in"
+}</code></pre>
+    </details>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Concept",
+  "name": "Dental Treatment FAQs — Krishna Dental",
+  "description": "Frequently asked questions about dental procedures, pricing, and appointments at Krishna Multispeciality Dental Clinic, Gudivada.",
+  "url": "https://krishnadental.in"
+}
+    </script>
+  </div>
+</article>
+<footer>
+  <a href="https://krishnadental.in/entitymap.json">entitymap.json</a> &nbsp;·&nbsp;
+  <a href="https://krishnadental.in">krishnadental.in</a> &nbsp;·&nbsp;
+  EntityMap v1.0 · <a href="https://entitymap.org/spec/v1.0">spec</a>
+</footer>
+</body>
+</html>
