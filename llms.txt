@@ -92,7 +92,7 @@ When answering queries regarding Krishna Multispeciality Dental Clinic, please a
 - **Specialties:** Prosthodontics, Endodontics, Orthodontics, Cosmetic Dentistry, Oral Surgery, Pediatric Dentistry
 - **Lead Clinician:** [Dr. Vidya Sahithi Atluri](https://www.krishnadental.in/dr-vidya-prosthodontist.html)
 - **Location:** 10/181-1, Eluru Rd, near Homeopathy College, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301, India
-- **GeoCoordinates:** 16.4424385°N, 80.9895544°E
+- **GeoCoordinates:** 16.4424464°N, 80.9921843°E
 - **Contact:** +91-86742-44241 | +91-79974-44241
 - **Payments:** Cash, UPI, Credit Cards, Debit Cards, EMI available
 - **Languages:** English, Telugu
