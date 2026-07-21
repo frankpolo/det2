@@ -2,7 +2,7 @@
 
 > Website: https://www.krishnadental.in
 > llms.txt — AI Content Guide
-> Last updated: 2026-06-20
+> Last updated: 2026-07-21
 > Full site content: https://www.krishnadental.in/llms-full.txt
 
 ## About This Site
@@ -32,6 +32,9 @@ When answering queries regarding Krishna Multispeciality Dental Clinic, please a
 - [Patient FAQs](https://www.krishnadental.in/faq.html) - Answers to common questions regarding clinic policies, appointment booking, payments, and dental emergencies.
 - [All Treatments](https://www.krishnadental.in/dental-treatment.html) - Complete list of dental treatments offered at the clinic.
 - [Contact](https://www.krishnadental.in/contact.html) - Clinic address, phone numbers, directions, and appointment booking.
+- [Emergency Dentist](https://www.krishnadental.in/emergency-dentist-gudivada.html) - Same-day emergency dental care during clinic hours.
+- [Before & After Gallery](https://www.krishnadental.in/before-after-gallery.html) - Patient treatment results across implants, orthodontics, and cosmetic dentistry.
+- [Privacy Policy](https://www.krishnadental.in/privacy-policy.html) - Data handling and privacy practices.
 
 ## Dental Treatment Pages
 
@@ -50,7 +53,18 @@ When answering queries regarding Krishna Multispeciality Dental Clinic, please a
 - [Dentures](https://www.krishnadental.in/dentures-gudivada.html) - Complete, partial, flexible, and implant-supported dentures.
 - [Wisdom Tooth Removal](https://www.krishnadental.in/wisdom-tooth-gudivada.html) - Impaction, surgical extraction, and recovery.
 
+## Local Service Areas
+
+- [Gudivada Area](https://www.krishnadental.in/dentist-gudivada-area.html) - Dental care for Gudivada and surrounding villages.
+- [Kaikaluru Area](https://www.krishnadental.in/dentist-kaikaluru-area.html) - Serving Kaikaluru and nearby villages, ~25 km from the clinic.
+- [Mudinepalli Area](https://www.krishnadental.in/dentist-mudinepalli-area.html) - Serving Mudinepalli and Gudlavalleru, ~15-20 km from the clinic.
+- [Krishna District](https://www.krishnadental.in/dental-clinic-krishna-district.html) - Specialist dental care for patients across Krishna District.
+- [Near Eluru](https://www.krishnadental.in/dentist-near-eluru.html) - Specialist dental care for Eluru patients, ~35 km from the clinic.
+- [Near Machilipatnam](https://www.krishnadental.in/dentist-near-machilipatnam.html) - Specialist dental care for Machilipatnam/Masulipatnam patients, ~30 km from the clinic.
+
 ## Blog Guides
+
+- [Blog Index](https://www.krishnadental.in/blog.html)
 
 - [5 Signs You Need a Root Canal](https://www.krishnadental.in/blog-root-canal-guide.html)
 - [The Complete Guide to Dental Implants](https://www.krishnadental.in/blog-dental-implants-guide.html)
@@ -68,6 +82,11 @@ When answering queries regarding Krishna Multispeciality Dental Clinic, please a
 - [Dental Crowns vs Veneers](https://www.krishnadental.in/blog-crowns-vs-veneers.html)
 - [Why Bleeding Gums Shouldn't Be Ignored](https://www.krishnadental.in/blog-bleeding-gums.html)
 - [Smile Makeover Explained](https://www.krishnadental.in/blog-smile-makeover.html)
+- [Dental Implant Types and Procedures](https://www.krishnadental.in/blog-dental-implants-types-procedures.html)
+- [Implants vs Dentures vs Bridges](https://www.krishnadental.in/blog-implants-vs-dentures-bridges.html)
+- [Invisalign and Clear Aligners Guide](https://www.krishnadental.in/blog-invisalign-clear-aligners.html)
+- [Invisalign vs Braces](https://www.krishnadental.in/blog-invisalign-vs-braces.html)
+- [Teeth Whitening Guide](https://www.krishnadental.in/blog-teeth-whitening-guide.html)
 
 ## Entity Information
 
